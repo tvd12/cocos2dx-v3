@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="64"
+   height="64"
+   id="svg5326">
+  <defs
+     id="defs5328" />
+  <g
+     id="layer1">
+    <path
+       d="M 41.22,32.19 C 39.8,36.74 36.16,39 31.87,39 27.6,39 23.97,36.77 22.53,32.25 16.14,36.79 11.78,38.04 11.78,48.56 11.78,49.9 11.83,51.21 11.97,52.5 17.84,55.61 24.69,57.41 32,57.41 39.31,57.41 46.16,55.61 52.03,52.5 52.17,51.21 52.22,49.9 52.22,48.56 52.22,37.98 47.82,36.79 41.38,32.19 L 41.22,32.19 z"
+       id="path2384"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <path
+       d="M 42,18 C 42,24.63 37.52,30 32,30 26.48,30 22,24.63 22,18 22,11.37 26.48,6 32,6 37.52,6 42,11.37 42,18 z"
+       id="path2437"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+  </g>
+</svg>

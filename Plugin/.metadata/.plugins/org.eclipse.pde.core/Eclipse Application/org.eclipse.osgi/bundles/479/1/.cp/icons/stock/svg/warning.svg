@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="64"
+   height="64"
+   id="svg3193">
+  <defs
+     id="defs3195" />
+  <g
+     id="layer1">
+    <path
+       d="M 32,23.78 C 29.51,23.78 27.5,25.34 27.5,27.28 L 30.07,41.5 33.93,41.5 36.5,27.28 C 36.5,25.34 34.48,23.78 32,23.78 z"
+       id="path3595"
+       style="font-size:52.3541px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:3.6;font-family:Georgia;-inkscape-font-specification:Georgia" />
+    <path
+       d="M 32,45 C 29.8,45 28,46.8 28,49 28,51.2 29.8,53 32,53 34.2,53 36,51.2 36,49 36,46.8 34.2,45 32,45 z"
+       id="path3601"
+       style="font-size:52.3541px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Georgia;-inkscape-font-specification:Georgia" />
+    <path
+       d="M 61,58 3,58 32,7 61,58 z"
+       id="path3153"
+       style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+  </g>
+</svg>

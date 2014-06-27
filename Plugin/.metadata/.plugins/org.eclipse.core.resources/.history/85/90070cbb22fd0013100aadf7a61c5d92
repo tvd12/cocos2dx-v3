@@ -1,0 +1,23 @@
+package com.packtpub.e4.clock.ui.views;
+
+import org.eclipse.jface.viewers.TableViewer;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.ui.part.ViewPart;
+
+public class TimeZoneTableView extends ViewPart {
+
+	private TableViewer tableViewer;
+	public TimeZoneTableView() {
+	}
+
+	@Override
+	public void createPartControl(Composite parent) {
+
+	}
+
+	@Override
+	public void setFocus() {
+
+	}
+
+}

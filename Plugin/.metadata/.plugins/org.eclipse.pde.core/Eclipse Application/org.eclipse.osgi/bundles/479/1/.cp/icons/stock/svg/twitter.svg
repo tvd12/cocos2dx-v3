@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="64"
+   height="64"
+   id="svg5326">
+  <defs
+     id="defs5328" />
+  <g
+     id="layer1">
+    <path
+       d="M 20,8 C 16.68,8 14,10.8 14,14.28 L 14,28.06 14,42 C 14,54 19.17,58 29.87,58.13 L 45.94,58.13 C 49.29,58.13 52,55.42 52,52.06 52,48.71 49.29,46 45.94,46 L 43.45,46 38.97,46 32.48,46 C 28.1,46 26,44.15 26,40.06 L 26,34.13 45.94,34.13 C 49.29,34.13 52,31.42 52,28.06 52,24.71 49.29,22 45.94,22 L 26,22 26,14.28 C 26,10.8 23.32,8 20,8 z"
+       id="rect3593"
+       style="fill:#000000;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:2.4" />
+  </g>
+</svg>

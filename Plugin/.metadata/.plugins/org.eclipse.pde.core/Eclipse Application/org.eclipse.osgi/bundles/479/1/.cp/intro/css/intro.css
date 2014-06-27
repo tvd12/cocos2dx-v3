@@ -1,0 +1,5 @@
+a#sketcher img { background-image : url('sketch_48.gif'); }
+a#sketcher:hover img { background-image : url('sketch_48_hover.gif'); }
+
+a#sketcher-tutorial img { background-image : url('sketch_48.gif'); }
+a#sketcher-tutorial:hover img { background-image : url('sketch_48_hover.gif'); }

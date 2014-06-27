@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="64"
+   height="64"
+   id="svg3331">
+  <defs
+     id="defs3333" />
+  <g
+     id="layer1">
+    <path
+       d="M 42,18 62,18 52,32 42,18 z"
+       id="rect3589"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:3.6" />
+    <path
+       d="M 12.21,15.51 C 16.09,8.179 24.39,3.498 32.69,4.029 41.22,4.354 49.18,10.18 52.12,18.18 53.07,20.67 53.56,23.34 53.55,26"
+       id="path3592"
+       style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:3.6" />
+    <path
+       d="M 22,40 2,40 12,26 22,40 z"
+       id="path3600"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:3.6" />
+    <path
+       d="M 51.79,42.49 C 47.91,49.82 39.61,54.5 31.31,53.97 22.78,53.65 14.82,47.82 11.88,39.82 10.93,37.33 10.45,34.66 10.45,32"
+       id="path3602"
+       style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:3.6" />
+  </g>
+</svg>

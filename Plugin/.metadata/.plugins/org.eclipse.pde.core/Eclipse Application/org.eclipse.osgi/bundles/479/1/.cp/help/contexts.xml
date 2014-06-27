@@ -1,0 +1,173 @@
+<contexts>
+  <context id="introduction">
+    <topic href="help/ch01.html" label="Introduction"/>
+  </context>
+  <context id="user_interface">
+    <topic href="help/ch02.html" label="User Interface"/>
+  </context>
+  <context id="user_interface/screen_editor">
+    <topic href="help/ch03.html" label="Screen Editor"/>
+  </context>
+  <context id="user_interface/storyboard_editor">
+    <topic href="help/ch04.html" label="Storyboard Editor"/>
+  </context>
+  <context id="user_interface/project_explorer">
+    <topic href="help/ch05.html" label="Project Explorer"/>
+  </context>
+  <context id="user_interface/palette">
+    <topic href="help/ch06.html" label="Palette"/>
+  </context>
+  <context id="user_interface/properties">
+    <topic href="help/ch07.html" label="Properties"/>
+  </context>
+  <context id="user_interface/outline">
+    <topic href="help/ch08.html" label="Outline"/>
+  </context>
+  <context id="user_interface/links">
+    <topic href="help/ch09.html" label="Links"/>
+  </context>
+  <context id="user_interface/toolbar">
+    <topic href="help/ch10.html" label="Toolbar"/>
+  </context>
+  <context id="user_interface/context_menu">
+    <topic href="help/ch11.html" label="Context Menu"/>
+  </context>
+  <context id="user_interface/menu">
+    <topic href="help/ch12.html" label="Menu"/>
+  </context>
+  <context id="working_with_projects">
+    <topic href="help/ch13.html" label="Working with Projects"/>
+  </context>
+  <context id="working_with_projects/creating_a_new_project">
+    <topic href="help/ch14.html" label="Creating a New Project"/>
+  </context>
+  <context id="working_with_projects/managing_project_assets">
+    <topic href="help/ch15.html" label="Managing Project Assets"/>
+  </context>
+  <context id="working_with_screens">
+    <topic href="help/ch16.html" label="Working with Screens"/>
+  </context>
+  <context id="working_with_screens/creating_a_new_screen">
+    <topic href="help/ch17.html" label="Creating a New Screen"/>
+  </context>
+  <context id="working_with_screens/adding_widgets">
+    <topic href="help/ch18.html" label="Adding Widgets"/>
+  </context>
+  <context id="working_with_screens/selection">
+    <topic href="help/ch19.html" label="Selection"/>
+  </context>
+  <context id="working_with_screens/editing_properties">
+    <topic href="help/ch20.html" label="Editing Properties"/>
+  </context>
+  <context id="working_with_screens/moving_and_resizing">
+    <topic href="help/ch21.html" label="Moving and Resizing"/>
+  </context>
+  <context id="working_with_screens/deleting_widgets">
+    <topic href="help/ch22.html" label="Deleting Widgets"/>
+  </context>
+  <context id="working_with_screens/ordering_widgets">
+    <topic href="help/ch23.html" label="Ordering Widgets"/>
+  </context>
+  <context id="working_with_screens/grouping_widgets">
+    <topic href="help/ch24.html" label="Grouping Widgets"/>
+  </context>
+  <context id="working_with_screens/duplicating_widgets">
+    <topic href="help/ch25.html" label="Duplicating Widgets"/>
+  </context>
+  <context id="working_with_screens/editing_text">
+    <topic href="help/ch26.html" label="Editing Text"/>
+  </context>
+  <context id="working_with_screens/working_with_tables">
+    <topic href="help/ch27.html" label="Working with Tables"/>
+  </context>
+  <context id="working_with_screens/working_with_images">
+    <topic href="help/ch28.html" label="Working with Images"/>
+  </context>
+  <context id="working_with_screens/working_with_svg_images">
+    <topic href="help/ch29.html" label="Working with SVG Images"/>
+  </context>
+  <context id="working_with_screens/working_with_icons">
+    <topic href="help/ch30.html" label="Working with Icons"/>
+  </context>
+  <context id="working_with_screens/working_with_components">
+    <topic href="help/ch31.html" label="Working with Components"/>
+  </context>
+  <context id="working_with_screens/working_with_annotations">
+    <topic href="help/ch32.html" label="Working with Annotations"/>
+  </context>
+  <context id="working_with_screens/custom_properties">
+    <topic href="help/ch33.html" label="Custom Properties"/>
+  </context>
+  <context id="working_with_storyboards">
+    <topic href="help/ch34.html" label="Working with Storyboards"/>
+  </context>
+  <context id="working_with_storyboards/creating_a_new_storyboard">
+    <topic href="help/ch35.html" label="Creating a New Storyboard"/>
+  </context>
+  <context id="working_with_storyboards/adding_screens">
+    <topic href="help/ch36.html" label="Adding Screens"/>
+  </context>
+  <context id="working_with_storyboards/nesting_storyboards">
+    <topic href="help/ch37.html" label="Nesting Storyboards"/>
+  </context>
+  <context id="working_with_storyboards/editing_storyboards">
+    <topic href="help/ch38.html" label="Editing Storyboards"/>
+  </context>
+  <context id="linking_screens">
+    <topic href="help/ch39.html" label="Linking Screens"/>
+  </context>
+  <context id="keyboard_shortcuts">
+    <topic href="help/ch40.html" label="Keyboard Shortcuts"/>
+  </context>
+  <context id="keyboard_shortcuts/mac_os_x">
+    <topic href="help/ch41.html" label="Mac OS X"/>
+  </context>
+  <context id="exporting_your_work">
+    <topic href="help/ch42.html" label="Exporting your Work"/>
+  </context>
+  <context id="exporting_your_work/exporting_to_image">
+    <topic href="help/ch43.html" label="Exporting to Image"/>
+  </context>
+  <context id="exporting_your_work/exporting_to_pdf">
+    <topic href="help/ch44.html" label="Exporting to PDF"/>
+  </context>
+  <context id="exporting_your_work/sharing_online">
+    <topic href="help/ch45.html" label="Sharing Online"/>
+  </context>
+  <context id="exporting_your_work/batch_image_export">
+    <topic href="help/ch46.html" label="Batch Image Export"/>
+  </context>
+  <context id="exporting_your_work/batch_pdf_export">
+    <topic href="help/ch47.html" label="Batch PDF Export"/>
+  </context>
+  <context id="exporting_your_work/batch_html_export">
+    <topic href="help/ch48.html" label="Batch HTML Export"/>
+  </context>
+  <context id="exporting_your_work/printing">
+    <topic href="help/ch49.html" label="Printing"/>
+  </context>
+  <context id="exporting_your_work/xml">
+    <topic href="help/ch50.html" label="XML"/>
+  </context>
+  <context id="exporting_your_work/command_line">
+    <topic href="help/ch51.html" label="Command Line"/>
+  </context>
+  <context id="presenting_your_work">
+    <topic href="help/ch52.html" label="Presenting your Work"/>
+  </context>
+  <context id="working_with_multiple_monitors">
+    <topic href="help/ch53.html" label="Working with Multiple Monitors"/>
+  </context>
+  <context id="preferences">
+    <topic href="help/ch54.html" label="Preferences"/>
+  </context>
+  <context id="preferences/palette_preferences">
+    <topic href="help/ch55.html" label="Palette Preferences"/>
+  </context>
+  <context id="swt_spy_plugin">
+    <topic href="help/ch56.html" label="SWT Spy Plugin"/>
+  </context>
+  <context id="installing_plugins">
+    <topic href="help/ch57.html" label="Installing plugins"/>
+  </context>
+</contexts>

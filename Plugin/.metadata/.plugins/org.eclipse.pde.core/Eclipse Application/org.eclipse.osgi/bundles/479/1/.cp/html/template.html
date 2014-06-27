@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- Generated using WireframeSketcher: http://wireframesketcher.com -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{{title}}</title>
+<link rel="stylesheet" type="text/css" href="{{files-uri}}/viewer.css">
+<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="{{files-uri}}/viewer_ie6.css"><![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="{{files-uri}}/viewer_ie7.css"><![endif]-->
+<script type="text/javascript" src="{{files-uri}}/jquery-1.6.1.min.js"
+	charset="UTF-8"></script>
+<script type="text/javascript" src="{{files-uri}}/jquery.maphilight.min.js"
+	charset="UTF-8"></script>
+<script type="text/javascript" src="{{files-uri}}/jquery.hotkeys.min.js"
+	charset="UTF-8"></script>
+<script type="text/javascript"
+	src="{{files-uri}}/jquery.ba-hashchange.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="{{files-uri}}/story.js" charset="UTF-8"></script>
+<script type="text/javascript" src="{{files-uri}}/viewer.js" charset="UTF-8"></script>
+<script type="text/javascript">
+	var viewer = createViewer(story, '{{files-string}}');
+</script>
+</head>
+<body class="screen">
+	<div id="container">
+		<div id="content"></div>
+	</div>
+	<div id="nav"><ul id="nav-left"><li 
+			id="nav-left-prev"><a href="javascript:viewer.previous()" title="Previous"><span>Prev</span></a></li><li 
+			id="nav-left-next"><a href="javascript:viewer.next()" title="Next"><span>Next</span></a></li>
+		</ul><ul id="nav-right"><li 
+			id="nav-right-links"><a href="javascript:viewer.toggleLinks()" title="Toggle Links"><span>Links</span></a></li><li 
+			id="nav-right-hide"><a href="javascript:viewer.hideNavbar()" title="Hide Navigation Bar"><span>Hide</span></a></li>
+		</ul><h1>Title</h1></div>
+	<div id="nav-hide" class="hidden"><a href="javascript:viewer.showNavbar()" title="Show Navigation Bar"><span>Navbar</span></a></div>
+</body>
+</html>

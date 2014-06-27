@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="64"
+   height="64"
+   id="svg4729">
+  <defs
+     id="defs4731" />
+  <path
+     d="M 56,50 C 56,55.52 51.52,60 46,60 40.48,60 36,55.52 36,50 36,44.48 40.48,40 46,40 51.52,40 56,44.48 56,50 z"
+     id="path3172"
+     style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+  <path
+     d="M 28,50 C 28,55.52 23.52,60 18,60 12.48,60 8,55.52 8,50 8,44.48 12.48,40 18,40 23.52,40 28,44.48 28,50 z"
+     id="path3174"
+     style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+  <path
+     d="M 28,46 52,4 C 52,4 55.41,22.87 52,28 48.59,33.13 32,40 32,40"
+     id="path3176"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="M 36,46 12,4 C 12,4 8.598,22.87 12,28 15.4,33.13 32,40 32,40"
+     id="path3178"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+  	<extensionContent id="com.wireframesketcher.ui" style="css/intro.css" alt-style="css/intro.properties" name="WireframeSketcher" path="overview/@">
+		<group style-id="content-group" id="content-group">
+       		<link label="WireframeSketcher tutorial" url="http://org.eclipse.ui.intro/runAction?class=com.wireframesketcher.ui.actions.TutorialAction&amp;pluginId=com.wireframesketcher.ui" id="sketcher-tutorial" style-id="content-link">
+          		<text>Browse a tutorial project and learn how to use WireframeSketcher on the go.</text>
+       		</link>
+       		<link label="WireframeSketcher user guide" url="http://org.eclipse.ui.intro/showHelpTopic?id=/com.wireframesketcher.ui/help/index.html" id="sketcher" style-id="content-link">
+          		<text>Familiarize yourself with WireframeSketcher's user interface, shortcuts, wiki syntax and more.</text>
+       		</link>
+       	</group>
+  	</extensionContent>
+  	<extensionContent id="com.wireframesketcher.ui.1" style="css/intro.css" alt-style="css/intro.properties" name="WireframeSketcher" path="tutorials/@">
+		<group style-id="content-group" id="content-group1" label="WireframeSketcher">
+       		<link label="Create a tutorial project" url="http://org.eclipse.ui.intro/runAction?class=com.wireframesketcher.ui.actions.TutorialAction&amp;pluginId=com.wireframesketcher.ui" id="sketcher-tutorial" style-id="content-link">
+          		<text>Browse a tutorial project and learn how to use WireframeSketcher on the go.</text>
+       		</link>
+       	</group>
+  	</extensionContent>
+</introContent>

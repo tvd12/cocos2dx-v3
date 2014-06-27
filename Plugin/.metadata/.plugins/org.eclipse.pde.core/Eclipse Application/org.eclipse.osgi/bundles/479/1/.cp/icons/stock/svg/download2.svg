@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="64"
+   height="64"
+   id="svg4729">
+  <defs
+     id="defs4731" />
+  <path
+     d="M 24,6 24,24 14,24 C 13.23,23.99 12.47,24.51 12.16,25.21 11.84,25.92 11.98,26.8 12.5,27.37 L 30.5,47.34 C 31.25,48.19 32.75,48.19 33.5,47.34 L 51.5,27.37 C 52.02,26.8 52.16,25.92 51.84,25.21 51.53,24.51 50.77,23.99 50,24 L 40,24 40,6 C 40,4.953 39.05,4 38,4 L 26,4 C 24.7,4.157 24.36,4.867 24,6 z"
+     id="rect2382"
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+  <path
+     d="M 4,44 C 4,49.33 4,54.67 4,60 22.67,60 41.33,60 60,60 60,54.67 60,49.33 60,44 57.33,44 54.67,44 52,44 52,46.67 52,49.33 52,52 38.67,52 25.33,52 12,52 12,49.33 12,46.67 12,44 9.333,44 6.667,44 4,44 z"
+     id="path2814"
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:8;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+</svg>

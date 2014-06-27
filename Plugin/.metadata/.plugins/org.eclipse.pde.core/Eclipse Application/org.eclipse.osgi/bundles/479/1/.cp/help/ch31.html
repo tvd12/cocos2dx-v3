@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Working with Components</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="../book.css"/>
+		<script language="JavaScript" src="../content/PLUGINS_ROOT/org.eclipse.help/livehelp.js"> </script>
+	</head>
+	<body>
+		<h3>Working with Components</h3>
+<p>Components let you create reusable bits and share them across multiple screens. This is helpful for creating common parts like navigation, headers and footers. Components can then be used by other screens without unnecessary duplication. Changes to a component are automatically reflected in every place it is used. Components in WireframeSketcher behave a lot like &#8220;masters&#8221; in other tools, or &#8220;master objects&#8221; to be more precise. However components are much more flexible &#8211; hence the name.</p>
+<p>Any regular screen can be used as a component. Use this feature to create screen variations without content duplication. Additionally, you can place multiple components in the same screen file using <a href="ch24.html">named groups</a>. This is the recommended way to create stencils.</p>
+<p>You can quickly extract selected widgets into a component using <strong>Convert to Component&#8230;</strong> action from the <a href="ch11.html">context menu</a>. Choose a new screen file to save the component to and click <strong>Finish</strong>.</p>
+<p>Screens that to be used as components can also be placed in the &#8220;assets&#8221; folder in the root of your project. These screens will be automatically loaded into the <a href="ch06.html">Palette</a>. Use <a href="ch15.html">Mockups Gallery</a> to add pre-built assets.</p>
+<p>Assets can be shared between projects using project references. Project references can be configured using <a href="ch05.html">Project Explorer</a>. Right-click on a project and then select <strong>Properties &gt; Project References</strong>. This mechanism lets you place assets in a global project and then reference it in other projects that also need those assets.</p>
+<p>Like images, components can be added using several methods:</p>
+<ul>
+	<li>Add the component from the <a href="ch06.html">Palette</a> if it was placed in &#8220;assets&#8221; folder</li>
+	<li>Add the <strong>Component</strong> widget from the <a href="ch06.html">Palette</a> and choose the screen file to use as component</li>
+	<li>Drag &amp; Drop screen files directly from the <a href="ch05.html">Project Explorer</a> view into the editor. You may have to uncheck the <strong>Link with Editor</strong> option (<img src="img/link_to_editor.gif" title="Link with Editor" alt="Link with Editor" />) in <a href="ch05.html">Project Explorer</a> view first.</li>
+	<li>Copy &amp; Paste screen files from the <a href="ch05.html">Project Explorer</a> view into the editor.</li>
+</ul>
+<h4><a name='working_with_screens/working_with_components/overriding_properties'>Overriding properties</a></h4>
+<p>Components come with an inheritance mechanism that allows component instances to be customized by overriding their individual properties. The instance remains linked to its source and is updated, with overrides preserved, when the source is changed. To override properties, first &#8220;enter&#8221; the component in <strong><span style="color:red;">Overriding properties</span></strong> mode using <strong>double-click</strong>. Edit the component&#8217;s contents in the usual way by changing properties, moving, resizing or deleting widgets. Hit <strong>Escape</strong> to exit component editing.</p>
+<p>Note that <strong><span style="color:red;">Overriding properties</span></strong> mode has some limitations. Specifically, it&#8217;s not possible to add/nest new components while in this mode. Pasting, duplicating or adding new components from the palette while being in this mode will result in a warning message. The solution to this issue is to exit this mode and to overlay new components above instead of nesting them inside.</p>
+<p>A component can also be detached from its original source and copied into the current screen as a group. Detaching the component will automatically apply any overrides and make them part of the copy. To detach the component choose &#8220;Detach Component&#8221; from the <a href="ch11.html">context menu</a>.</p>
+<h4><a name='working_with_screens/working_with_components/designing_components'>Designing components</a></h4>
+<p>When designing components use <a href="ch24.html">anchors</a> to control how widgets behave when the component is resized. Using anchors it&#8217;s possible to combine simple shapes and objects into complex components that resize well and are more reusable.</p>
+<p>Consider using <a href="ch29.html"><span class="caps">SVG</span> images</a> for new components. You can place helper images in &#8220;assets&#8221; directory and use them in your stencil. Prefix image names with underscore, e.g. <strong>_ipad_popover.svg</strong>, to hide them from the <a href="ch06.html">Palette</a>.</p>
+<hr/>
+<p><strong>Next:</strong> <a href="ch32.html">Working with Annotations</a></p>
+	</body>
+</html>
+

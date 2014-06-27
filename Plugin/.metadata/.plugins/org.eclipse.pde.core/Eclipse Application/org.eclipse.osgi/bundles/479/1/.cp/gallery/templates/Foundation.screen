@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Master" id="1" x="10" y="5" measuredWidth="932" measuredHeight="44">
+    <screen xsi:type="model:WidgetGroup" href="assets/Foundation/Navigation.screen#Top%20Bar"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="2" x="78" y="96" measuredWidth="215" measuredHeight="53">
+    <screen xsi:type="model:WidgetGroup" href="assets/Foundation/Typography.screen#h1.%20Header"/>
+    <overrides>
+      <widgets ref="2" text="Hello World"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="3" x="78" y="174" measuredWidth="520" measuredHeight="81">
+    <screen xsi:type="model:WidgetGroup" href="assets/Foundation/Typography.screen#Paragraph"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="4" x="78" y="305" measuredWidth="161" measuredHeight="48">
+    <screen xsi:type="model:WidgetGroup" href="assets/Foundation/Buttons.screen#Button"/>
+    <overrides>
+      <widgets ref="20" width="161" text="Button"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

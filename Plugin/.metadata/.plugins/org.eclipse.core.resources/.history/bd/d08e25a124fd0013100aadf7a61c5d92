@@ -1,0 +1,17 @@
+package com.packtpub.e4.clock.ui.internal;
+
+public class TimeZoneIDColumn extends TimeZoneColumn {
+
+	@Override
+	public String getText(Object element) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getTitle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

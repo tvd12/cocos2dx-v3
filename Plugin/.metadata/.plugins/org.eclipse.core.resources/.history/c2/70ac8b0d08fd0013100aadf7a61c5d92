@@ -1,0 +1,7 @@
+package com.packtpub.e4.clock.ui.internal;
+
+import ViewerComparator;
+
+public class TimeZoneViewerComparator extends ViewerComparator {
+
+}
