@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="64"
+   height="64"
+   id="svg4729">
+  <defs
+     id="defs4731" />
+  <path
+     d="M 23.81,10 C 20.59,10 18,12.59 18,15.81 L 18,18 7.812,18 C 4.589,18 2,20.59 2,23.81 L 2,48.19 C 2,51.41 4.589,54 7.812,54 L 56.19,54 C 59.41,54 62,51.41 62,48.19 L 62,23.81 C 62,20.59 59.41,18 56.19,18 L 46,18 46,15.81 C 46,12.59 43.41,10 40.19,10 L 23.81,10 z M 32,16 C 41.94,16 50,24.06 50,34 50,43.94 41.94,52 32,52 22.06,52 14,43.94 14,34 14,24.06 22.06,16 32,16 z"
+     id="rect2383"
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  <path
+     d="M 42,34 C 42,39.52 37.52,44 32,44 26.48,44 22,39.52 22,34 22,28.48 26.48,24 32,24 37.52,24 42,28.48 42,34 z"
+     id="path3592"
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:3.6" />
+</svg>

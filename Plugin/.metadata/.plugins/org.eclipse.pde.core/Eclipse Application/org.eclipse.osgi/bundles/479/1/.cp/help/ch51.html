@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Command Line</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="../book.css"/>
+		<script language="JavaScript" src="../content/PLUGINS_ROOT/org.eclipse.help/livehelp.js"> </script>
+	</head>
+	<body>
+		<h3>Command Line</h3>
+<p>You can use command line to automate the exporting of your screens and storyboards. The executable that you launch and pass options to is <strong>eclipsec.exe</strong> on Windows and <strong>eclipse</strong> on Mac OS X and Linux. If you are using standalone version of WireframeSketcher then the executable is named <strong>WireframeSketcher.exe</strong> and <strong>WireframeSketcher</strong> accordingly.</p>
+<p>To export an entire directory of screens to image use:</p>
+<pre><code>eclipsec -application com.wireframesketcher.ui.screenExport \
+ -data c:\eclipse\workspace \
+ -noSplash
+ -source c:\eclipse\workspace\mockups \
+ -dest c:\mockups
+ -format PNG</code></pre>
+<p>To export a single screen to <span class="caps">PDF</span> use:</p>
+<pre><code>eclipsec -application com.wireframesketcher.ui.screenExport \
+ -data c:\eclipse\workspace \
+ -noSplash
+ -source c:\eclipse\workspace\mockups\Mockup.screen \
+ -dest c:\mockups
+ -format PDF</code></pre>
+<p>Here&#8217;s a complete list of command line options:</p>
+<pre><code>Usage:
+eclipsec -application com.wireframesketcher.ui.screenExport \
+  -data WORKSPACE_DIR \
+  -noSplash \
+  -source FILE \
+  -dest FILE
+
+Options:
+  -source FILE                                   Source file or directory
+  -dest FILE                                     Destination directory
+  -format PNG|PDF|HTML                           Export format (defaults to PNG)
+  -pdf optimize|fitpage                          Optimize PDF for viewing or fit a
+                                                 specified page size (defaults to
+                                                 fitpage)
+  -pageSize A2|A3|A4|A5|Legal|Letter|Tabloid     PDF page size (defaults to A4)
+  -orientation auto|portrait|landscape           PDF page orientation (defaults to
+                                                 auto)
+  -exportScreenflow                              Export screen flow in multi-page
+                                                 PDFs
+  -highlightLinks                                Highlight links in multi-page PDFs
+                                                 and HTML
+  -hideAnnotations                               Hide annotations
+  -usage                                         Show this message</code></pre>
+<hr/>
+<p><strong>Next:</strong> <a href="ch52.html">Presenting your Work</a></p>
+	</body>
+</html>
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Working with Tables</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="../book.css"/>
+		<script language="JavaScript" src="../content/PLUGINS_ROOT/org.eclipse.help/livehelp.js"> </script>
+	</head>
+	<body>
+		<h3>Working with Tables</h3>
+<p>To insert a table use the Table widget from the <a href="ch06.html">palette</a> widget. Tables are configured via a more complex syntax in <span class="caps">CSV</span> format: one line for each row with commas or tabs being used as separators for columns. Tables allow you to insert icons, line returns, specify column alignments and sizes.</p>
+<p>Here&#8217;s an example:</p>
+<pre>
+Name,Last\nName,Age v,Kids,Likes,Actions
+Peter,Severin,34,[x],{computer},[Edit] [View]
+Henri,Severin,4,[],{train},[Edit] [View]
+Olga,Severin,59,[x],{note},[Edit] [View]
+[-] You can even
+  [+] Have
+  [+] Treetable
+</pre>
+<p>Which renders to this:</p>
+<p><img src="img/styling_example.png" title="Styling example" alt="Styling example" /></p>
+<h4><a name='working_with_screens/working_with_tables/cell_attributes'>Cell Attributes</a></h4>
+<p>Various cell attributes can be given using special instructions at the beginning of a table cell. The general syntax is:</p>
+<pre>
+instructions. Cell Content
+</pre>
+<h5><a name='working_with_screens/working_with_tables/cell_attributes/column_aligns_and_widths'>Column Aligns and Widths</a></h5>
+<p>Cell attributes can be used to specify column aligns and widths. Here are a few examples that show what&#8217;s available:</p>
+<pre>
+&lt;. Align to left, (align:left). Also align to left
+&gt;. Align to right, (align:right). Also align to right
+=. Center, (align:center). Also center
+(w:30). Width of 30 pixels, (w=30). The same, (width:30). Also works
+=(w=30). Width and align, (w:30)(align=center). The same, (width:30)(align:center). Also works
+</pre>
+<p>Note that specifying column widths only works when given in the header row. Column widths are expressed in pixels, but limited to the minimum width of the column&#8217;s content. If you wish to make a column as narrow as possible then give it the width of 1 pixel using: (w:1).</p>
+<h5><a name='working_with_screens/working_with_tables/cell_attributes/cell_background'>Cell Background</a></h5>
+<p>Cell attributes can also be used to control cell background. Here&#8217;s an example:</p>
+<pre>
+(bg:red). Red cell, (bgcolor:#0000FF)(align:left). Blue cell
+</pre>
+<h4><a name='working_with_screens/working_with_tables/row_background'>Row Background</a></h4>
+<p>Row attributes can be used to control row background. Here&#8217;s an example:</p>
+<pre>
+(bg:red)|Row with red background
+|Row with default selection background
+(bgcolor:#00F)|Row with blue background
+Regular row
+</pre>
+<p>This syntax also works for List and Tree widgets.</p>
+<h4><a name='working_with_screens/working_with_tables/using_icons_in_tables'>Using Icons in Tables</a></h4>
+<p>You can insert any icon using the <strong>{icon-name}</strong> syntax. There are also some text shortcuts and their equivalent icon syntax:</p>
+<ul>
+	<li>Selected checkbox: [x], {checked}</li>
+	<li>Unselected checkbox: [], [ ], {unchecked}</li>
+	<li>Selected radio button: (x), (*), (o), {selected}</li>
+	<li>Unselected radio button: (), ( ), {unselected}</li>
+	<li>Collapsed tree node: [+], {expand}</li>
+	<li>Expanded tree node: [-], {collapse}</li>
+	<li>Ascending sort: ^, {asc}</li>
+	<li>Descending sort: v, {desc}</li>
+	<li>Neutral sort: v^, ^v, {neutral}</li>
+</ul>
+<h4><a name='working_with_screens/working_with_tables/breaking_text_in_multiple_lines'>Breaking Text in Multiple Lines</a></h4>
+<p>Insert \n sequence inside the text to break it in multiple lines. Use Shift+Enter shortcut to do it without typing.</p>
+<h4><a name='working_with_screens/working_with_tables/multiple_selection_in_tables'>Multiple Selection in Tables</a></h4>
+<p>To mark a row as selected you can prepend it with &#8216;|&#8217; character, like this:</p>
+<pre>
+|This is a selected row
+</pre>
+<h4><a name='working_with_screens/working_with_tables/using_spreadsheet_to_edit_data'>Using spreadsheet to edit data</a></h4>
+<p>When editing complex tables you can use a spreadsheet application like Excel, Numbers, LibreOffice Calc or <a href="https://docs.google.com/spreadsheet">Google Spreadsheet</a> (use the last link to quickly open a new spreadsheet page). Just copy the contents of the Table widget and then paste it to spreadsheet. After you are done editing the data, select the range of cells to transfer and then copy &amp; paste their contents back into the Table widget.</p>
+<p>Note that to make copy &amp; paste from other apps as seamless as possible, Table widget accepts both comma and tab characters as cell separators.</p>
+<hr/>
+<p><strong>Next:</strong> <a href="ch28.html">Working with Images</a></p>
+	</body>
+</html>
+

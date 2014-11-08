@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Working with SVG Images</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="../book.css"/>
+		<script language="JavaScript" src="../content/PLUGINS_ROOT/org.eclipse.help/livehelp.js"> </script>
+	</head>
+	<body>
+		<h3>Working with <span class="caps">SVG</span> Images</h3>
+<p><span class="caps">SVG</span> Image widget lets you work with <span class="caps">SVG</span> vector graphic images. <span class="caps">SVG</span> images are the ideal choice for custom clipart and new widgets. Try using <a href="http://openclipart.org/">OpenClipart.org</a> to find royalty free clipart for your wireframes. <span class="caps">SVG</span> images can also be used for <a href="ch30.html">custom icons</a>.</p>
+<p>Unlike raster images, <span class="caps">SVG</span> images inherit the current theme used by the screen. If the screen is using sketchy style then <span class="caps">SVG</span> images will be sketchy too. There is also a limited control over colors. If the original <span class="caps">SVG</span> image is black &amp; white then you&#8217;ll be able to change these colors in <a href="ch07.html">Properties View</a>. To increase possible uses, <span class="caps">SVG</span> images can be rotated, flipped horizontally and vertically.</p>
+<p>To use an <span class="caps">SVG</span> image you can:</p>
+<ul>
+	<li>Drop the <span class="caps">SVG</span> Image widget from the palette. You&#8217;ll be prompted for an <span class="caps">SVG</span> image file.</li>
+	<li>Drag &amp; drop the <span class="caps">SVG</span> image from local file system or from the browser. The image will be copied to &#8220;assets&#8221; folder. Later you can rename the image file in <a href="ch05.html">Project Explorer</a>.</li>
+	<li>Drag &amp; drop the image file directly from the <a href="ch05.html">Project Explorer</a> view into the editor. You may have to uncheck the <strong>Link with Editor</strong> option (<img src="img/link_to_editor.gif" title="Link with Editor" alt="Link with Editor" />) in <a href="ch05.html">Project Explorer</a> view first.</li>
+	<li>Copy &amp; Paste image files from the <a href="ch05.html">Project Explorer</a> view into the editor.</li>
+</ul>
+<h4><a name='working_with_screens/working_with_svg_images/advanced_uses'>Advanced Uses</a></h4>
+<p>By default <span class="caps">SVG</span> images are scaled as specified in the standard. In particular this means that the stroke width is scaled too. WireframeSketcher has a few proprietary tricks that you can use for more control. The <span class="caps">SVG</span> file can include the <strong>ws-layout</strong> attribute in &lt;svg&gt; tag:</p>
+<pre><code>&lt;svg
+   ...
+   ws-layout="non-scaling-stroke"&gt;</code></pre>
+<p>If you are using <a href="http://inkscape.org/">Inkscape</a> editor then you can add this attribute using <strong>Edit &gt; <span class="caps">XML</span> Editor</strong>. Inkscape will preserve it.</p>
+<p>The <strong>non-scaling-stroke</strong> value ensures that the stroke width does not scale. There are some other values that you can use for different scaling strategies. Here&#8217;s what you need to do to get 9-slice scaling, a popular scaling method in Adobe tools:</p>
+<pre><code>&lt;svg
+   ...
+   ws-layout="scale-9"&gt;
+   ...
+       &lt;rect
+            id="ws-guides"
+            width="33"
+            height="7"
+            x="26"
+            y="16"/&gt;
+   ...</code></pre>
+<p>Note the <strong>scale-9</strong> attribute and also the extra element with id <strong>ws-guides</strong> that is used to define a 3&#215;3 scaling grid (this element is not rendered). 9-slice scaling strategy only resizes the middle band without distorting corners.</p>
+<p>In <a href="http://inkscape.org/">Inkscape</a> editor use <strong>Object &gt; Object Properties</strong> to define a custom id for an element.</p>
+<p>There are some other less important scaling strategies. <strong>scale-3-h</strong> and <strong>scale-3-v</strong> are basically <strong>scale-9</strong>, but only on horizontal or vertical axis. The other axis gets <strong>non-scaling-stroke</strong> scaling. Then there is a more advanced <strong>scale-25</strong> strategy that works with <strong>ws-guides-1</strong> and <strong>ws-guides-2</strong> elements to define a 5&#215;5 grid. It&#8217;s similar to <strong>scale-9</strong> but you get an additional middle band that does not scale.</p>
+<p>All these scaling strategies keep the stroke constant and don&#8217;t scale it.</p>
+<p>If this is not enough then it&#8217;s also possible to use embedded JavaScript with <strong>onresize</strong> event to control <span class="caps">SVG</span> scaling programmatically. More than that, many widgets support Skin property that can be specified by editing screen <span class="caps">XML</span> file and adding a <strong>skin</strong> attribute that points to <span class="caps">SVG</span> file. With this approach you can create you own stencils with custom widgets that behave like any other built-in widget. See <a href="http://wireframesketcher.com/skinning.html">skinning widgets documentation</a> for more details.</p>
+<p>You can see some concrete examples of custom widgets in <a href="http://wireframesketcher.com/mockups/geometric-shapes.html">Shapes</a> and <a href="http://wireframesketcher.com/mockups/ipad-stencil.html">iPad</a> stencils.</p>
+<p>When creating <span class="caps">SVG</span> images that need more precision make sure to snap coordinates and sizes to integer values. Here&#8217;s a <a href="http://wireframesketcher.com/samples/asset-template.svg">template <span class="caps">SVG</span> file</a> that you can use with <a href="http://inkscape.org">Inkscape</a>. It defines a 1&#215;1px grid for automatic snapping.</p>
+<p>Note that WireframeSketcher has a limited support for gradients and will approximate them with solid colors.</p>
+<hr/>
+<p><strong>Next:</strong> <a href="ch30.html">Working with Icons</a></p>
+	</body>
+</html>
+

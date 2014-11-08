@@ -1,0 +1,170 @@
+#container, #content {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#container {
+	padding-bottom: 32px;
+}
+
+img {
+	border: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 75%;
+	color: #41454c;
+	margin: 0;
+	padding: 0;
+}
+
+a, a:focus {
+	outline: none;
+}
+
+.hidden {
+	display: none;
+}
+
+#nav {
+	width: 100%;
+	height: 32px;
+	position: fixed;
+	bottom: 0;
+	background-color: #dedede;
+	opacity: 0.9;
+}
+
+#nav h1 {
+	font-size: 1.15em;
+	text-align: center;
+	margin: 0.4em 0 0 0;
+	padding: 0 .5em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+#nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+#nav ul li {
+	display: inline;
+	float: left;
+}
+
+#nav-left li {
+	margin: 2px 0 0 5px;
+}
+
+#nav-right li {
+	margin: 2px 5px 0 0;
+}
+
+#nav ul li a, #nav-hide a {
+	display: block;
+	text-align: center;
+}
+
+#nav ul li a {
+	border: 1px solid #888888;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.screen #nav ul li a:hover, .screen #nav-hide a:hover, #nav ul li a:active, #nav-hide a:active, #nav ul li.active a {
+	background-color: #2e83ff;
+}
+
+#nav ul li a span, #nav-hide a span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(icons.png);
+	text-indent: -9999px;
+}
+
+#nav-left {
+	float: left;
+}
+
+#nav-right {
+	float: right;
+}
+
+#nav-hide {
+	width: auto;
+	height: 32px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: #dedede;
+	opacity: 0.9;
+}
+
+#nav-hide a {
+	border-style: solid;
+	border-color: #888888;
+	border-width: 1px 0 0 1px;
+	-moz-border-radius: 3px 0 0 0;
+	-webkit-border-radius: 3px 0 0 0;
+	border-radius: 3px 0 0 0;
+	padding: 7px 8px 8px 7px;
+}
+
+#nav-left-prev a span {
+	background-position: 0 0;
+}
+
+#nav-left-next a span {
+	background-position: -16px 0;
+}
+
+#nav-right-links a span {
+	background-position: -64px 0;
+}
+
+#nav-right-hide a span {
+	background-position: -48px 0;
+}
+
+#nav-hide a span {
+	background-position: -32px 0;
+}
+
+#nav-left-prev.disabled a span {
+	background-position: 0 -16px;
+}
+
+#nav-left-next.disabled a span {
+	background-position: -16px -16px;
+}
+
+.screen #nav-left-prev a:hover span, #nav-left-prev a:active span {
+	background-position: 0 -32px;
+}
+
+.screen #nav-left-next a:hover span, #nav-left-next a:active span {
+	background-position: -16px -32px;
+}
+
+.screen #nav-right-links a:hover span, #nav-right-links a:active span, #nav-right-links.active a span {
+	background-position: -64px -32px;
+}
+
+.screen #nav-right-hide a:hover span, #nav-right-hide a:active span {
+	background-position: -48px -32px;
+}
+
+.screen #nav-hide a:hover span, #nav-hide a:active span {
+	background-position: -32px -32px;
+}

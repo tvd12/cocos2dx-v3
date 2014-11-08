@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Editing Text</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="../book.css"/>
+		<script language="JavaScript" src="../content/PLUGINS_ROOT/org.eclipse.help/livehelp.js"> </script>
+	</head>
+	<body>
+		<h3>Editing Text</h3>
+<p>Some widgets can display text. You can quickly edit this text in-place. To open the in-place editor just double-click the widget or hit <strong>Enter</strong>. When finished with editing press the <strong>Enter</strong> key.</p>
+<p>When editing widgets with multi-line text the <strong>Enter</strong> key serves to make new lines. In this case use the <strong>Ctrl+Enter</strong> combination to close the editor.</p>
+<p>You can cancel the current edit by hitting the <strong>Esc</strong> key.</p>
+<p>Certain widgets allow multiple items to be entered using comma (,) or newline as separator. When required, commas can be escaped using the \, syntax.</p>
+<p>You can force multiple lines in widgets like Table, Placeholder, Button, Link and others by using the \n sequence.</p>
+<p>Additionally, a wiki-like markup syntax can be used to style the text.</p>
+<table>
+	<tr>
+		<th>What you type</th>
+		<th>What it looks like</th>
+	</tr>
+	<tr>
+		<td>*bold text*</td>
+		<td><strong>bold text</strong></td>
+	</tr>
+	<tr>
+		<td>_italicized text_</td>
+		<td><em>italicized text</em></td>
+	</tr>
+	<tr>
+		<td>+underlined text+</td>
+		<td><ins>underlined text</ins></td>
+	</tr>
+	<tr>
+		<td>-struck out text-</td>
+		<td><del>struck out text</del></td>
+	</tr>
+	<tr>
+		<td>~disabled text~</td>
+		<td><span style="color:gray;">disabled text</span></td>
+	</tr>
+	<tr>
+		<td>%(color:red)colored text%</td>
+		<td><span style="color:red;">colored text</span></td>
+	</tr>
+	<tr>
+		<td>%(color:FF0000)colored text%</td>
+		<td><span style="color:#FF0000;">colored text</span></td>
+	</tr>
+	<tr>
+		<td>%(bgcolor:yellow)text with background%</td>
+		<td><span style="background:yellow;">text with background</span></td>
+	</tr>
+	<tr>
+		<td>%(font:+2)bigger text%</td>
+		<td><span style="font-size:120%;">bigger text</span></td>
+	</tr>
+	<tr>
+		<td>%(font:-2)smaller text%</td>
+		<td><span style="font-size:90%;">smaller text</span></td>
+	</tr>
+	<tr>
+		<td>%(font:14)14 points text%</td>
+		<td><span style="font-size:100%;">14 points text</span></td>
+	</tr>
+	<tr>
+		<td>+*_combine styles_*+</td>
+		<td><ins><strong><em>combine styles</em></strong></ins></td>
+	</tr>
+	<tr>
+		<td>[link]</td>
+		<td><span style="color:blue;"><ins>link</ins></span></td>
+	</tr>
+	<tr>
+		<td>{icon-name}</td>
+		<td>insert the icon named &#8220;icon-name&#8221;</td>
+	</tr>
+	<tr>
+		<td>${screen-name}</td>
+		<td>insert the name of the screen</td>
+	</tr>
+	<tr>
+		<td>${screen-path}</td>
+		<td>insert the path of the screen</td>
+	</tr>
+	<tr>
+		<td>${screen-mtime}</td>
+		<td>insert last modification time of the screen</td>
+	</tr>
+	<tr>
+		<td>${current-time}</td>
+		<td>insert current time during print/export</td>
+	</tr>
+	<tr>
+		<td>${page-number}</td>
+		<td>insert current page during print/export</td>
+	</tr>
+	<tr>
+		<td>${page-count}</td>
+		<td>insert total page count during print/export</td>
+	</tr>
+	<tr>
+		<td>\*escape markup\*</td>
+		<td>*escape markup*</td>
+	</tr>
+	<tr>
+		<td>* A<br />
+* Bullet<br />
+** List</td>
+		<td><ul><li>A</li><li>Bullet<ul><li>List</li></ul></li></ul></td>
+	</tr>
+	<tr>
+		<td># A<br />
+# Numbered<br />
+## List</td>
+		<td><ol><li>A</li><li>Numbered<ol><li>List</li></ol></li></ol></td>
+	</tr>
+	<tr>
+		<td> h1. Heading 1<br/>
+ h2. Heading 2<br/>
+ h3. Heading 3<br/>
+ h4. Heading 4<br/>
+ h5. Heading 5<br/>
+ h6. Heading 6</td>
+		<td><img src="img/headings.png" title="Headings" alt="Headings" /></td>
+	</tr>
+</table>
+<p>Hit Ctrl+Space to open auto-completion popup with the list of available icons and macros. To narrow down the list of proposals just continue typing a search keyword directly in the text. For macros start with the &#8216;$&#8217; character. Auto-completion is smart enough to recognize what you are trying to do.</p>
+<hr/>
+<p><strong>Next:</strong> <a href="ch28.html">Working with Images</a></p>
+	</body>
+</html>
+

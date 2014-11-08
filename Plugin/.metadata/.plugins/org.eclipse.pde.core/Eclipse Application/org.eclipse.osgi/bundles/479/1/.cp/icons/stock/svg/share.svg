@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="64"
+   height="64"
+   id="svg4729">
+  <defs
+     id="defs4731" />
+  <g
+     id="icon">
+    <path
+       d="M 24,30 C 24,36.62 18.62,42 12,42 5.376,42 0,36.62 0,30 0,23.38 5.376,18 12,18 18.62,18 24,23.38 24,30 z"
+       id="path2831"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    <path
+       d="M 60,12 C 60,18.62 54.62,24 48,24 41.38,24 36,18.62 36,12 36,5.376 41.38,0 48,0 54.62,0 60,5.376 60,12 z"
+       id="path2833"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    <path
+       d="M 60,48 C 60,54.62 54.62,60 48,60 41.38,60 36,54.62 36,48 36,41.38 41.38,36 48,36 54.62,36 60,41.38 60,48 z"
+       id="path2835"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    <path
+       d="M 48,12 12,30 48,48"
+       id="path2837"
+       style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+</svg>

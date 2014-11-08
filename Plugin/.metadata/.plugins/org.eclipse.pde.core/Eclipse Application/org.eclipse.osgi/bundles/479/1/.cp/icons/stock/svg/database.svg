@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="64"
+   height="64"
+   id="svg4729">
+  <defs
+     id="defs4731" />
+  <g
+     id="icon">
+    <path
+       d="M 56,10.3 C 56,13.61 46.15,16.3 34,16.3 21.85,16.3 12,13.61 12,10.3 12,6.993 21.85,4.303 34,4.303 46.15,4.303 56,6.993 56,10.3 z"
+       id="path3211"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       d="M 13.28,20.31 C 12.47,20.94 12,21.61 12,22.31 12,25.63 21.85,28.31 34,28.31 46.15,28.31 56,25.63 56,22.31 56,21.61 55.53,20.94 54.72,20.31 51.69,22.64 43.57,24.31 34,24.31 24.43,24.31 16.31,22.64 13.28,20.31 z"
+       id="path3589"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 13.28,32.31 C 12.47,32.94 12,33.61 12,34.31 12,37.63 21.85,40.31 34,40.31 46.15,40.31 56,37.63 56,34.31 56,33.61 55.53,32.94 54.72,32.31 51.69,34.64 43.57,36.31 34,36.31 24.43,36.31 16.31,34.64 13.28,32.31 z"
+       id="path3594"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 13.28,44.31 C 12.47,44.94 12,45.61 12,46.31 12,49.63 21.85,52.31 34,52.31 46.15,52.31 56,49.63 56,46.31 56,45.61 55.53,44.94 54.72,44.31 51.69,46.64 43.57,48.31 34,48.31 24.43,48.31 16.31,46.64 13.28,44.31 z"
+       id="path3596"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  </g>
+</svg>

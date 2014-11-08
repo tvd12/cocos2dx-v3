@@ -1,0 +1,22 @@
+package com.packtpub.e4.clock.ui.internal;
+
+
+import org.eclipse.jface.viewers.ColumnLabelProvider;
+import org.eclipse.jface.viewers.TableViewer;
+import org.eclipse.jface.viewers.TableViewerColumn;
+import org.eclipse.swt.SWT;
+
+public abstract class TimeZoneColumn extends ColumnLabelProvider {
+	public abstract String getText(Object element);
+	public abstract String getTitle();
+	public int getWidth() {
+		return 250;
+	}
+	
+	public TableViewerColumn addColumnTo(TableViewer viewer) {
+		TableViewerColumn tableViewerColumn =
+				new TableViewerColumn(viewer, SWT.NONE);
+		org.eclipse.swt.widgets.TableColumn column = tableViewerColumn.getColumn();
+		
+	}
+}

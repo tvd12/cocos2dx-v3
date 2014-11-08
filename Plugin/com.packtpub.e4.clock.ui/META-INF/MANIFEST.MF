@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Clock
+Bundle-SymbolicName: com.packtpub.e4.clock.ui; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.packtpub.e4.clock.ui.Activator
+Bundle-Vendor: PacktPub
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.views
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy

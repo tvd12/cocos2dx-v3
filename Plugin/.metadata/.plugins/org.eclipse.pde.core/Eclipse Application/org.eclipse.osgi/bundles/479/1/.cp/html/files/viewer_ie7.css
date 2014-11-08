@@ -1,0 +1,8 @@
+#nav ul li a span, #nav-hide a span {
+	display: block;
+	cursor: pointer;
+}
+
+#nav, #nav-hide {
+	filter: alpha(opacity = 90);
+}
