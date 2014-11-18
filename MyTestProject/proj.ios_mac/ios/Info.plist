@@ -56,18 +56,20 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb958212987539850</string>
+				<string>fb958164280878054</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>FacebookAppID</key>
-	<string>958212987539850</string>
+	<string>958164280878054</string>
 	<key>FacebookDisplayName</key>
-	<string> MyTestProject iOs</string>
+	<string>AppTest</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>
