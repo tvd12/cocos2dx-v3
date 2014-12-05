@@ -1,0 +1,24 @@
+#
+# create templates
+#
+
+#CCPoint declaring template
+{tab}CCPoint {var_name};
+
+#end
+
+#CCPoint implementing template
+{var_name}{tab}{tab}{tab}= CCPoint({position});
+
+#end
+
+#=============== Point template ===================
+#Point declaring template
+{tab}Point {var_name};
+
+#end
+
+#Point implementing template
+{var_name}{tab}{tab}{tab}= Point({position});
+
+#end	

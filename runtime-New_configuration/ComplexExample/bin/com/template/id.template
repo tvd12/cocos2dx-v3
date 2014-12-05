@@ -1,0 +1,13 @@
+#
+# create templates
+#
+
+#Image identifiers declaring template
+{tab}string {id};
+
+#end
+
+#Image identifiers implementing template
+{tab}{id}{tab}{tab}{tab}= "{value}";
+
+#end

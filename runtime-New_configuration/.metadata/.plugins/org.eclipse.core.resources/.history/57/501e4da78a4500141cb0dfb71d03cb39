@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="CrazyUpgradePopupView" prefix="popup_crazy_upgrade" type="popup" exitable="true" 
+		super="PopUpLayer" background-name="default" size="296.0, 188.0"
+		template-name="Common extend table"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="crazy_upgrade_popup" />
+	<position value="default" />
+	<define-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Utils/Defines" />
+	<parameters-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Utils/GameParams" />
+	<images-inputpath value="/Users/apple/Downloads/crazy_upgrade_popup" />
+	<images-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/iphone" />
+	<xibcontainer-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/screenshots/iphone" used="true" />
+	<screencontainer-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Wireframing/WireframingScreen/iphone" />
+	<androidcontainer-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/proj.android/res/layout/iphone" />
+	<class-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes" />
+	<background-image id="crazy_upgrade_popup_background_cz_container" 
+		location-in-interfacebuilder="10.0, 10.0"
+		width="296.0" height="188.0"
+		phony-path="crazy_upgrade_popup/background/cz_container.png"  />
+	<exit-image position="0.0, 0.0" location-in-interfacebuilder="100.0, 100.0" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="cz_reward_icon_1" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="crazy_upgrade_popup_cz_reward_icon_1" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="35.0" height="30.0"
+				phony-path="crazy_upgrade_popup/sprites/cz_reward_icon_1.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="cz_vip_level_ribbon" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="crazy_upgrade_popup_cz_vip_level_ribbon_cz_vip_level_ribbon" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="272.0" height="84.0"
+				phony-path="crazy_upgrade_popup/sprites/cz_vip_level_ribbon/cz_vip_level_ribbon.png"  />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="cz_reward_icon_2" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="50.0, 50.0" />
+					<z-index value="0" />
+					<image id="crazy_upgrade_popup_cz_vip_level_ribbon_cz_reward_icon_2" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="35.0" height="30.0"
+						phony-path="crazy_upgrade_popup/sprites/cz_vip_level_ribbon/sprites/cz_reward_icon_2.png"  />
+				</sprite>
+			</sprites>
+		</sprite>
+	</sprites>
+</view>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map>
-	<bundle bundleID="690" class="com.packtpub.e4.clock.ui.Activator" localization="OSGI-INF/l10n/bundle" name="Clock" project="com.packtpub.e4.clock.ui" provider="PacktPub"/>
-	<bundle bundleID="691" class="com.packtpub.e4.hello.ui.Activator" localization="OSGI-INF/l10n/bundle" name="Hello" project="com.packtpub.e4.hello.ui" provider="PacktPub"/>
-</map>

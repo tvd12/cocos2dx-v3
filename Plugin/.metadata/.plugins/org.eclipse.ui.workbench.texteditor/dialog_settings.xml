@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="263" key="DIALOG_WIDTH"/>
-		<item value="53" key="DIALOG_Y_ORIGIN"/>
+		<item value="316" key="DIALOG_WIDTH"/>
+		<item value="204" key="DIALOG_Y_ORIGIN"/>
 		<item value="399" key="DIALOG_HEIGHT"/>
-		<item value="734" key="DIALOG_X_ORIGIN"/>
+		<item value="910" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
+		<item value="true" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="shell" key="selection"/>
+		<item value="Inte" key="selection"/>
 		<list key="findhistory">
-			<item value="shell"/>
-			<item value="paint"/>
+			<item value="Inte"/>
+			<item value="next"/>
+			<item value="exit"/>
+			<item value="mDefaultViewSuffix"/>
+			<item value="setPos"/>
+			<item value="System"/>
+			<item value="setTab"/>
+			<item value="setTa"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="mSelection"/>
+			<item value="gameview"/>
+			<item value="advancedattributegroup"/>
+			<item value="DefaultExitResources"/>
+			<item value="mDefaultBackgrounds"/>
+			<item value="mIsVisible"/>
+			<item value="mProgressGroup"/>
 		</list>
 	</section>
 </section>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="LobbyLayerView" prefix="layer_lobby" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="1024.0, 768.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="lobby_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Utils/Defines" />
+	<parameters-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Utils/GameParams" />
+	<images-inputpath value="/Users/apple/Downloads/supernatural-memory/lobby/lobby_layer" />
+	<images-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/ipadhd" />
+	<xibcontainer-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/screenshots/ipadhd" used="true" />
+	<screencontainer-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Wireframing/WireframingScreen/ipadhd" />
+	<androidcontainer-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/proj.android/res/layout/ipadhd" />
+	<class-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/View/Layer" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="lobby_background" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_background_lobby_background" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="320.0" height="480.0"
+				phony-path="lobby_layer/sprites/lobby_background/lobby_background.png"  />
+		</sprite>
+	</sprites>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="continue" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_continue_active" unlocated="true" />
+					<image id="lobby_layer_continue_lobby_continue_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="35.0" height="35.0"
+						phony-path="lobby_layer/menuitems/continue/sprites/lobby_continue_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_continue_normal" unlocated="true" />
+					<image id="lobby_layer_continue_lobby_continue_normal" 
+						phony-path="lobby_layer/menuitems/continue/sprites/lobby_continue_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="exit" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_exit_active" unlocated="true" />
+					<image id="lobby_layer_exit_lobby_exit_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="34.0" height="36.0"
+						phony-path="lobby_layer/menuitems/exit/sprites/lobby_exit_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_exit_normal" unlocated="true" />
+					<image id="lobby_layer_exit_lobby_exit_normal" 
+						phony-path="lobby_layer/menuitems/exit/sprites/lobby_exit_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="facebook" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_facebook_active" unlocated="true" />
+					<image id="lobby_layer_facebook_lobby_facebook_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="40.0" height="40.0"
+						phony-path="lobby_layer/menuitems/facebook/sprites/lobby_facebook_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_facebook_normal" unlocated="true" />
+					<image id="lobby_layer_facebook_lobby_facebook_normal" 
+						phony-path="lobby_layer/menuitems/facebook/sprites/lobby_facebook_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="setting" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_setting_active" unlocated="true" />
+					<image id="lobby_layer_setting_lobby_setting_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="60.0" height="60.0"
+						phony-path="lobby_layer/menuitems/setting/sprites/lobby_setting_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_setting_normal" unlocated="true" />
+					<image id="lobby_layer_setting_lobby_setting_normal" 
+						phony-path="lobby_layer/menuitems/setting/sprites/lobby_setting_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="shop" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_shop_active" unlocated="true" />
+					<image id="lobby_layer_shop_lobby_shop_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="40.0" height="40.0"
+						phony-path="lobby_layer/menuitems/shop/sprites/lobby_shop_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_shop_normal" unlocated="true" />
+					<image id="lobby_layer_shop_lobby_shop_normal" 
+						phony-path="lobby_layer/menuitems/shop/sprites/lobby_shop_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="start" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_start__normal" unlocated="true" />
+					<image id="lobby_layer_start_lobby_start_normal" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="50.0" height="50.0"
+						phony-path="lobby_layer/menuitems/start/sprites/lobby_start__normal.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_start_active" unlocated="true" />
+					<image id="lobby_layer_start_lobby_start_active" 
+						phony-path="lobby_layer/menuitems/start/sprites/lobby_start_active.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+</view>

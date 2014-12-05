@@ -1,0 +1,24 @@
+#
+# create templates
+#
+
+#CCMenu declaring template
+{tab}CCMenu* {var_name};
+
+#end
+
+#CCMenu implementing template
+{tab}{var_name} = CCMenu::create();
+{tab}{var_name}->setAnchorPoint(CCPoint(0, 0));
+{tab}{var_name}->setPosition(CCPoint(0, 0));
+{tab}{parent_name}->addChild({var_name});
+
+#end
+
+#CCMenu in function template
+{tab}CCMenu* {var_name} = CCMenu::create();
+{tab}{var_name}->setAnchorPoint(CCPoint(0, 0));
+{tab}{var_name}->setPosition(CCPoint(0, 0));
+{tab}{parent_name}->addChild({var_name});
+
+#end

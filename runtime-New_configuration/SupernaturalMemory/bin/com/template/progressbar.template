@@ -1,0 +1,19 @@
+#
+# create templates
+#
+
+#CCProgressTimer declaring template
+{tab}CCProgressTimer* {var_name};
+
+#end
+
+#CCProgressTimer unlocated implementing template
+{tab}{var_name} = CCProgressTimer::create({sprite_name});
+{tab}{var_name}->setType({progress_type});
+{tab}{var_name}->setAnchorPoint(CCPoint({anchorpoint}));
+{tab}{var_name}->setMidpoint(CCPoint({mid_point}));
+{tab}{var_name}->setBarChangeRate(CCPoint({bar_change_rate}));
+{tab}{var_name}->setPercentage({percent});
+{tab}{parent_name}->addChild({var_name}, {z-index});
+
+#end

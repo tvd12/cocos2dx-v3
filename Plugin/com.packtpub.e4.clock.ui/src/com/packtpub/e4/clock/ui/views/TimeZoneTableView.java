@@ -2,10 +2,13 @@ package com.packtpub.e4.clock.ui.views;
 
 import java.util.TimeZone;
 
+import org.eclipse.jface.action.MenuManager;
 import org.eclipse.jface.viewers.ArrayContentProvider;
 import org.eclipse.jface.viewers.TableViewer;
+import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Menu;
 import org.eclipse.ui.ISelectionListener;
 import org.eclipse.ui.part.ViewPart;
 
@@ -45,6 +48,21 @@ public class TimeZoneTableView extends ViewPart {
 				tableViewer, getSite().getPart());
 		this.getSite().getWorkbenchWindow().getSelectionService()
 			.addSelectionListener(selectionListener);
+		
+		hookContextMenu(tableViewer);
+//		MenuManager manager = new MenuManager("#PopupMenu");
+//		Menu menu = manager.createContextMenu(tableViewer.getControl());
+//		tableViewer.getControl().setMenu(menu);
+//		
+//		Action deprecated = new Action() {
+//			
+//			@Override
+//			public void run() {
+//				MessageDialog.openInformation(null, "Hello", "World");
+//			}
+//		};
+//		deprecated.setText("Hello");
+//		manager.add(deprecated);
 	}
 
 	@Override
@@ -62,4 +80,10 @@ public class TimeZoneTableView extends ViewPart {
 		super.dispose();
 	}
 
+	private void hookContextMenu(Viewer viewer) {
+		MenuManager manager = new MenuManager("#PopupMenu");
+		Menu menu = manager.createContextMenu(viewer.getControl());
+		viewer.getControl().setMenu(menu);
+		this.getSite().registerContextMenu(manager, viewer);
+	}
 }
