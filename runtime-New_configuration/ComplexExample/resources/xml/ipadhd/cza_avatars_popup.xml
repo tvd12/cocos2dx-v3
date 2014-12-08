@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="CzaAvatarsPopupView" prefix="popup_cza_avatars" type="popup" exitable="true" 
+		super="PopUpLayer" background-name="default" size="296.0, 447.0"
+		template-name="Common extend table"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="cza_avatars_popup" />
+	<position value="default" />
+	<define-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/Defines" />
+	<parameters-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/GameParams" />
+	<images-inputpath value="/Users/apple/Downloads/cza_avatars_popup" />
+	<images-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/ipadhd" />
+	<xibcontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/screenshots/ipadhd" used="true" />
+	<screencontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Wireframing/WireframingScreen/ipadhd" />
+	<androidcontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/proj.android/res/layout/ipadhd" />
+	<class-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/UI/PopUp" />
+	<background-image id="cza_avatars_popup_background_cza_bg" 
+		location-in-interfacebuilder="10.0, 10.0"
+		width="296.0" height="447.0"
+		phony-path="cza_avatars_popup/background/cza_bg.png"  />
+	<exit-image position="0.0, 0.0" location-in-interfacebuilder="100.0, 100.0" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="cza_come_back_text" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="cza_avatars_popup_cza_come_back_text" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="196.0" height="14.0"
+				phony-path="cza_avatars_popup/sprites/cza_come_back_text.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="cza_header" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="cza_avatars_popup_cza_header" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="277.0" height="45.0"
+				phony-path="cza_avatars_popup/sprites/cza_header.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="cza_lv_progress_bg" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="cza_avatars_popup_cza_lv_progress_bg_cza_lv_progress_bg" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="168.0" height="24.0"
+				phony-path="cza_avatars_popup/sprites/cza_lv_progress_bg/cza_lv_progress_bg.png"  />
+			<progressbar template-name="CCProgressTimer" visible="true" comment="">
+				<type value="kCCProgressTimerTypeBar" />
+				<mid-point value="0.0, 0.0" />
+				<bar-change-rate value="1.0, 0.0" />
+				<percent value="30.0" />
+				<position-name value="cza_lv_progress_over" unlocated="true" />
+				<anchorpoint value="0.0, 0.0" />
+				<sprite visible="true" comment="">
+					<position-name value="cza_lv_progress_over" unlocated="true" />
+					<image id="cza_avatars_popup_cza_lv_progress_bg_progressbar_cza_lv_progress_over" 
+						phony-path="cza_avatars_popup/sprites/cza_lv_progress_bg/progressbar/cza_lv_progress_over.png"  />
+				</sprite>
+			</progressbar>
+		</sprite>
+	</sprites>
+	<tables array="false" comment="create group of tables">
+		<table rows="1" columns="1" visible="true" 
+				comment="">
+			<position-name value="container" />
+			<anchorpoint value="0.0, 0.0" />
+			<position value="5.0, 10.0" />
+			<size value="200.0, 250.0" />
+			<z-index value="0" />
+			<image id="cza_avatars_popup_container_background" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="200.0" height="250.0" />
+			<cell class-name="CzaAvatarsPopupCellView" prefix="cell_cza_avatars_popup"
+					super="ITableCellView" visible="true" 
+					comment="">
+				<position value="50.0, 50.0" />
+				<size value="200.0, 100.0" />
+				<image id="cza_avatars_popup_container_cell_background" 
+					location-in-interfacebuilder="10.0, 10.0"
+					width="200.0" height="100.0" />
+				<sprites array="false" comment="create group of sprites">
+					<sprite visible="true" comment="">
+						<position-name value="cza_current_background" />
+						<anchorpoint value="0.5, 0.5" />
+						<position value="50.0, 50.0" />
+						<z-index value="0" />
+						<image id="cza_avatars_popup_container_cell_cza_current_background_cza_current_background" 
+							location-in-interfacebuilder="10.0, 10.0"
+							width="76.0" height="103.0"
+							phony-path="cza_avatars_popup/tables/container/cell/sprites/cza_current_background/cza_current_background.png"  />
+						<sprites array="false" comment="create group of sprites">
+							<sprite visible="true" comment="">
+								<position-name value="cza_facebook_icon" />
+								<anchorpoint value="0.5, 0.5" />
+								<position value="50.0, 50.0" />
+								<z-index value="0" />
+								<image id="cza_avatars_popup_container_cell_cza_current_background_cza_facebook_icon" 
+									location-in-interfacebuilder="10.0, 10.0"
+									width="23.0" height="23.0"
+									phony-path="cza_avatars_popup/tables/container/cell/sprites/cza_current_background/sprites/cza_facebook_icon.png"  />
+							</sprite>
+							<sprite visible="true" comment="">
+								<position-name value="cza_inframe" />
+								<anchorpoint value="0.5, 0.5" />
+								<position value="50.0, 50.0" />
+								<z-index value="0" />
+								<image id="cza_avatars_popup_container_cell_cza_current_background_cza_inframe" 
+									location-in-interfacebuilder="10.0, 10.0"
+									width="55.0" height="55.0"
+									phony-path="cza_avatars_popup/tables/container/cell/sprites/cza_current_background/sprites/cza_inframe.png"  />
+							</sprite>
+							<sprite visible="true" comment="">
+								<position-name value="cza_selected" />
+								<anchorpoint value="0.5, 0.5" />
+								<position value="50.0, 50.0" />
+								<z-index value="0" />
+								<image id="cza_avatars_popup_container_cell_cza_current_background_cza_selected" 
+									location-in-interfacebuilder="10.0, 10.0"
+									width="20.0" height="15.0"
+									phony-path="cza_avatars_popup/tables/container/cell/sprites/cza_current_background/sprites/cza_selected.png"  />
+							</sprite>
+							<sprite visible="true" comment="">
+								<position-name value="cza_use_background" />
+								<anchorpoint value="0.5, 0.5" />
+								<position value="50.0, 50.0" />
+								<z-index value="0" />
+								<image id="cza_avatars_popup_container_cell_cza_current_background_cza_use_background" 
+									location-in-interfacebuilder="10.0, 10.0"
+									width="76.0" height="103.0"
+									phony-path="cza_avatars_popup/tables/container/cell/sprites/cza_current_background/sprites/cza_use_background.png"  />
+							</sprite>
+						</sprites>
+						<menus array="false" comment="create group of menus">
+							<menu visible="true" comment="">
+								<position-name value="use" />
+								<anchorpoint value="0.5, 0.5" />
+								<position value="0.0, 0.0" />
+								<z-index value="0" />
+								<menuitems array="false" comment="create group of menuitems">
+									<menuitem visible="true" comment="">
+										<position-name value="use" />
+										<anchorpoint value="0.5, 0.5" />
+										<position value="0.0, 0.0" />
+										<z-index value="0" />
+										<sprites array="false" comment="create group of sprites">
+											<sprite visible="true" comment="">
+												<position-name value="use_active" unlocated="true" />
+												<image id="cza_avatars_popup_container_cell_cza_current_background_use_use_use_active" 
+													location-in-interfacebuilder="10.0, 10.0"
+													width="63.0" height="27.0"
+													phony-path="cza_avatars_popup/tables/container/cell/sprites/cza_current_background/menus/use/menuitems/use/sprites/use_active.png"  />
+											</sprite>
+											<sprite visible="true" comment="">
+												<position-name value="use_disable" unlocated="true" />
+												<image id="cza_avatars_popup_container_cell_cza_current_background_use_use_use_disable" 
+													phony-path="cza_avatars_popup/tables/container/cell/sprites/cza_current_background/menus/use/menuitems/use/sprites/use_disable.png"  />
+											</sprite>
+											<sprite visible="true" comment="">
+												<position-name value="use_normal" unlocated="true" />
+												<image id="cza_avatars_popup_container_cell_cza_current_background_use_use_use_normal" 
+													phony-path="cza_avatars_popup/tables/container/cell/sprites/cza_current_background/menus/use/menuitems/use/sprites/use_normal.png"  />
+											</sprite>
+										</sprites>
+									</menuitem>
+								</menuitems>
+							</menu>
+						</menus>
+					</sprite>
+				</sprites>
+			</cell>
+
+		</table>
+	</tables>
+	<resource comment="resource for view">
+		<image id="cza_avatars_popup_resource_memory_game_ki_tu" 
+			phony-path="cza_avatars_popup/resource/memory_game/ki tu.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_main_game_layer_exit_ex_active" 
+			phony-path="cza_avatars_popup/resource/memory_game/main_game_layer/menuitems/exit/sprites/ex_active.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_main_game_layer_exit_ex_normal" 
+			phony-path="cza_avatars_popup/resource/memory_game/main_game_layer/menuitems/exit/sprites/ex_normal.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_main_game_layer_replay_rp_active" 
+			phony-path="cza_avatars_popup/resource/memory_game/main_game_layer/menuitems/replay/sprites/rp_active.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_main_game_layer_replay_rp_normal" 
+			phony-path="cza_avatars_popup/resource/memory_game/main_game_layer/menuitems/replay/sprites/rp_normal.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_main_game_layer_square_default_normal" 
+			phony-path="cza_avatars_popup/resource/memory_game/main_game_layer/menuitems/square/sprites/default_normal.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_main_game_layer_square_text_active" 
+			phony-path="cza_avatars_popup/resource/memory_game/main_game_layer/menuitems/square/sprites/text_active.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_main_game_layer_background_mg_bg" 
+			phony-path="cza_avatars_popup/resource/memory_game/main_game_layer/sprites/background/mg_bg.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_main_game_layer_time_bg" 
+			phony-path="cza_avatars_popup/resource/memory_game/main_game_layer/sprites/time_bg.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_man" 
+			phony-path="cza_avatars_popup/resource/memory_game/man.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_meo_goi_y" 
+			phony-path="cza_avatars_popup/resource/memory_game/meo goi y.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_meo" 
+			phony-path="cza_avatars_popup/resource/memory_game/meo.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_o_trong_goi_y" 
+			phony-path="cza_avatars_popup/resource/memory_game/o trong goi y.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_o_trong" 
+			phony-path="cza_avatars_popup/resource/memory_game/o trong.png"  />
+		<image id="cza_avatars_popup_resource_memory_game_thoat_replay" 
+			phony-path="cza_avatars_popup/resource/memory_game/thoat-replay.png"  />
+	</resource>
+</view>

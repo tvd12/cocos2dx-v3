@@ -1,0 +1,22 @@
+#
+# create templates
+#
+
+#CCTableView declaring template
+{tab}CCTableView* {var_name};
+
+#end
+
+#CCTableView implementing template
+{tab}{var_name} = TableView::create(
+					GPARAMS().{size_name},
+					{rows},
+					{columns},
+					GPARAMS().{cell_position_name},
+					GPARAMS().{cell_size_name},
+					this);
+{tab}{var_name}->setPosition(GPARAMS().{position_name});
+{tab}{var_name}->setTouchPriority(kCCMenuHandlerPriority - 101);
+{tab}{parent_name}->addChild({var_name});
+
+#end

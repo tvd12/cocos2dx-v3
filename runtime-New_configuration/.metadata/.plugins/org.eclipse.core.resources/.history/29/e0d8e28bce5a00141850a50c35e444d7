@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="SettingPopupView" prefix="popup_setting" type="popup" exitable="true" 
+		super="PopupLayer" background-name="default" size="320.0, 480.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="setting_popup" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Downloads/setting2/setting_popup" />
+	<images-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/iphone" />
+	<xibcontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/screenshots/iphone" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Wireframing/WireframingScreen/iphone" />
+	<androidcontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/proj.android/res/layout/iphone" />
+	<class-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/View/Popup" />
+	<background-image id="setting_popup_background_st_bg" 
+		location-in-interfacebuilder="8.0, 0.0"
+		width="320.0" height="480.0"
+		phony-path="setting_popup/background/st_bg.png"  />
+	<exit-image position="0.0, 0.0" location-in-interfacebuilder="100.0, 100.0" />
+
+	<sprites array="true" length="3" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="st_text" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="208.0, 284.5" />
+			<z-index value="0" />
+			<image id="setting_popup_st_text" 
+				location-in-interfacebuilder="186.0, 182.0"
+				width="60.0" height="27.0"
+				phony-path="setting_popup/sprites/st_text.png"  />
+		</sprite>
+		<next visible="true" comment="">
+			<position value="208.0, 238.5" />
+			<image id="st_text_1" 
+				location-in-interfacebuilder="186.0, 228.0"
+				width="60.0" height="27.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="208.0, 191.5" />
+			<image id="st_text_2" 
+				location-in-interfacebuilder="186.0, 275.0"
+				width="60.0" height="27.0" />
+		</next>
+	</sprites>
+	<labels array="false" comment="create group of labels">
+		<label visible="true" comment="">
+			<text value="Your Name" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="username" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="98.5, 36.0" />
+			<location-in-interfacebuilder value="60.0, 4.0" />
+			<z-index value="0" />
+		</label>
+	</labels>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="edit_name" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="181.5, 333.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="st_edit_active" unlocated="true" />
+					<image id="setting_popup_edit_name_st_edit_active" 
+						location-in-interfacebuilder="180.0, 134.0"
+						width="19.0" height="25.0"
+						phony-path="setting_popup/menuitems/edit_name/sprites/st_edit_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="st_edit_normal" unlocated="true" />
+					<image id="setting_popup_edit_name_st_edit_normal" 
+						phony-path="setting_popup/menuitems/edit_name/sprites/st_edit_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="exit" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 81.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="st_exit_active" unlocated="true" />
+					<image id="setting_popup_exit_st_exit_active" 
+						location-in-interfacebuilder="130.0, 372.0"
+						width="76.0" height="53.0"
+						phony-path="setting_popup/menuitems/exit/sprites/st_exit_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="st_exit_normal" unlocated="true" />
+					<image id="setting_popup_exit_st_exit_normal" 
+						phony-path="setting_popup/menuitems/exit/sprites/st_exit_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="feedback" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="216.0, 135.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="st_feedback_active" unlocated="true" />
+					<image id="setting_popup_feedback_st_feedback_active" 
+						location-in-interfacebuilder="174.0, 326.0"
+						width="100.0" height="38.0"
+						phony-path="setting_popup/menuitems/feedback/sprites/st_feedback_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="st_feedback_normal" unlocated="true" />
+					<image id="setting_popup_feedback_st_feedback_normal" 
+						phony-path="setting_popup/menuitems/feedback/sprites/st_feedback_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="rate_us" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="103.0, 135.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="st_rateus_active" unlocated="true" />
+					<image id="setting_popup_rate_us_st_rateus_active" 
+						location-in-interfacebuilder="61.0, 326.0"
+						width="100.0" height="38.0"
+						phony-path="setting_popup/menuitems/rate_us/sprites/st_rateus_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="st_rateus_normal" unlocated="true" />
+					<image id="setting_popup_rate_us_st_rateus_normal" 
+						phony-path="setting_popup/menuitems/rate_us/sprites/st_rateus_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+	<menuitems array="true" length="3" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="increase" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="245.0, 284.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="st_increase_activel" unlocated="true" />
+					<image id="setting_popup_increase_st_increase_activel" 
+						location-in-interfacebuilder="242.0, 181.0"
+						width="22.0" height="30.0"
+						phony-path="setting_popup/menuitems/increase/sprites/st_increase_activel.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="st_increase_normal" unlocated="true" />
+					<image id="setting_popup_increase_st_increase_normal" 
+						phony-path="setting_popup/menuitems/increase/sprites/st_increase_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<next visible="true" comment="">
+			<position value="245.0, 239.0" />
+			<image id="increase_1" 
+				location-in-interfacebuilder="242.0, 226.0"
+				width="22.0" height="30.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="245.0, 191.0" />
+			<image id="increase_2" 
+				location-in-interfacebuilder="242.0, 274.0"
+				width="22.0" height="30.0" />
+		</next>
+	</menuitems>
+	<menuitems array="true" length="3" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="reduce" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="170.0, 284.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="st_reduced_active" unlocated="true" />
+					<image id="setting_popup_reduce_st_reduced_active" 
+						location-in-interfacebuilder="167.0, 181.0"
+						width="22.0" height="30.0"
+						phony-path="setting_popup/menuitems/reduce/sprites/st_reduced_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="st_reduced_normal" unlocated="true" />
+					<image id="setting_popup_reduce_st_reduced_normal" 
+						phony-path="setting_popup/menuitems/reduce/sprites/st_reduced_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<next visible="true" comment="">
+			<position value="170.0, 239.0" />
+			<image id="reduce_1" 
+				location-in-interfacebuilder="167.0, 226.0"
+				width="22.0" height="30.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="170.0, 191.0" />
+			<image id="reduce_2" 
+				location-in-interfacebuilder="167.0, 274.0"
+				width="22.0" height="30.0" />
+		</next>
+	</menuitems>
+</view>

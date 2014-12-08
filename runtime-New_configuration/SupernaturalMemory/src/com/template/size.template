@@ -1,0 +1,23 @@
+#
+# create templates
+#
+
+#CCSizeMake declaring template
+{tab}CCSize {var_name};
+
+#end
+
+#CCSizeMake implementing template
+{var_name}{tab}{tab}{tab}= CCSizeMake({size});
+
+#end
+
+#================SizeMake========================
+#SizeMake declaring template
+{tab}Size {var_name};
+#end
+
+#SizeMake implementing template
+{var_name}{tab}{tab}{tab}= SizeMake({size});
+
+#end

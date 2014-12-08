@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.tvd.com/tools"  
+		xmlns="http://www.tvd.com/tools" 
+		xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		elementFormDefault="qualified">
+	<xs:element name="view">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="position-name" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="position" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="define-path" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="parameters-path" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="images-inputpath" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="images-path" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="xibcontainer-path" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="screencontainer-path" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="androidcontainer-path" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="class-path" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="parameter" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="background-image" maxOccurs="1" minOccurs="0"/>
+				<xs:element ref="exit-image" maxOccurs="1" minOccurs="0" />
+				<xs:element ref="sprites" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="labels"  maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="menus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="menuitems" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="tables" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="resource" maxOccurs="1" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="background-name" type="xs:string" use="optional" />
+			<xs:attribute name="type" type="xs:string" use="required" />
+			<xs:attribute name="size" type="pointtype" use="required" />
+			<xs:attribute name="exitable" type="xs:boolean" use="optional" />
+			<xs:attributeGroup ref="template" />
+			<xs:attributeGroup ref="advancedattributegroup" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="position-name">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+					<xs:attribute name="unlocated" type="xs:boolean" use="optional" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="position">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string"> 
+					<xs:attribute name="value" type="pointtype" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="define-path">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="parameters-path">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="images-inputpath">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="images-path">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="xibcontainer-path">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+					<xs:attribute name="used" type="xs:boolean" use="optional" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+		<xs:element name="screencontainer-path">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+					<xs:attribute name="used" type="xs:boolean" use="optional" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="androidcontainer-path">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />	
+					<xs:attribute name="used" type="xs:boolean" use="optional" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="class-path">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="parameter">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="name" type="xs:string" use="required" />
+					<xs:attribute name="type" type="xs:string" use="required" />
+					<xs:attribute name="kind" use="optional">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="normal" />
+								<xs:enumeration value="ref" />
+								<xs:enumeration value="pointer" />
+								<xs:enumeration value="const-normal" />
+								<xs:enumeration value="const-ref" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="imagetype">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="background" 
+					type="xs:boolean" use="optional" />
+				<xs:attribute name="id" type="xs:string" use="optional" />
+				<xs:attribute name="phony-path" type="xs:string" />
+				<xs:attribute name="real-path" type="xs:string" use="optional" />
+				<xs:attribute name="width" type="xs:float" use="optional" />
+				<xs:attribute name="height" type="xs:float" use="optional" />
+				<xs:attribute name="location-in-interfacebuilder" 
+					type="pointtype" use="optional" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="image">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:restriction base="imagetype" />
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="background-image">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:restriction base="imagetype" />
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="exit-image">
+		<xs:complexType>
+			<xs:attribute name="position" type="pointtype" use="required" />
+			<xs:attribute name="location-in-interfacebuilder" 
+					type="pointtype" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sprites">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="sprite" maxOccurs="unbounded" minOccurs="1" />
+				<xs:element ref="next" maxOccurs="unbounded" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="array" type="xs:boolean" use="optional" />
+			<xs:attribute name="length" type="xs:integer" use="optional" />
+			<xs:attribute name="comment" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="menuitems">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="menuitem" maxOccurs="unbounded" minOccurs="1" />
+				<xs:element ref="next" maxOccurs="unbounded" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="array" type="xs:boolean" use="optional" />
+			<xs:attribute name="length" type="xs:integer" use="optional" />
+			<xs:attribute name="comment" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="menus">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="menu" maxOccurs="unbounded" minOccurs="1" />
+				<xs:element ref="next" maxOccurs="unbounded" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="array" type="xs:boolean" use="optional" />
+			<xs:attribute name="length" type="xs:integer" use="optional" />
+			<xs:attribute name="comment" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tables">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="table" maxOccurs="unbounded" minOccurs="1" />
+				<xs:element ref="next" maxOccurs="unbounded" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="array" type="xs:boolean" use="optional" />
+			<xs:attribute name="length" type="xs:integer" use="optional" />
+			<xs:attribute name="comment" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="labels">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="label" maxOccurs="unbounded" minOccurs="1" />
+				<xs:element ref="next" maxOccurs="unbounded" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="array" type="xs:boolean" use="optional" />
+			<xs:attribute name="length" type="xs:integer" use="optional" />
+			<xs:attribute name="comment" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sprite">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="advancedgroup" />
+				<xs:element ref="image" maxOccurs="1" minOccurs="0" />
+				<xs:element ref="sprites" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="labels" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="menus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="menuitems" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="tables" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="progressbar" maxOccurs="1" minOccurs="0" />
+			</xs:sequence>
+			<xs:attributeGroup ref="template" />
+			<xs:attributeGroup ref="advancedattributegroup" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="menuitem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="advancedgroup" />
+				<xs:element name="sprites" maxOccurs="1" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="sprite" maxOccurs="3" minOccurs="2" />
+						</xs:sequence>
+						<xs:attribute name="array" type="xs:boolean" use="optional" />
+						<xs:attributeGroup ref="template" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="template" />
+			<xs:attributeGroup ref="advancedattributegroup" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="menu">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="advancedgroup" />
+				<xs:element ref="menuitems" maxOccurs="unbounded" minOccurs="1" />
+			</xs:sequence>
+			<xs:attributeGroup ref="template" />
+			<xs:attributeGroup ref="advancedattributegroup" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="table">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="parameter" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="position-name" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="size-name" maxOccurs="1" minOccurs="0" />
+				<xs:element ref="anchorpoint" maxOccurs="1" minOccurs="0" />
+				<xs:element ref="position" maxOccurs="1" minOccurs="0" />
+				<xs:element ref="size" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="z-index" maxOccurs="1" minOccurs="0" />
+				<xs:element ref="image" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="cell" maxOccurs="1" minOccurs="1" />
+			</xs:sequence>
+			<xs:attribute name="rows" type="xs:integer" use="required" />
+			<xs:attribute name="columns" type="xs:integer" use="required" />
+			<xs:attributeGroup ref="template" />
+			<xs:attributeGroup ref="advancedattributegroup" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cell">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="parameter" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="position" maxOccurs="1" minOccurs="0" />
+				<xs:element ref="size" maxOccurs="1" minOccurs="0" />
+				<xs:element ref="image" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="sprites" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="labels" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="menuitems" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="menus" maxOccurs="unbounded" minOccurs="0" />
+				<xs:element ref="tables" maxOccurs="unbounded" minOccurs="0" />
+			</xs:sequence>
+			<xs:attributeGroup ref="template" />
+			<xs:attributeGroup ref="advancedattributegroup" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="label">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="font" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="font-color" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="font-size" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="position-name" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="anchorpoint" maxOccurs="1" minOccurs="0" />
+				<xs:element ref="position" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="location-in-interfacebuilder" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="z-index" maxOccurs="1" minOccurs="0" />
+			</xs:sequence>
+			<xs:attributeGroup ref="template" />
+			<xs:attributeGroup ref="advancedattributegroup" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="progressbar">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="type" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="mid-point" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="bar-change-rate" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="percent" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="position-name" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="anchorpoint" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="sprite" maxOccurs="1" minOccurs="1" />
+			</xs:sequence>
+			<xs:attributeGroup ref="template" />
+			<xs:attributeGroup ref="advancedattributegroup" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="next">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="position" maxOccurs="1" minOccurs="1" />
+				<xs:element ref="image" maxOccurs="1" minOccurs="1" />
+			</xs:sequence>
+			<xs:attribute name="comment" type="xs:string" use="optional" />
+			<xs:attribute name="visible" type="xs:boolean" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="resource">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="image" maxOccurs="unbounded" minOccurs="1" />
+			</xs:sequence>
+			<xs:attribute name="comment" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="size-name">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="anchorpoint">
+		<xs:complexType>
+			<xs:attribute name="value" type="pointtype" />
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="pointtype">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="default|[-+]?(\d*[.])?\d+, [-+]?(\d*[.])?\d+" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="text">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+					<xs:attribute name="varname" type="xs:string" use="optional" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="font">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="name" type="xs:string" use="required" />
+					<xs:attribute name="family" type="xs:string" use="optional" />
+					<xs:attribute name="varname" type="xs:string" use="optional" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="font-color">
+		<xs:complexType>
+			<xs:attribute name="red" type="xs:unsignedByte" use="required" />
+			<xs:attribute name="green" type="xs:unsignedByte" use="required" />
+			<xs:attribute name="blue" type="xs:unsignedByte" use="required" />
+			<xs:attribute name="alpha" type="xs:unsignedByte" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="z-index">
+		<xs:complexType>
+			<xs:attribute name="value" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="font-size">
+		<xs:complexType>
+			<xs:attribute name="value" type="xs:float" use="required" />
+			<xs:attribute name="varname" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cell-position">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="size">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="pointtype" use="required" />
+				</xs:extension>
+			</xs:simpleContent> 
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cell-size">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="value" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="location-in-interfacebuilder">
+		<xs:complexType>
+			<xs:attribute name="value" type="pointtype" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="mid-point">
+		<xs:complexType>
+			<xs:attribute name="value" type="pointtype" use="required" />
+			<xs:attribute name="varname" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="bar-change-rate">
+		<xs:complexType>
+			<xs:attribute name="value" type="pointtype" use="required" />
+			<xs:attribute name="varname" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="percent">
+		<xs:complexType>
+			<xs:attribute name="value" type="xs:float" use="required" />
+			<xs:attribute name="varname" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="type">
+		<xs:complexType>
+		<xs:attribute name="value" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="template">
+		<xs:attribute name="comment" type="xs:string" use="optional" />
+		<xs:attribute name="visible" type="xs:boolean" use="optional" />
+		<xs:attribute name="template-name" type="xs:string" use="optional" />
+		<xs:attribute name="template-file" type="xs:string" use="optional" />
+		<xs:attribute name="postion-template-name" type="xs:string" use="optional" />
+		<xs:attribute name="position-template-file" type="xs:string" use="optional" />
+		<xs:attribute name="size-template-name" type="xs:string" use="optional" />
+		<xs:attribute name="size-template-file" type="xs:string" use="optional" />
+	</xs:attributeGroup>
+	<xs:group name="advancedgroup">
+		<xs:sequence>
+			<xs:element ref="parameter" maxOccurs="unbounded" minOccurs="0" />
+			<xs:element ref="position-name" maxOccurs="1" minOccurs="1" />
+			<xs:element ref="anchorpoint" maxOccurs="1" minOccurs="0" />
+			<xs:element ref="position" maxOccurs="1" minOccurs="0" />
+			<xs:element ref="z-index" maxOccurs="1" minOccurs="0" />
+		</xs:sequence>
+	</xs:group>
+	<xs:attributeGroup name="advancedattributegroup">
+		<xs:attribute name="class-name" type="xs:string" use="optional" />
+		<xs:attribute name="prefix" type="xs:string" use="optional" />
+		<xs:attribute name="super" type="xs:string" use="optional" />
+		<xs:attribute name="generate-class" type="xs:boolean" use="optional" />
+		<xs:attribute name="exported" type="xs:boolean" use="optional" />
+	</xs:attributeGroup>
+	<xs:simpleType name="uppertype">
+		<xs:restriction base="xs:string">
+    		<xs:pattern value="[A-Z]*"/>
+ 		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -4,11 +4,12 @@
 	<item value="false" key="uiPlugin"/>
 	<item value="false" key="rcpPlugin"/>
 	<item value="false" key="apiAnalysis"/>
-	<item value="3.5 or greater" key="targetName"/>
 	<item value="false" key="osgiProject"/>
+	<item value="3.5 or greater" key="targetName"/>
 	<list key="providers">
-		<item value="PacktPub"/>
 		<item value="TVD"/>
+		<item value="PACKTPUB"/>
+		<item value="PacktPub"/>
 	</list>
 	<section name="org.eclipse.pde.ui.dialogs.PluginSelectionDialog">
 		<item value="true" key="ShowStatusLine"/>
@@ -16,24 +17,46 @@
 		<section name="DialogBoundsSettings">
 			<item value="600" key="DIALOG_WIDTH"/>
 			<item value="54" key="DIALOG_Y_ORIGIN"/>
-			<item value="325" key="DIALOG_X_ORIGIN"/>
 			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="325" key="DIALOG_X_ORIGIN"/>
 			<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
+	<section name="PluginExportWizard">
+		<item value="true" key="exportUpdate"/>
+		<item value="false" key="saveAsAnt"/>
+		<item value="" key="alias"/>
+		<item value="Generate source bundles" key="exportSourceFormat"/>
+		<item value="false" key="qualifier"/>
+		<item value="" key="password"/>
+		<item value="" key="keypass"/>
+		<item value="false" key="exportSource"/>
+		<item value="" key="keystore"/>
+		<item value="false" key="useWorkspaceCompiledClasses"/>
+		<item value="1" key="exportType"/>
+		<item value="false" key="signJAR"/>
+		<item value="/Users/dungtavan/Desktop" key="destination1"/>
+		<item value="/Users/dungtavan/Desktop" key="destination0"/>
+		<item value="201411271408" key="qualifierName"/>
+		<item value="true" key="allowBinaryCycles"/>
+	</section>
 	<section name="JavaAttributeWizard">
 		<section name="NewClassWizardPage">
 			<item value="true" key="create_constructor"/>
-			<item value="false" key="create_main"/>
 			<item value="true" key="create_unimplemented"/>
+			<item value="false" key="create_main"/>
 		</section>
+	</section>
+	<section name="PDEFormActionManager">
+	</section>
+	<section name="targetStateView">
 	</section>
 	<section name="TracingTab">
 		<item value="org.eclipse.ui" key="selectedPlugin"/>
 	</section>
 	<section name="pde-form-editor">
-		<item value="runtime" key="org.eclipse.pde.ui.manifestEditor"/>
+		<item value="dependencies" key="org.eclipse.pde.ui.manifestEditor"/>
 	</section>
 </section>

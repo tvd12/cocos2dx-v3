@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="LobbyLayerView" prefix="layer_lobby" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="480.0, 320.0"
+		template-name="Common extend table"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="lobby_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/Working/TomCuaCa/tomcuacaonline/TomCuaCaOnline/Classes/Utils/Defines" />
+	<parameters-path value="/Volumes/Working/TomCuaCa/tomcuacaonline/TomCuaCaOnline/Classes/Utils/GameParams" />
+	<images-inputpath value="/Users/apple/Downloads/cut/lobby_layer" />
+	<images-path value="/Volumes/Working/TomCuaCa/tomcuacaonline/TomCuaCaOnline/Resources/iPhonehd" />
+	<xibcontainer-path value="/Volumes/Working/TomCuaCa/tomcuacaonline/TomCuaCaOnline/Resources/screenshots/iPhonehd" used="true" />
+	<screencontainer-path value="/Volumes/Working/TomCuaCa/tomcuacaonline/TomCuaCaOnline/Wireframing/WireframingScreen/iPhonehd" />
+	<androidcontainer-path value="/Volumes/Working/TomCuaCa/tomcuacaonline/TomCuaCaOnline/proj.android/res/layout/iPhonehd" />
+	<class-path value="/Volumes/Working/TomCuaCa/tomcuacaonline/TomCuaCaOnline/Classes/UI/Layers" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="lobby_bg" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="240.0, 160.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_bg_looby_bg" 
+				location-in-interfacebuilder="0.0, 0.0"
+				width="480.0" height="320.0"
+				phony-path="lobby_layer/sprites/lobby_bg/looby_bg.png"  />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="info_area" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="78.5, 296.5" />
+					<z-index value="0" />
+					<image id="lobby_layer_lobby_bg_info_area_info_area_bg" 
+						location-in-interfacebuilder="0.0, 0.0"
+						width="157.0" height="47.0"
+						phony-path="lobby_layer/sprites/lobby_bg/sprites/info_area/info_area_bg.png"  />
+					<sprites array="false" comment="create group of sprites">
+						<sprite visible="true" comment="">
+							<position-name value="facebook" />
+							<anchorpoint value="0.5, 0.5" />
+							<position value="48.0, 34.0" />
+							<z-index value="0" />
+							<image id="lobby_layer_lobby_bg_info_area_facebook" 
+								location-in-interfacebuilder="40.0, 4.0"
+								width="16.0" height="18.0"
+								phony-path="lobby_layer/sprites/lobby_bg/sprites/info_area/sprites/facebook.png"  />
+						</sprite>
+						<sprite visible="true" comment="">
+							<position-name value="in_frame_35" />
+							<anchorpoint value="0.5, 0.5" />
+							<position value="21.5, 25.5" />
+							<z-index value="0" />
+							<image id="lobby_layer_lobby_bg_info_area_in_frame_35" 
+								location-in-interfacebuilder="4.0, 4.0"
+								width="35.0" height="35.0"
+								phony-path="lobby_layer/sprites/lobby_bg/sprites/info_area/sprites/in_frame_35.png"  />
+						</sprite>
+					</sprites>
+					<labels array="false" comment="create group of labels">
+						<label visible="true" comment="">
+							<text value="Tavandung12" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="255" green="255" blue="255" alpha="255" />
+							<font-size value="14.0" />
+							<position-name value="username" />
+							<anchorpoint value="0.5, 0.5" />
+							<position value="98.5, 36.0" />
+							<location-in-interfacebuilder value="60.0, 4.0" />
+							<z-index value="0" />
+						</label>
+						<label visible="true" comment="">
+							<text value="123.456.789" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="255" green="255" blue="255" alpha="255" />
+							<font-size value="14.0" />
+							<position-name value="user_money" />
+							<anchorpoint value="0.5, 0.5" />
+							<position value="98.5, 18.0" />
+							<location-in-interfacebuilder value="60.0, 22.0" />
+							<z-index value="0" />
+						</label>
+					</labels>
+				</sprite>
+			</sprites>
+			<tables array="true" length="" comment="create group of tables">
+				<table rows="5" columns="1" visible="true" 
+						comment="">
+					<position-name value="room_list" />
+					<anchorpoint value="0.0, 0.0" />
+					<position value="8.0, 68.0" />
+					<size value="367.0, 197.0" />
+					<z-index value="0" />
+					<image id="lobby_layer_lobby_bg_room_list_background" 
+						location-in-interfacebuilder="8.0, 55.0"
+						width="367.0" height="197.0" />
+					<cell class-name="LobbyLayerCellView" prefix="cell_lobby_layer"
+							super="ITableCellView" visible="true" 
+							generate-class="true" exported="false"
+							comment="">
+						<position value="183.5, 176.0" />
+						<size value="367.0, 42.0" />
+						<image id="lobby_layer_lobby_bg_room_list_cell_background" 
+							location-in-interfacebuilder="8.0, 55.0"
+							width="367.0" height="42.0" />
+						<sprites array="false" comment="create group of sprites">
+							<sprite visible="true" comment="">
+								<position-name value="selecting_room" />
+								<anchorpoint value="0.5, 0.5" />
+								<position value="183.5, 24.0" />
+								<z-index value="0" />
+								<image id="lobby_layer_lobby_bg_room_list_cell_selecting_room" 
+									location-in-interfacebuilder="8.0, 55.0"
+									width="367.0" height="36.0"
+									phony-path="lobby_layer/sprites/lobby_bg/tables/room_list/cell/sprites/selecting_room.png"  />
+								<labels array="false" comment="create group of labels">
+									<label visible="true" comment="">
+										<text value="Ha Noi..." />
+										<font name="HelveticaNeue" family="Helvetica Neue" />
+										<font-color red="255" green="255" blue="255" alpha="255" />
+										<font-size value="14.0" />
+										<position-name value="room_title" />
+										<anchorpoint value="0.5, 0.5" />
+										<position value="57.5, 21.0" />
+										<location-in-interfacebuilder value="34.0, 63.0" />
+										<z-index value="0" />
+									</label>
+									<label visible="true" comment="">
+										<text value="100/50k" />
+										<font name="HelveticaNeue" family="Helvetica Neue" />
+										<font-color red="255" green="255" blue="255" alpha="255" />
+										<font-size value="14.0" />
+										<position-name value="room_stakes" />
+										<anchorpoint value="0.5, 0.5" />
+										<position value="111.5, 21.0" />
+										<location-in-interfacebuilder value="95.0, 63.0" />
+										<z-index value="0" />
+									</label>
+									<label visible="true" comment="">
+										<text value="2.500.000" />
+										<font name="HelveticaNeue" family="Helvetica Neue" />
+										<font-color red="255" green="255" blue="255" alpha="255" />
+										<font-size value="15.0" />
+										<position-name value="room_money" />
+										<anchorpoint value="0.5, 0.5" />
+										<position value="220.0, 19.5" />
+										<location-in-interfacebuilder value="194.0, 64.0" />
+										<z-index value="0" />
+									</label>
+									<label visible="true" comment="">
+										<text value="20" />
+										<font name="HelveticaNeue" family="Helvetica Neue" />
+										<font-color red="255" green="255" blue="255" alpha="255" />
+										<font-size value="15.0" />
+										<position-name value="room_playes" />
+										<anchorpoint value="0.5, 0.5" />
+										<position value="350.5, 21.5" />
+										<location-in-interfacebuilder value="351.0, 62.0" />
+										<z-index value="0" />
+									</label>
+								</labels>
+							</sprite>
+						</sprites>
+					</cell>
+
+				</table>
+			</tables>
+		</sprite>
+	</sprites>
+	<menuitems array="true" length="10" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="play_now" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="431.0, 37.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="play_now_active" unlocated="true" />
+					<image id="lobby_layer_play_now_play_now_active" 
+						location-in-interfacebuilder="391.0, 266.0"
+						width="80.0" height="34.0"
+						phony-path="lobby_layer/menuitems/play_now/sprites/play_now_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="play_now_normal" unlocated="true" />
+					<image id="lobby_layer_play_now_play_now_normal" 
+						phony-path="lobby_layer/menuitems/play_now/sprites/play_now_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<next visible="true" comment="">
+			<position value="48.0, 37.0" />
+			<image id="play_now_1" 
+				location-in-interfacebuilder="8.0, 266.0"
+				width="80.0" height="34.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="186.0, 31.0" />
+			<image id="play_now_2" 
+				location-in-interfacebuilder="146.0, 272.0"
+				width="80.0" height="34.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="104.0, 25.0" />
+			<image id="play_now_3" 
+				location-in-interfacebuilder="64.0, 278.0"
+				width="80.0" height="34.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="426.0, 299.0" />
+			<image id="play_now_4" 
+				location-in-interfacebuilder="386.0, 4.0"
+				width="80.0" height="34.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="312.0, 298.0" />
+			<image id="play_now_5" 
+				location-in-interfacebuilder="272.0, 5.0"
+				width="80.0" height="34.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="205.0, 298.0" />
+			<image id="play_now_6" 
+				location-in-interfacebuilder="165.0, 5.0"
+				width="80.0" height="34.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="343.0, 37.0" />
+			<image id="play_now_7" 
+				location-in-interfacebuilder="303.0, 266.0"
+				width="80.0" height="34.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="246.0, 37.0" />
+			<image id="play_now_8" 
+				location-in-interfacebuilder="206.0, 266.0"
+				width="80.0" height="34.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="146.0, 37.0" />
+			<image id="play_now_9" 
+				location-in-interfacebuilder="106.0, 266.0"
+				width="80.0" height="34.0" />
+		</next>
+	</menuitems>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="ranking" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="426.0, 237.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="ranking_active" unlocated="true" />
+					<image id="lobby_layer_ranking_ranking_active" 
+						location-in-interfacebuilder="380.0, 55.0"
+						width="92.0" height="55.0"
+						phony-path="lobby_layer/menuitems/ranking/sprites/ranking_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="ranking_normal" unlocated="true" />
+					<image id="lobby_layer_ranking_ranking_normal" 
+						phony-path="lobby_layer/menuitems/ranking/sprites/ranking_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="shopping" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="426.0, 177.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="shopping_active" unlocated="true" />
+					<image id="lobby_layer_shopping_shopping_active" 
+						location-in-interfacebuilder="380.0, 115.0"
+						width="92.0" height="55.0"
+						phony-path="lobby_layer/menuitems/shopping/sprites/shopping_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="shopping_normal" unlocated="true" />
+					<image id="lobby_layer_shopping_shopping_normal" 
+						phony-path="lobby_layer/menuitems/shopping/sprites/shopping_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="vip_club" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="426.0, 115.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="vip_club_active" unlocated="true" />
+					<image id="lobby_layer_vip_club_vip_club_active" 
+						location-in-interfacebuilder="380.0, 177.0"
+						width="92.0" height="55.0"
+						phony-path="lobby_layer/menuitems/vip_club/sprites/vip_club_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="vip_club_normal" unlocated="true" />
+					<image id="lobby_layer_vip_club_vip_club_normal" 
+						phony-path="lobby_layer/menuitems/vip_club/sprites/vip_club_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+	<resource comment="resource for view">
+		<image id="lobby_layer_resource_sellect_room_full" 
+			phony-path="lobby_layer/resource/sellect_room_full.png"  />
+	</resource>
+</view>

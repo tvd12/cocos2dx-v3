@@ -21,7 +21,7 @@ public class TimeZoneSelectionListener implements ISelectionListener {
 	
 	@Override
 	public void selectionChanged(IWorkbenchPart p, ISelection sel) {
-		if(p != this.part) {
+		if(p != this.part && sel instanceof IStructuredSelection) {
 			Object selected = ((IStructuredSelection)sel)
 					.getFirstElement();
 			Object current = ((IStructuredSelection)viewer.getSelection())

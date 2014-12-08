@@ -6,19 +6,26 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TimeZone;
 
+import org.eclipse.jface.dialogs.IDialogSettings;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabItem;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Group;
+import org.eclipse.ui.internal.UIPlugin;
 import org.eclipse.ui.part.ViewPart;
 
+import com.packtpub.e4.clock.ui.Activator;
 import com.packtpub.e4.clock.ui.ClockWidget;
 import com.packtpub.e4.clock.ui.internal.TimeZoneComparator;
 
 public class TimeZoneView extends ViewPart {
+	
+	private String lastTabSelected;
 
 	public TimeZoneView() {
 		
@@ -55,8 +62,58 @@ public class TimeZoneView extends ViewPart {
 			}
 		}
 		tabs.setSelection(0);
-	}
+//		tabs.addSelectionListener(new SelectionAdapter() {
+//			@Override
+//			public void widgetSelected(SelectionEvent e) {
+//				if(e.item instanceof CTabItem) {
+//					lastTabSelected = ((CTabItem)e.item).getText();
+//				}
+//			}
+//		});
 
+//		@SuppressWarnings("restriction")
+		final IDialogSettings settings = 
+			Activator.getDefault().getDialogSettings();
+		lastTabSelected = settings.get("lastTabSelected");
+		tabs.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				if(e.item instanceof CTabItem) {
+					lastTabSelected = ((CTabItem)e.item).getText();
+					settings.put("lastTabSelected", lastTabSelected);
+				}
+			}
+		});
+		
+		if(lastTabSelected == null) {
+			tabs.setSelection(0);
+		} else {
+			CTabItem[] items = tabs.getItems();
+			for(CTabItem item : items) {
+				if(lastTabSelected.equals(item.getText())) {
+					tabs.setSelection(item);
+					break;
+				}
+			}
+		}
+		
+	}
+	
+//	@Override
+//	public void saveState(IMemento memento) {
+//		super.saveState(memento);
+//		memento.putString("lastTabSelected", lastTabSelected);
+//	}
+//	
+//	@Override
+//	public void init(IViewSite site, IMemento memento) 
+//			throws PartInitException {
+//		super.init(site, memento);
+//		if(memento != null) {
+//			lastTabSelected = memento.getString("lastTabSelected");
+//		}
+//	}
+	
 	@Override
 	public void setFocus() {
 

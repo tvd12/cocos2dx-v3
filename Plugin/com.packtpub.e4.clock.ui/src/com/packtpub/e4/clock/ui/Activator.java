@@ -1,5 +1,7 @@
 package com.packtpub.e4.clock.ui;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
+import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.DisposeEvent;
@@ -32,6 +34,7 @@ public class Activator extends AbstractUIPlugin {
 	 * The constructor
 	 */
 	public Activator() {
+		super();
 	}
 
 	/*
@@ -41,6 +44,15 @@ public class Activator extends AbstractUIPlugin {
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
 		plugin = this;
+		int launchCount = getPreferenceStore().getInt("launchCount");
+		IEclipsePreferences eclipsePreferences = 
+				InstanceScope.INSTANCE.getNode(PLUGIN_ID);
+		int launchCount2 = eclipsePreferences.getInt("launchCount",  -1);
+		System.out.println("I have been launched "
+				+ launchCount + " times"
+				+ " time and " + launchCount2);
+		getPreferenceStore().setValue("launchCount", launchCount + 1);
+		
 		final Display display = Display.getDefault();
 		display.asyncExec(new Runnable() {
 			
@@ -90,6 +102,7 @@ public class Activator extends AbstractUIPlugin {
 				}
 			}
 		});
+		
 	}
 
 	/*
@@ -97,8 +110,8 @@ public class Activator extends AbstractUIPlugin {
 	 * @see org.eclipse.ui.plugin.AbstractUIPlugin#stop(org.osgi.framework.BundleContext)
 	 */
 	public void stop(BundleContext context) throws Exception {
-//		plugin = null;
-//		super.stop(context);
+		plugin = null;
+		super.stop(context);
 		if(trayItem != null && !trayItem.isDisposed()) {
 			Display.getDefault().asyncExec(new Runnable() {
 				
