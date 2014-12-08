@@ -14,6 +14,7 @@
 #include "Board.h"
 
 using namespace std;
+using namespace algorithm;
 
 TichTacToeGame::TichTacToeGame() :
 mCurrent(NULL),
@@ -47,6 +48,17 @@ void TichTacToeGame::getNextMoveFromUser() {
 		cout << mCurrent->toString();
 
 	} while(0);
+}
+
+void TichTacToeGame::getNextMoveFromUser(int x, int y) {
+    if(mCurrent->isTerminalNode()) {
+        return;
+    }
+    
+    do {
+        mCurrent = mCurrent->getChildAtPosition(x, y);
+        cout << mCurrent->toString();
+    } while(0);
 }
 
 Board* TichTacToeGame::getInitNode() {

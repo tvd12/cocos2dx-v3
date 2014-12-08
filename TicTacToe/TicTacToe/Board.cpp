@@ -13,6 +13,8 @@
 #include "Point.h"
 #include "Transform.h"
 
+using namespace algorithm;
+
 #define DELETE_PTR(ptr) \
 if(ptr) { \
     delete ptr; \
@@ -53,23 +55,6 @@ void Board::copy(Board* other) {
 	this->mIsGameOver		= other->mIsGameOver;
 	this->mScore			= other->mScore;
 }
-
-//void Board::copy(Board &other) {
-//        if(mValues) {
-//            mValues->clear();
-//            mValues->insert(mValues->begin(),
-//                            other.mValues->begin(),
-//                            other.mValues->end());
-//        }
-//        else {
-//    this->mValues 		= new vector<GridEntry>(other.mValues->begin(),
-//                                                other.mValues->end());
-//        }
-//    this->mTurnForPlayerX 	= other.mTurnForPlayerX;
-//    this->mRecursiveScore	= other.mRecursiveScore;
-//    this->mIsGameOver		= other.mIsGameOver;
-//    this->mScore			= other.mScore;
-//}
 
 Board* Board::getChildAtPosition(int x, int y) {
 	int i = x + y*3;
@@ -135,14 +120,9 @@ int Board::miniMaxShortVersion(int depth, int alpha, int beta, Board& childWithM
 			alpha = score;
 			childWithMax.copy(childrens[i]);
 			if(alpha >= beta) {
-//				cout << "alpha = " << alpha << " beta " << beta << "\n";
 				break;
 			}
 		}
-//		if(childrens[i]) {
-//			delete childrens[i];
-//			childrens[i] = NULL;
-//		}
 	}
     for(int i = 0 ; i < childrens.size() ; i++) {
         DELETE_PTR(childrens[i]);

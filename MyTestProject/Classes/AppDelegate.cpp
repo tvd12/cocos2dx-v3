@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "SqliteTestScene.h"
 
 USING_NS_CC;
 
@@ -44,7 +45,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
                                     ResolutionPolicy::SHOW_ALL);
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::scene();
+//    auto scene = HelloWorld::scene();
+    auto scene = SqliteTestScene::scene();
 
     // run
     director->runWithScene(scene);

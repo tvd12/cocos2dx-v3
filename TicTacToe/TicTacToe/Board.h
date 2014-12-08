@@ -13,6 +13,8 @@
 
 #include "TicTacToe.h"
 
+namespace algorithm {
+
 class Transform;
 
 using namespace std;
@@ -42,6 +44,7 @@ public:
 
     int getRecursiveScore() { return mRecursiveScore; }
     bool isGameOver() { return mIsGameOver; }
+    vector<GridEntry> *getValues() {return mValues; }
 
 	~Board();
 protected:
@@ -51,5 +54,6 @@ protected:
 	int mRecursiveScore;
 	bool mIsGameOver;
 };
+}
 
 #endif /* TICTACTOE_BOARD_H_ */

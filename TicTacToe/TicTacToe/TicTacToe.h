@@ -8,12 +8,14 @@
 #ifndef SRC_TICTACTOE_H_
 #define SRC_TICTACTOE_H_
 
-
-enum GridEntry {
-	empty,
-	playerX,
-	playerO
-};
+namespace algorithm {
+    
+    enum GridEntry {
+        empty,
+        playerX,
+        playerO
+    };
+}
 
 
 

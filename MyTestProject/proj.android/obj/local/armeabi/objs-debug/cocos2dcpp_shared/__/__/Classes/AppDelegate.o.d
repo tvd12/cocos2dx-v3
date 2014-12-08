@@ -334,7 +334,8 @@
   jni/../../cocos2d/cocos/3d/../deprecated/CCBool.h \
   jni/../../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h \
   jni/../../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
-  jni/../../Classes/HelloWorldScene.h
+  jni/../../Classes/HelloWorldScene.h \
+  jni/../../Classes/SqliteTest/Test/SqliteTestScene.h
 
 jni/../../Classes/AppDelegate.h:
 
@@ -1007,3 +1008,5 @@ jni/../../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h:
 jni/../../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
 
 jni/../../Classes/HelloWorldScene.h:
+
+jni/../../Classes/SqliteTest/Test/SqliteTestScene.h:

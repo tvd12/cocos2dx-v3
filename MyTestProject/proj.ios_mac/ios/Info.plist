@@ -42,7 +42,7 @@
 		<string>Icon-144.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.tdgc.videopokerjackpot</string>
+	<string>com.tvd.supernaturalmemory</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -69,7 +69,7 @@
 	<key>FacebookAppID</key>
 	<string>958164280878054</string>
 	<key>FacebookDisplayName</key>
-	<string>AppTest</string>
+	<string>Supernatural Memory</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>
