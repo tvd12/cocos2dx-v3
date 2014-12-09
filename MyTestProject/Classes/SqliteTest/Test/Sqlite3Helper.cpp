@@ -61,42 +61,6 @@ void Sqlite3Helper::openConnection(const string& dbFilePath) {
     mSqlite3 = pDB;
 }
 
-bool Sqlite3Helper::executeInsertQuery(const string &table,
-                                       const vector<string> &fields,
-                                       const vector<string> &values) {
-    string querryStr ="";
-    querryStr.append("insert into ").append(table).append("(");
-    for (int i = 0 ; i < fields.size() ; i++) {
-        querryStr.append(fields[i]);
-        if (i < fields.size() - 1) {
-            querryStr.append(",");
-        }
-    }
-    querryStr.append(") values(");
-    for (int i = 0 ; i < values.size() ; i++) {
-        querryStr.append(values[i]);
-        if (i < values.size() - 1)
-        {
-            querryStr.append(",");
-        }
-    }
-    querryStr.append(")");
-    
-    sqlite3_stmt *statement;
-    
-    int result = sqlite3_prepare_v2(mSqlite3, querryStr.c_str(), -1, &statement, NULL);
-    if (result == SQLITE_OK)
-    {
-        int res = sqlite3_step(statement);
-        result = res;
-        sqlite3_finalize(statement);
-        CCLOG("ok insert query");
-        return true;
-    }
-    CCLOG("error insert query");
-    return false;
-}
-
 bool Sqlite3Helper::executeUpdate(const string& query) {
     sqlite3_stmt *statement;
     int result;
@@ -110,50 +74,6 @@ bool Sqlite3Helper::executeUpdate(const string& query) {
     }
     CCLOG("erorr running query");
     return false;
-}
-
-vector<vector<string> > Sqlite3Helper::executeSelectAllQuery(const string &tableName) {
-    vector<vector<string> > table;
-    sqlite3_stmt *statement;
-    int result = sqlite3_prepare_v2(mSqlite3, ("SELECT * FROM " + tableName).c_str(),
-                                    -1,
-                                    &statement,
-                                    NULL);
-    if (result == SQLITE_OK)
-    {
-        int columnCount = sqlite3_column_count(statement);
-        int res = 0;
-        
-        while (1)
-        {
-            res = sqlite3_step(statement);
-            
-            if (res == SQLITE_ROW)
-            {
-                vector<string> column;
-                for (int i = 0; i < columnCount; i++)
-                {
-                    string s = (char*)sqlite3_column_text(statement, i);
-                    column.push_back(s);
-                }
-                table.push_back(column);
-            }
-            
-            if (res == SQLITE_DONE || res == SQLITE_ERROR)
-            {
-                if(res == SQLITE_DONE) {
-                    CCLOG("ok select query");
-                }
-                else if (res == SQLITE_ERROR) {
-                    CCLOG("error select query");
-                }
-                break;
-            }
-        }
-        CCLOG("finish select query");
-    }
-    //sqlite3_close(db);
-    return table;
 }
 
 SqlObject* Sqlite3Helper::fetchData(SqlObject* sqlObj) {
@@ -175,7 +95,7 @@ SqlObject* Sqlite3Helper::fetchData(SqlObject* sqlObj) {
             
             if (res == SQLITE_ROW)
             {
-                SqlRow *sqlRow = new SqlRow();
+                SqlRow *sqlRow = sqlObj->newRow();
                 for (int i = 0; i < columnCount; i++)
                 {
                     SqlType columnType = sqlObj->columnAt(i)->getType();
@@ -231,10 +151,7 @@ bool Sqlite3Helper::insertData(SqlObject *sqlObj, SqlRow *sqlRow) {
     string insertquery = sqlObj->toInsertQuery(sqlRow);
     CCLOG("insertquery = %s", insertquery.c_str());
     
-    if(executeUpdate(insertquery)) {
-        sqlObj->addRow(sqlRow);
-    }
-    else {
+    if(!executeUpdate(insertquery)) {
         CC_SAFE_DELETE(sqlRow);
         return false;
     }
@@ -280,4 +197,8 @@ bool Sqlite3Helper::isConnected() {
 
 sqlite3* Sqlite3Helper::getSqlite3() {
     return mSqlite3;
+}
+
+Sqlite3Helper::~Sqlite3Helper() {
+    closeConnection();
 }

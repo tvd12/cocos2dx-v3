@@ -43,12 +43,7 @@ public:
     
     sqlite3* getSqlite3();
     
-    //spam
-    bool executeInsertQuery(const string& table,
-                            const vector<string>& fields,
-                            const vector<string>& values);
-    
-    vector<vector<string> > executeSelectAllQuery(const string &tableName);
+    ~Sqlite3Helper();
     
 protected:
     bool mIsConnected;

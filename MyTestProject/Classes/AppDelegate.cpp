@@ -1,6 +1,8 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 #include "SqliteTestScene.h"
+#include "MapManager.h"
+#include "Sqlite3Helper.h"
 
 USING_NS_CC;
 
@@ -43,7 +45,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     glview->setDesignResolutionSize(designResolutionSize.width,
                                     designResolutionSize.height,
                                     ResolutionPolicy::SHOW_ALL);
-
+    Sqlite3Helper::getInstance()->openConnection();
+    MapManager::getInstance()->init();
+    
     // create a scene. it's an autorelease object
 //    auto scene = HelloWorld::scene();
     auto scene = SqliteTestScene::scene();

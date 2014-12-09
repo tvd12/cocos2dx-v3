@@ -25,6 +25,8 @@ public:
     // a selector callback
     void menuCloseCallback(Ref* pSender);
     
+    void mapSizeMenuItemCallback(Ref* pSender);
+    
     // implement the "static node()" method manually
     CREATE_FUNC(SqliteTestScene);
 };

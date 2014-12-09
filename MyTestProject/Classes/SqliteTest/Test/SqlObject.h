@@ -35,6 +35,7 @@ public:
     virtual void setIdFieldIndexes(int index, ...);
 
 	virtual SqlColumn* newColumn();
+    virtual SqlRow* newRow();
 
 	virtual void addColumn(SqlColumn* column);
 	virtual void addColumns(const vector<SqlColumn*>& columns);

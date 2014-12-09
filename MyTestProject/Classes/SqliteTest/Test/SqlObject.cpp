@@ -93,6 +93,10 @@ SqlColumn* SqlObject::newColumn() {
 	return column;
 }
 
+SqlRow* SqlObject::newRow() {
+    return new SqlRow();
+}
+
 void SqlObject::addColumn(SqlColumn* column) {
     column->setIndex(numberOfColumns());
 	mColumns.push_back(column);
@@ -100,7 +104,7 @@ void SqlObject::addColumn(SqlColumn* column) {
     int indexOfColumn = mColumns.size() - 1;
     for(int i = 0 ; i < column->numberOfCells() ; i++) {
         if(numberOfRows() == i) {
-            addRow(new SqlRow());
+            addRow(newRow());
         }
         rowAt(i)->addCell(column->cellAt(i), indexOfColumn);
     }
