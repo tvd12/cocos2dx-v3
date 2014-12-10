@@ -28,14 +28,19 @@ public:
     int getCharacter();
     int getTime();
     int getClick();
+    int getStars();
+    
+    bool hasPassed();
     
     void setSize(int size);
     void setCharacter(int character);
     void setTime(int time);
     void setClick(int click);
-    void setDate(const string& date);
+    void setDate(const string& date = "");
     
     std::string getDate();
+    
+    std::string toString();
     
     TO_STRING_FUNC(getIndex);
     TO_STRING_FUNC(getSize);
@@ -58,6 +63,9 @@ public:
     std::vector<MapArea*>* areasAt(int size);
     MapArea* areaAt(int size, int index);
     MapArea* areaByCharacter(int size, int character);
+    MapArea* beforeArea(int size, int character);
+    
+    bool playable(int size, int character);
     
     int numberOfCharacters(int size);
     

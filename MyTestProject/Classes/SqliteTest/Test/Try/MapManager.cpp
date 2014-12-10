@@ -6,6 +6,8 @@
 //
 //
 
+#include <ctime>
+
 #include "MapManager.h"
 #include "SqlCell.h"
 #include "Sqlite3Helper.h"
@@ -52,8 +54,60 @@ void MapArea::setClick(int click) {
     mCells.at(4)->setIntegerValue(click);
 }
 
+bool MapArea::hasPassed() {
+    return getTime() > 0
+    && getClick() >= getCharacter();
+}
+
+int MapArea::getStars() {
+    int times[] = {30, 60, 70, 80, 90, 100};
+    int numberOfStar = 0, standard = getSize() * getSize() * 2 * 0.75;
+    if(this->getTime() < 0.75 * getCharacter()) {
+        numberOfStar = 0;
+    }
+    else if(this->getTime() <= standard) {
+        numberOfStar = 3;
+    }
+    else if(this->getTime() <= standard + 15) {
+        numberOfStar = 2;
+    }
+    
+    else if(this->getTime() <= times[getSize() - 3]) {
+        numberOfStar = 1;
+    }
+    
+    return numberOfStar;
+}
+
 void MapArea::setDate(const string& date) {
-    mCells.at(5)->setTextValue(date);
+    if(date.length() == 0) {
+        std::time_t tp = std::time(NULL);   // current time, an integer
+        // counting seconds since epoch
+        std::tm * ts = std::localtime(&tp); // parsed into human conventions
+        string d = string()
+        .append(std::to_string(ts->tm_mday))
+        .append("/")
+        .append(std::to_string(ts->tm_mon + 1))
+        .append("/")
+        .append(std::to_string(1900 + ts->tm_year));
+        mCells.at(5)->setTextValue(d);
+    }
+    else {
+        mCells.at(5)->setTextValue(date);
+    }
+}
+
+string MapArea::toString() {
+    string builder = string()
+    .append("\nindex: " + std::to_string(getIndex()))
+    .append("\nsize: " + std::to_string(getSize()))
+    .append("\ncharacter: " + std::to_string(getCharacter()))
+    .append("\ntime: " + std::to_string(getTime()))
+    .append("\nclick: " + std::to_string(getClick()))
+    .append("\ndate: " + getDate())
+    .append("\nhasPassed: " + std::to_string(hasPassed()));
+    
+    return builder;
 }
 
 //===========================================
@@ -145,6 +199,25 @@ MapArea* MapManager::areaByCharacter(int size, int character) {
     }
     
     return NULL;
+}
+
+MapArea* MapManager::beforeArea(int size, int character) {
+    MapArea* area = areaByCharacter(size, character - 1);
+    if(!area && size > 3) {
+        area = areasAt(size - 1)->at(areasAt(size - 1)->size() - 1);
+    }
+    
+    return area;
+}
+
+bool MapManager::playable(int size, int character) {
+    MapArea* before = beforeArea(size, character);
+    if(size == 3 ||
+       before->hasPassed()) {
+        return true;
+    }
+    
+    return false;
 }
 
 vector<MapArea*>* MapManager::areasAt(int size) {

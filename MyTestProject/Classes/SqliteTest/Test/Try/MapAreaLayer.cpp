@@ -59,14 +59,16 @@ void MapAreaLayer::createMenuItemAt(int index) {
                                      25 + (15 + 60) * (index / 3 + 1) + 60 * (index / 3)));
     mMenu->addChild(squareMenuItem);
     
+    MapArea* area = MapManager::getInstance()->areaAt(mSize, index);
+    
     for(int i = 0 ; i < 3 ; i++) {
         float x = 34 + 23 * i + 3;
-        Sprite* starSprite = Sprite::create("starb.png");
+        string fileName = (area->getStars() > i) ? "stary.png" : "starb.png";
+        Sprite* starSprite = Sprite::create(fileName);
         starSprite->setPosition(Vec2(x, 5));
         squareMenuItem->addChild(starSprite);
     }
     
-    MapArea* area = MapManager::getInstance()->areaAt(mSize, index);
     string numchar = area->getCharacterStr();
     Label* charLabel =
     Label::createWithSystemFont(numchar + "\nCharacter",
@@ -112,7 +114,10 @@ void MapAreaLayer::mapAreaMenuItemCallback(cocos2d::Ref *pSender) {
         Director::getInstance()->replaceScene(SqliteTestScene::scene());
     }
     else {
-        Director::getInstance()->replaceScene(MainGameLayer::createScene(mSize,
-                                                                         menuItem->getTag()));
+        if(MapManager::getInstance()->playable(mSize, menuItem->getTag())) {
+            Director::getInstance()
+            ->replaceScene(MainGameLayer::createScene(mSize,
+                                                      menuItem->getTag()));
+        }
     }
 }

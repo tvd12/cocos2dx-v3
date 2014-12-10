@@ -66,7 +66,7 @@ void MainGameLayer::mainGameLayerMenuItemCallback(cocos2d::Ref *pSender) {
         Director::getInstance()->replaceScene(MapAreaLayer::createScene(mSize));
     }
     else {
-        int time = 3 + arc4random() % 90;
+        int time = mCharacter * 0.75 + arc4random() % 90;
         int click = mCharacter + arc4random() % (2 * mCharacter);
         std::string str = "Play: time = " + std::to_string(time)
         + ", click = " + std::to_string(click);
@@ -75,7 +75,7 @@ void MainGameLayer::mainGameLayerMenuItemCallback(cocos2d::Ref *pSender) {
         MapArea* area = MapManager::getInstance()->areaByCharacter(mSize, mCharacter);
         area->setTime(time);
         area->setClick(click);
-        area->setDate("123456");
+        area->setDate();
         
         MapManager::getInstance()->updateMapArea(area);
     }
