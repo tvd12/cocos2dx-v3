@@ -334,7 +334,15 @@
   jni/../../cocos2d/cocos/3d/../deprecated/CCBool.h \
   jni/../../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h \
   jni/../../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
-  jni/../../Classes/HelloWorldScene.h
+  jni/../../Classes/HelloWorldScene.h \
+  jni/../../Classes/SqliteTest/Test/Try/SqliteTestScene.h \
+  jni/../../Classes/SqliteTest/Test/Try/MapManager.h \
+  jni/../../Classes/SqliteTest/Test/SqlObject.h \
+  jni/../../Classes/SqliteTest/Test/SqlType.h \
+  jni/../../Classes/SqliteTest/Test/SqlRow.h \
+  jni/../../Classes/SqliteTest/Test/Sqlite3Helper.h \
+  /Volumes/DATA/Data/Android/IDE/android-ndk-r10b/sources/cxx-stl/llvm-libc++/libcxx/include/fstream \
+  jni/../../Classes/SqliteTest/sqlite3.h
 
 jni/../../Classes/AppDelegate.h:
 
@@ -1007,3 +1015,19 @@ jni/../../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h:
 jni/../../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
 
 jni/../../Classes/HelloWorldScene.h:
+
+jni/../../Classes/SqliteTest/Test/Try/SqliteTestScene.h:
+
+jni/../../Classes/SqliteTest/Test/Try/MapManager.h:
+
+jni/../../Classes/SqliteTest/Test/SqlObject.h:
+
+jni/../../Classes/SqliteTest/Test/SqlType.h:
+
+jni/../../Classes/SqliteTest/Test/SqlRow.h:
+
+jni/../../Classes/SqliteTest/Test/Sqlite3Helper.h:
+
+/Volumes/DATA/Data/Android/IDE/android-ndk-r10b/sources/cxx-stl/llvm-libc++/libcxx/include/fstream:
+
+jni/../../Classes/SqliteTest/sqlite3.h:

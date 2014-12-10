@@ -7,6 +7,8 @@
 
 #include "Transform.h"
 
+using namespace algorithm;
+
 vector<Transform*> Transform::sTransforms = vector<Transform*>();
 
 Transform::Transform(FnPtr op, vector<FnPtr>& ops) :

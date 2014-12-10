@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.tvd.test.project"
+      package="com.tvd.supernaturalmemory"
       android:versionCode="1"
       android:versionName="1.0"
       android:installLocation="auto">
@@ -15,7 +15,7 @@
         <meta-data android:name="android.app.lib_name"
 	              android:value="cocos2dcpp" />
 
-        <activity android:name="com.tvd.test.project.AppActivity"
+        <activity android:name="com.tvd.supernaturalmemory.AppActivity"
                   android:label="@string/app_name"
                   android:screenOrientation="landscape"
                   android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
@@ -30,7 +30,7 @@
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id" />
 
 		<activity android:name="com.facebook.LoginActivity" />
-		<provider android:authorities="com.facebook.app.NativeAppCallContentProvider1450063488603945"
+		<provider android:authorities="com.facebook.app.NativeAppCallContentProvider958164280878054"
           	android:name="com.facebook.NativeAppCallContentProvider"
           	android:exported="true"/>
     </application>

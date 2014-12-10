@@ -24,6 +24,7 @@ if(ptr) { \
 }
 
 using namespace std;
+using namespace algorithm;
 
 int main(int argc, const char * argv[]) {
     

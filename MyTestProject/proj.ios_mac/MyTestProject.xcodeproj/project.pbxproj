@@ -62,13 +62,26 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		CF078F4B1A31A8720042B5DC /* Sqlite3Helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF078F491A31A8720042B5DC /* Sqlite3Helper.cpp */; };
+		CF1008A91A354DB90090DFEF /* SqlCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF1008A31A354DB90090DFEF /* SqlCell.cpp */; };
+		CF1008AA1A354DB90090DFEF /* SqlColumn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF1008A51A354DB90090DFEF /* SqlColumn.cpp */; };
+		CF1008AB1A354DB90090DFEF /* SqlObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF1008A71A354DB90090DFEF /* SqlObject.cpp */; };
+		CF1008B11A354DEA0090DFEF /* SqlRow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF1008AE1A354DEA0090DFEF /* SqlRow.cpp */; };
+		CF70043E1A36B2B300728153 /* SqliteTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF70043C1A36B2B300728153 /* SqliteTestScene.cpp */; };
+		CF7004411A36B4E300728153 /* MapManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF70043F1A36B4E300728153 /* MapManager.cpp */; };
+		CF7004451A36DFED00728153 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = CF7004421A36DFED00728153 /* square.png */; };
+		CF7004461A36DFED00728153 /* starb.png in Resources */ = {isa = PBXBuildFile; fileRef = CF7004431A36DFED00728153 /* starb.png */; };
+		CF7004471A36DFED00728153 /* stary.png in Resources */ = {isa = PBXBuildFile; fileRef = CF7004441A36DFED00728153 /* stary.png */; };
+		CF70044A1A36E2E700728153 /* MapAreaLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF7004481A36E2E700728153 /* MapAreaLayer.cpp */; };
 		CF75958D1A0CAFA8005A9E46 /* libPluginProtocol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF75958C1A0CAF7F005A9E46 /* libPluginProtocol.a */; };
+		CF902D381A37009F00A535B2 /* MainGameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF902D361A37009F00A535B2 /* MainGameLayer.cpp */; };
 		CFCD2D7F1A0C890A00154B04 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCD2D7E1A0C890A00154B04 /* FacebookSDK.framework */; };
 		CFCD2D861A0C897300154B04 /* libPluginFacebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCD2D851A0C896700154B04 /* libPluginFacebook.a */; };
 		CFCD2D8D1A0CA6E000154B04 /* TestFacebookUserScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFCD2D8B1A0CA6E000154B04 /* TestFacebookUserScene.cpp */; };
 		CFDE60AA1A0DBBCB00C78706 /* TestFacebookShare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFDE60A81A0DBBCB00C78706 /* TestFacebookShare.cpp */; };
 		CFDE60AE1A0DCE2400C78706 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDE60AD1A0DCE2400C78706 /* MediaPlayer.framework */; };
 		CFDE60B01A0DCE2E00C78706 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDE60AF1A0DCE2E00C78706 /* GameController.framework */; };
+		CFFE562C1A30649400CE2308 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = CFFE562A1A30649400CE2308 /* sqlite3.c */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
@@ -173,7 +186,29 @@
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CF078F491A31A8720042B5DC /* Sqlite3Helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sqlite3Helper.cpp; sourceTree = "<group>"; };
+		CF078F4A1A31A8720042B5DC /* Sqlite3Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sqlite3Helper.h; sourceTree = "<group>"; };
+		CF1008A31A354DB90090DFEF /* SqlCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SqlCell.cpp; sourceTree = "<group>"; };
+		CF1008A41A354DB90090DFEF /* SqlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlCell.h; sourceTree = "<group>"; };
+		CF1008A51A354DB90090DFEF /* SqlColumn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SqlColumn.cpp; sourceTree = "<group>"; };
+		CF1008A61A354DB90090DFEF /* SqlColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlColumn.h; sourceTree = "<group>"; };
+		CF1008A71A354DB90090DFEF /* SqlObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SqlObject.cpp; sourceTree = "<group>"; };
+		CF1008A81A354DB90090DFEF /* SqlObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlObject.h; sourceTree = "<group>"; };
+		CF1008AE1A354DEA0090DFEF /* SqlRow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SqlRow.cpp; sourceTree = "<group>"; };
+		CF1008AF1A354DEA0090DFEF /* SqlRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlRow.h; sourceTree = "<group>"; };
+		CF1008B01A354DEA0090DFEF /* SqlType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlType.h; sourceTree = "<group>"; };
+		CF70043C1A36B2B300728153 /* SqliteTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SqliteTestScene.cpp; sourceTree = "<group>"; };
+		CF70043D1A36B2B300728153 /* SqliteTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteTestScene.h; sourceTree = "<group>"; };
+		CF70043F1A36B4E300728153 /* MapManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapManager.cpp; sourceTree = "<group>"; };
+		CF7004401A36B4E300728153 /* MapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
+		CF7004421A36DFED00728153 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		CF7004431A36DFED00728153 /* starb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starb.png; sourceTree = "<group>"; };
+		CF7004441A36DFED00728153 /* stary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stary.png; sourceTree = "<group>"; };
+		CF7004481A36E2E700728153 /* MapAreaLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapAreaLayer.cpp; sourceTree = "<group>"; };
+		CF7004491A36E2E700728153 /* MapAreaLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAreaLayer.h; sourceTree = "<group>"; };
 		CF7595871A0CAF7F005A9E46 /* PluginProtocol.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginProtocol.xcodeproj; path = ../cocos2d/plugin/protocols/proj.ios/PluginProtocol.xcodeproj; sourceTree = "<group>"; };
+		CF902D361A37009F00A535B2 /* MainGameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainGameLayer.cpp; sourceTree = "<group>"; };
+		CF902D371A37009F00A535B2 /* MainGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainGameLayer.h; sourceTree = "<group>"; };
 		CFCD2D7E1A0C890A00154B04 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../cocos2d/plugin/plugins/facebook/proj.ios/sdk/FacebookSDK.framework; sourceTree = "<group>"; };
 		CFCD2D801A0C896700154B04 /* PluginFacebook.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginFacebook.xcodeproj; path = ../cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook.xcodeproj; sourceTree = "<group>"; };
 		CFCD2D8B1A0CA6E000154B04 /* TestFacebookUserScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestFacebookUserScene.cpp; sourceTree = "<group>"; };
@@ -183,6 +218,8 @@
 		CFDE60A91A0DBBCB00C78706 /* TestFacebookShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFacebookShare.h; sourceTree = "<group>"; };
 		CFDE60AD1A0DCE2400C78706 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		CFDE60AF1A0DCE2E00C78706 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
+		CFFE562A1A30649400CE2308 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		CFFE562B1A30649400CE2308 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -316,6 +353,9 @@
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
 				46880B7719C43A67006E1F66 /* CloseSelected.png */,
 				46880B7A19C43A67006E1F66 /* HelloWorld.png */,
+				CF7004421A36DFED00728153 /* square.png */,
+				CF7004431A36DFED00728153 /* starb.png */,
+				CF7004441A36DFED00728153 /* stary.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -324,6 +364,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CFFE56291A30649400CE2308 /* SqliteTest */,
 				CFDE60A71A0DBBCB00C78706 /* TestFacebookShare */,
 				CFCD2D8A1A0CA6E000154B04 /* TestFacebookUser */,
 				CFCD2D8E1A0CA73D00154B04 /* Configs.h */,
@@ -383,6 +424,21 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		CF70043B1A36B2B300728153 /* Try */ = {
+			isa = PBXGroup;
+			children = (
+				CF70043C1A36B2B300728153 /* SqliteTestScene.cpp */,
+				CF70043D1A36B2B300728153 /* SqliteTestScene.h */,
+				CF70043F1A36B4E300728153 /* MapManager.cpp */,
+				CF7004401A36B4E300728153 /* MapManager.h */,
+				CF7004481A36E2E700728153 /* MapAreaLayer.cpp */,
+				CF7004491A36E2E700728153 /* MapAreaLayer.h */,
+				CF902D361A37009F00A535B2 /* MainGameLayer.cpp */,
+				CF902D371A37009F00A535B2 /* MainGameLayer.h */,
+			);
+			path = Try;
+			sourceTree = "<group>";
+		};
 		CF7595881A0CAF7F005A9E46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +471,35 @@
 				CFDE60A91A0DBBCB00C78706 /* TestFacebookShare.h */,
 			);
 			path = TestFacebookShare;
+			sourceTree = "<group>";
+		};
+		CFFE56291A30649400CE2308 /* SqliteTest */ = {
+			isa = PBXGroup;
+			children = (
+				CFFE562F1A3064B300CE2308 /* Test */,
+				CFFE562A1A30649400CE2308 /* sqlite3.c */,
+				CFFE562B1A30649400CE2308 /* sqlite3.h */,
+			);
+			path = SqliteTest;
+			sourceTree = "<group>";
+		};
+		CFFE562F1A3064B300CE2308 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				CF70043B1A36B2B300728153 /* Try */,
+				CF1008AE1A354DEA0090DFEF /* SqlRow.cpp */,
+				CF1008AF1A354DEA0090DFEF /* SqlRow.h */,
+				CF1008B01A354DEA0090DFEF /* SqlType.h */,
+				CF1008A31A354DB90090DFEF /* SqlCell.cpp */,
+				CF1008A41A354DB90090DFEF /* SqlCell.h */,
+				CF1008A51A354DB90090DFEF /* SqlColumn.cpp */,
+				CF1008A61A354DB90090DFEF /* SqlColumn.h */,
+				CF1008A71A354DB90090DFEF /* SqlObject.cpp */,
+				CF1008A81A354DB90090DFEF /* SqlObject.h */,
+				CF078F491A31A8720042B5DC /* Sqlite3Helper.cpp */,
+				CF078F4A1A31A8720042B5DC /* Sqlite3Helper.h */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,8 +632,10 @@
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
+				CF7004461A36DFED00728153 /* starb.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
+				CF7004471A36DFED00728153 /* stary.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
@@ -561,6 +648,7 @@
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				CF7004451A36DFED00728153 /* square.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,13 +673,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF902D381A37009F00A535B2 /* MainGameLayer.cpp in Sources */,
+				CF1008A91A354DB90090DFEF /* SqlCell.cpp in Sources */,
+				CF1008AB1A354DB90090DFEF /* SqlObject.cpp in Sources */,
+				CF7004411A36B4E300728153 /* MapManager.cpp in Sources */,
+				CF70043E1A36B2B300728153 /* SqliteTestScene.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				CF70044A1A36E2E700728153 /* MapAreaLayer.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				CF1008AA1A354DB90090DFEF /* SqlColumn.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				CFDE60AA1A0DBBCB00C78706 /* TestFacebookShare.cpp in Sources */,
+				CF078F4B1A31A8720042B5DC /* Sqlite3Helper.cpp in Sources */,
 				CFCD2D8D1A0CA6E000154B04 /* TestFacebookUserScene.cpp in Sources */,
+				CF1008B11A354DEA0090DFEF /* SqlRow.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				CFFE562C1A30649400CE2308 /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
