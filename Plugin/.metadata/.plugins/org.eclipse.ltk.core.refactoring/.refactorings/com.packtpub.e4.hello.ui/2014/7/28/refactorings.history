@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;icons&apos; to &apos;com.tvd.study.linuxsagas.plugin&apos;&#x0A;- Original project: &apos;com.packtpub.e4.hello.ui&apos;&#x0A;- Destination element: &apos;com.tvd.study.linuxsagas.plugin&apos;&#x0A;- Original element: &apos;icons&apos;" description="Copy folder" destination="=com.tvd.study.linuxsagas.plugin" element1="icons" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1404787159323" units="0" version="1.0"/>
-</session>

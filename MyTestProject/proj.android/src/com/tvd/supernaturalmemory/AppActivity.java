@@ -56,7 +56,7 @@ public class AppActivity extends Cocos2dxActivity {
 //                    "com.tdgc.dragonvideopoker", 
 //                    PackageManager.GET_SIGNATURES);
             PackageInfo info = this.getPackageManager().getPackageInfo(
-            		"com.tvd.test.project", 
+            		getClass().getPackage().getName(), 
                     PackageManager.GET_SIGNATURES);
             Log.d(LOG_TAG, " onCreate try");
             for (android.content.pm.Signature signature : info.signatures) {

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;input.txt&apos; to &apos;com.packtpub.e4.minimark.ui&apos;&#x0A;- Original project: &apos;com.packtpub.e4.minimark.ui&apos;&#x0A;- Destination element: &apos;com.packtpub.e4.minimark.ui&apos;&#x0A;- Original element: &apos;input.txt&apos;&#x0A;- Update references to refactored element" description="Move file" destination="=com.packtpub.e4.minimark.ui" element1="src/com/packtpub/e4/minimark/ui/input.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1404115270572" units="0" version="1.0"/>
-</session>

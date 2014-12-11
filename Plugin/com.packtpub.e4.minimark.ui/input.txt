@@ -1,3 +1,0 @@
-First, the format of the markup language needs to be explained. 
-The first line will be a title, and then subsequent paragraphs 
-are blank-line separated. This can be translated into an HTML file as follows:
