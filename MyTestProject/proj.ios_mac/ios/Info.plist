@@ -42,7 +42,7 @@
 		<string>Icon-144.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.tvd.supernaturalmemory</string>
+	<string>com.test.hehe</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -60,14 +60,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb958164280878054</string>
+				<string>fb958164282120878054</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>FacebookAppID</key>
-	<string>958164280878054</string>
+	<string>9581642808723238054</string>
 	<key>FacebookDisplayName</key>
 	<string>Supernatural Memory</string>
 	<key>LSRequiresIPhoneOS</key>
