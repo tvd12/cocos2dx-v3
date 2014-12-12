@@ -342,7 +342,57 @@
   jni/../../Classes/SqliteTest/Test/SqlRow.h \
   jni/../../Classes/SqliteTest/Test/Sqlite3Helper.h \
   /Volumes/DATA/Data/Android/IDE/android-ndk-r10b/sources/cxx-stl/llvm-libc++/libcxx/include/fstream \
-  jni/../../Classes/SqliteTest/sqlite3.h
+  jni/../../Classes/SqliteTest/sqlite3.h \
+  jni/../../Classes/TableTest/Lobby/LobbyLayerView.h \
+  jni/../../cocos2d/extensions/./cocos-ext.h \
+  jni/../../cocos2d/extensions/./ExtensionMacros.h \
+  jni/../../cocos2d/extensions/./GUI/CCControlExtension/CCControlExtensions.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControl.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlUtils.h \
+  jni/../../cocos2d/extensions/../extensions/ExtensionExport.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlButton.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCInvocation.h \
+  jni/../../cocos2d/cocos/3d/../ui/UIScale9Sprite.h \
+  jni/../../cocos2d/cocos/3d/../ui/GUIExport.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlColourPicker.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlHuePicker.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlPotentiometer.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlSlider.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlStepper.h \
+  jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlSwitch.h \
+  jni/../../cocos2d/extensions/./GUI/CCScrollView/CCScrollView.h \
+  jni/../../cocos2d/extensions/./GUI/CCScrollView/CCTableView.h \
+  jni/../../cocos2d/extensions/GUI/CCScrollView/CCTableViewCell.h \
+  jni/../../cocos2d/extensions/./physics-nodes/CCPhysicsDebugNode.h \
+  jni/../../cocos2d/extensions/./physics-nodes/CCPhysicsSprite.h \
+  jni/../../cocos2d/extensions/./assets-manager/AssetsManager.h \
+  jni/../../cocos2d/extensions/./assets-manager/AssetsManagerEx.h \
+  jni/../../cocos2d/extensions/./assets-manager/CCEventAssetsManagerEx.h \
+  jni/../../cocos2d/extensions/./assets-manager/Downloader.h \
+  jni/../../cocos2d/extensions/./assets-manager/Manifest.h \
+  jni/../../cocos2d/cocos/./../external/json/document.h \
+  jni/../../cocos2d/cocos/./../external/json/reader.h \
+  jni/../../cocos2d/cocos/./../external/json/rapidjson.h \
+  jni/../../cocos2d/cocos/./../external/json/internal/pow10.h \
+  jni/../../cocos2d/cocos/./../external/json/internal/stack.h \
+  /Volumes/DATA/Data/Android/IDE/android-ndk-r10b/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp \
+  /Volumes/DATA/Data/Android/IDE/android-ndk-r10b/platforms/android-19/arch-arm/usr/include/setjmp.h \
+  /Volumes/DATA/Data/Android/IDE/android-ndk-r10b/platforms/android-19/arch-arm/usr/include/machine/setjmp.h \
+  jni/../../cocos2d/cocos/./../external/json/internal/strfunc.h \
+  jni/../../cocos2d/extensions/./assets-manager/CCEventListenerAssetsManagerEx.h \
+  jni/../../cocos2d/extensions/./ExtensionDeprecated.h \
+  jni/../../cocos2d/cocos/3d/../ui/UIEditBox/UIEditBox.h \
+  jni/../../cocos2d/cocos/3d/../ui/GUIDefine.h \
+  jni/../../cocos2d/cocos/3d/../base/ObjectFactory.h \
+  jni/../../cocos2d/cocos/3d/../ui/UIButton.h \
+  jni/../../cocos2d/cocos/3d/../ui/UIWidget.h \
+  jni/../../cocos2d/cocos/3d/../ui/UILayoutParameter.h \
+  jni/../../Classes/View/Extends/Layer/CommonLayer.h \
+  /Volumes/DATA/Data/Android/IDE/android-ndk-r10b/sources/cxx-stl/llvm-libc++/libcxx/include/iostream \
+  jni/../../Classes/View/Extends/Layer/TableLayer.h \
+  jni/../../Classes/View/Extends/Tables/ITableViewBuilder.h \
+  jni/../../Classes/TableTest/Word/WordLayer.h
 
 jni/../../Classes/AppDelegate.h:
 
@@ -1031,3 +1081,103 @@ jni/../../Classes/SqliteTest/Test/Sqlite3Helper.h:
 /Volumes/DATA/Data/Android/IDE/android-ndk-r10b/sources/cxx-stl/llvm-libc++/libcxx/include/fstream:
 
 jni/../../Classes/SqliteTest/sqlite3.h:
+
+jni/../../Classes/TableTest/Lobby/LobbyLayerView.h:
+
+jni/../../cocos2d/extensions/./cocos-ext.h:
+
+jni/../../cocos2d/extensions/./ExtensionMacros.h:
+
+jni/../../cocos2d/extensions/./GUI/CCControlExtension/CCControlExtensions.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControl.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlUtils.h:
+
+jni/../../cocos2d/extensions/../extensions/ExtensionExport.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlButton.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCInvocation.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIScale9Sprite.h:
+
+jni/../../cocos2d/cocos/3d/../ui/GUIExport.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlColourPicker.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlHuePicker.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlPotentiometer.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlSlider.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlStepper.h:
+
+jni/../../cocos2d/extensions/GUI/CCControlExtension/CCControlSwitch.h:
+
+jni/../../cocos2d/extensions/./GUI/CCScrollView/CCScrollView.h:
+
+jni/../../cocos2d/extensions/./GUI/CCScrollView/CCTableView.h:
+
+jni/../../cocos2d/extensions/GUI/CCScrollView/CCTableViewCell.h:
+
+jni/../../cocos2d/extensions/./physics-nodes/CCPhysicsDebugNode.h:
+
+jni/../../cocos2d/extensions/./physics-nodes/CCPhysicsSprite.h:
+
+jni/../../cocos2d/extensions/./assets-manager/AssetsManager.h:
+
+jni/../../cocos2d/extensions/./assets-manager/AssetsManagerEx.h:
+
+jni/../../cocos2d/extensions/./assets-manager/CCEventAssetsManagerEx.h:
+
+jni/../../cocos2d/extensions/./assets-manager/Downloader.h:
+
+jni/../../cocos2d/extensions/./assets-manager/Manifest.h:
+
+jni/../../cocos2d/cocos/./../external/json/document.h:
+
+jni/../../cocos2d/cocos/./../external/json/reader.h:
+
+jni/../../cocos2d/cocos/./../external/json/rapidjson.h:
+
+jni/../../cocos2d/cocos/./../external/json/internal/pow10.h:
+
+jni/../../cocos2d/cocos/./../external/json/internal/stack.h:
+
+/Volumes/DATA/Data/Android/IDE/android-ndk-r10b/sources/cxx-stl/llvm-libc++/libcxx/include/csetjmp:
+
+/Volumes/DATA/Data/Android/IDE/android-ndk-r10b/platforms/android-19/arch-arm/usr/include/setjmp.h:
+
+/Volumes/DATA/Data/Android/IDE/android-ndk-r10b/platforms/android-19/arch-arm/usr/include/machine/setjmp.h:
+
+jni/../../cocos2d/cocos/./../external/json/internal/strfunc.h:
+
+jni/../../cocos2d/extensions/./assets-manager/CCEventListenerAssetsManagerEx.h:
+
+jni/../../cocos2d/extensions/./ExtensionDeprecated.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIEditBox/UIEditBox.h:
+
+jni/../../cocos2d/cocos/3d/../ui/GUIDefine.h:
+
+jni/../../cocos2d/cocos/3d/../base/ObjectFactory.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIButton.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UIWidget.h:
+
+jni/../../cocos2d/cocos/3d/../ui/UILayoutParameter.h:
+
+jni/../../Classes/View/Extends/Layer/CommonLayer.h:
+
+/Volumes/DATA/Data/Android/IDE/android-ndk-r10b/sources/cxx-stl/llvm-libc++/libcxx/include/iostream:
+
+jni/../../Classes/View/Extends/Layer/TableLayer.h:
+
+jni/../../Classes/View/Extends/Tables/ITableViewBuilder.h:
+
+jni/../../Classes/TableTest/Word/WordLayer.h:
