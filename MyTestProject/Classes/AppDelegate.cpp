@@ -3,6 +3,8 @@
 #include "SqliteTestScene.h"
 #include "MapManager.h"
 #include "Sqlite3Helper.h"
+#include "LobbyLayerView.h"
+#include "WordLayer.h"
 
 USING_NS_CC;
 
@@ -50,7 +52,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     // create a scene. it's an autorelease object
 //    auto scene = HelloWorld::scene();
-    auto scene = SqliteTestScene::scene();
+//    auto scene = SqliteTestScene::scene();
+    auto scene = TestController::createScene();
 
     // run
     director->runWithScene(scene);
