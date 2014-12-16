@@ -1,0 +1,10 @@
+#
+# create templates
+#
+
+#normal template
+{function_type} {class_name}::{function_name}(//{arguments}) {
+{tab}{function_content}
+}
+
+#end

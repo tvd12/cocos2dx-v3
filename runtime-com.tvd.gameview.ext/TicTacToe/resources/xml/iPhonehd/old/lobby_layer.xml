@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="LobbyLayer" prefix="layer_lobby" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 568.0"
+		template-name="Common"
+		exported="true"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="lobby_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Downloads/Skype/Multiplayer/lobby_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPhonehd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPhonehd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPhonehd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPhonehd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+	<background-image id="lobby_layer_background_lbb_bg" 
+		location-in-interfacebuilder="0.0, 0.0"
+		width="320.0" height="568.0"
+		phony-path="lobby_layer/background/lbb_bg.png"  />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="footer" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 35.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_footer_lbb_footer_bg" 
+				location-in-interfacebuilder="0.0, 498.0"
+				width="320.0" height="70.0"
+				phony-path="lobby_layer/sprites/footer/lbb_footer_bg.png"  />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lbb_icon_back" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="55.0, 35.0" />
+					<z-index value="3" />
+					<image id="lobby_layer_footer_lbb_icon_back" 
+						location-in-interfacebuilder="31.0, 509.0"
+						width="48.0" height="48.0"
+						phony-path="lobby_layer/sprites/footer/sprites/lbb_icon_back.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lbb_icon_leaderboard" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="198.0, 35.0" />
+					<z-index value="3" />
+					<image id="lobby_layer_footer_lbb_icon_leaderboard" 
+						location-in-interfacebuilder="174.0, 509.0"
+						width="48.0" height="48.0"
+						phony-path="lobby_layer/sprites/footer/sprites/lbb_icon_leaderboard.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lbb_icon_setting" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="126.0, 35.0" />
+					<z-index value="3" />
+					<image id="lobby_layer_footer_lbb_icon_setting" 
+						location-in-interfacebuilder="102.0, 509.0"
+						width="48.0" height="48.0"
+						phony-path="lobby_layer/sprites/footer/sprites/lbb_icon_setting.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lbb_icon_shop" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="268.0, 35.0" />
+					<z-index value="3" />
+					<image id="lobby_layer_footer_lbb_icon_shop" 
+						location-in-interfacebuilder="244.0, 509.0"
+						width="48.0" height="48.0"
+						phony-path="lobby_layer/sprites/footer/sprites/lbb_icon_shop.png"  />
+				</sprite>
+			</sprites>
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="header" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 533.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_header_lbb_header_bg" 
+				location-in-interfacebuilder="0.0, 0.0"
+				width="320.0" height="70.0"
+				phony-path="lobby_layer/sprites/header/lbb_header_bg.png"  />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lbb_avatar_default" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="32.0, 35.0" />
+					<z-index value="0" />
+					<image id="lobby_layer_header_lbb_avatar_default" 
+						location-in-interfacebuilder="8.0, 11.0"
+						width="48.0" height="48.0"
+						phony-path="lobby_layer/sprites/header/sprites/lbb_avatar_default.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lbb_icon_buy_chip" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="300.0, 23.0" />
+					<z-index value="0" />
+					<image id="lobby_layer_header_lbb_icon_buy_chip" 
+						location-in-interfacebuilder="288.0, 35.0"
+						width="24.0" height="24.0"
+						phony-path="lobby_layer/sprites/header/sprites/lbb_icon_buy_chip.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lbb_icon_coin" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="74.0, 23.0" />
+					<z-index value="0" />
+					<image id="lobby_layer_header_lbb_icon_coin" 
+						location-in-interfacebuilder="62.0, 35.0"
+						width="24.0" height="24.0"
+						phony-path="lobby_layer/sprites/header/sprites/lbb_icon_coin.png"  />
+				</sprite>
+			</sprites>
+			<labels array="false" comment="create group of labels">
+				<label visible="true" comment="">
+					<text value="Ta Van Dung" />
+					<font name="HelveticaNeue" family="Helvetica Neue" />
+					<font-color red="0" green="0" blue="255" alpha="255" />
+					<font-size value="17.0" />
+					<position-name value="user_full_name" />
+					<anchorpoint value="0.0, 0.5" />
+					<position value="94.0, 48.5" />
+					<location-in-interfacebuilder value="94.0, 13.0" />
+					<z-index value="1" />
+				</label>
+				<label visible="true" comment="">
+					<text value="Ta Van Dung" />
+					<font name="HelveticaNeue" family="Helvetica Neue" />
+					<font-color red="0" green="0" blue="255" alpha="255" />
+					<font-size value="17.0" />
+					<position-name value="coins" />
+					<anchorpoint value="0.0, 0.5" />
+					<position value="94.0, 23.5" />
+					<location-in-interfacebuilder value="94.0, 38.0" />
+					<z-index value="1" />
+				</label>
+			</labels>
+		</sprite>
+	</sprites>
+	<labels array="false" comment="create group of labels">
+		<label visible="true" comment="">
+			<text value="Start A Tournament" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="title" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="161.0, 476.0" />
+			<location-in-interfacebuilder value="53.0, 80.0" />
+			<z-index value="0" />
+		</label>
+	</labels>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="coin" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="161.5, 221.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lbb_coin_active" unlocated="true" />
+					<image id="lobby_layer_coin_lbb_coin_active" 
+						location-in-interfacebuilder="49.0, 316.0"
+						width="225.0" height="62.0"
+						phony-path="lobby_layer/menuitems/coin/sprites/lbb_coin_active.png"  />
+					<labels array="false" comment="create group of labels">
+						<label visible="true" comment="">
+							<text value="Use 1 Coin" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="0" green="0" blue="255" alpha="255" />
+							<font-size value="17.0" />
+							<position-name value="coin_text_active" />
+							<anchorpoint value="0.5, 0.5" />
+							<position value="107.5, 31.5" />
+							<location-in-interfacebuilder value="114.0, 338.0" />
+							<z-index value="0" />
+						</label>
+					</labels>
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lbb_coin_normal" unlocated="true" />
+					<image id="lobby_layer_coin_lbb_coin_normal" 
+						phony-path="lobby_layer/menuitems/coin/sprites/lbb_coin_normal.png"  />
+					<labels array="false" comment="create group of labels">
+						<label visible="true" comment="">
+							<text value="Use 1 Coin" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="0" green="0" blue="255" alpha="255" />
+							<font-size value="17.0" />
+							<position-name value="coin_text_normal" />
+							<anchorpoint value="0.5, 0.5" />
+							<position value="107.5, 31.5" />
+							<location-in-interfacebuilder value="114.0, 338.0" />
+							<z-index value="0" />
+						</label>
+					</labels>
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="facebook" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="161.5, 415.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lbb_facebook_active" unlocated="true" />
+					<image id="lobby_layer_facebook_lbb_facebook_active" 
+						location-in-interfacebuilder="49.0, 122.0"
+						width="225.0" height="62.0"
+						phony-path="lobby_layer/menuitems/facebook/sprites/lbb_facebook_active.png"  />
+					<labels array="false" comment="create group of labels">
+						<label visible="true" comment="">
+							<text value="Share on fb" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="0" green="0" blue="255" alpha="255" />
+							<font-size value="17.0" />
+							<position-name value="fb_text_active" />
+							<anchorpoint value="0.0, 0.5" />
+							<position value="65.0, 31.5" />
+							<location-in-interfacebuilder value="114.0, 144.0" />
+							<z-index value="0" />
+						</label>
+					</labels>
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lbb_facebook_normal" unlocated="true" />
+					<image id="lobby_layer_facebook_lbb_facebook_normal" 
+						phony-path="lobby_layer/menuitems/facebook/sprites/lbb_facebook_normal.png"  />
+					<labels array="false" comment="create group of labels">
+						<label visible="true" comment="">
+							<text value="Share on fb" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="0" green="0" blue="255" alpha="255" />
+							<font-size value="17.0" />
+							<position-name value="fb_text_normal" />
+							<anchorpoint value="0.5, 0.5" />
+							<position value="112.0, 31.5" />
+							<location-in-interfacebuilder value="114.0, 144.0" />
+							<z-index value="0" />
+						</label>
+					</labels>
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="timer" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="161.5, 124.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lbb_timer_active" unlocated="true" />
+					<image id="lobby_layer_timer_lbb_timer_active" 
+						location-in-interfacebuilder="49.0, 413.0"
+						width="225.0" height="62.0"
+						phony-path="lobby_layer/menuitems/timer/sprites/lbb_timer_active.png"  />
+					<labels array="false" comment="create group of labels">
+						<label visible="true" comment="">
+							<text value="Wait 12:00" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="0" green="0" blue="255" alpha="255" />
+							<font-size value="17.0" />
+							<position-name value="timer_text_active" />
+							<anchorpoint value="0.0, 0.5" />
+							<position value="60.0, 31.5" />
+							<location-in-interfacebuilder value="109.0, 435.0" />
+							<z-index value="0" />
+						</label>
+					</labels>
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lbb_timer_normal" unlocated="true" />
+					<image id="lobby_layer_timer_lbb_timer_normal" 
+						phony-path="lobby_layer/menuitems/timer/sprites/lbb_timer_normal.png"  />
+					<labels array="false" comment="create group of labels">
+						<label visible="true" comment="">
+							<text value="Wait 12:00" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="0" green="0" blue="255" alpha="255" />
+							<font-size value="17.0" />
+							<position-name value="timer_text_normal" />
+							<anchorpoint value="0.0, 0.5" />
+							<position value="60.0, 31.5" />
+							<location-in-interfacebuilder value="109.0, 435.0" />
+							<z-index value="0" />
+						</label>
+					</labels>
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="video" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="161.5, 318.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lbb_video_active" unlocated="true" />
+					<image id="lobby_layer_video_lbb_video_active" 
+						location-in-interfacebuilder="49.0, 219.0"
+						width="225.0" height="62.0"
+						phony-path="lobby_layer/menuitems/video/sprites/lbb_video_active.png"  />
+					<labels array="false" comment="create group of labels">
+						<label visible="true" comment="">
+							<text value="Watch a video" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="0" green="0" blue="255" alpha="255" />
+							<font-size value="17.0" />
+							<position-name value="video_text_active" />
+							<anchorpoint value="0.0, 0.5" />
+							<position value="65.0, 31.5" />
+							<location-in-interfacebuilder value="114.0, 241.0" />
+							<z-index value="0" />
+						</label>
+					</labels>
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lbb_video_normal" unlocated="true" />
+					<image id="lobby_layer_video_lbb_video_normal" 
+						phony-path="lobby_layer/menuitems/video/sprites/lbb_video_normal.png"  />
+					<labels array="false" comment="create group of labels">
+						<label visible="true" comment="">
+							<text value="Watch a video" />
+							<font name="HelveticaNeue" family="Helvetica Neue" />
+							<font-color red="0" green="0" blue="255" alpha="255" />
+							<font-size value="17.0" />
+							<position-name value="video_text_normal" />
+							<anchorpoint value="0.5, 0.5" />
+							<position value="120.5, 31.5" />
+							<location-in-interfacebuilder value="114.0, 241.0" />
+							<z-index value="0" />
+						</label>
+					</labels>
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+</view>

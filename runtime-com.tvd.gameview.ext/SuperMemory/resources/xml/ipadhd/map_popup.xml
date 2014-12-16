@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="MapPopupView" prefix="popup_map" type="popup" exitable="false" 
+		super="PopupLayer" background-name="default" size="320.0, 480.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="map_popup" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Downloads/map/map_popup" />
+	<images-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/ipadhd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/screenshots/ipadhd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Wireframing/WireframingScreen/ipadhd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/proj.android/res/layout/ipadhd" />
+	<class-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/View/Popup" />
+	<background-image id="map_popup_background_map_bg" 
+		location-in-interfacebuilder="10.0, 10.0"
+		width="320.0" height="480.0"
+		phony-path="map_popup/background/map_bg.png"  />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="map_my_location" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="map_popup_map_my_location" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="24.0" height="45.0"
+				phony-path="map_popup/sprites/map_my_location.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="map_road" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="map_popup_map_road" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="140.0" height="297.0"
+				phony-path="map_popup/sprites/map_road.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="map_tree5" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="map_popup_map_tree5" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="67.0" height="59.0"
+				phony-path="map_popup/sprites/map_tree5.png"  />
+		</sprite>
+	</sprites>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="gate1" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="map_gate1_active" unlocated="true" />
+					<image id="map_popup_gate1_map_gate1_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="61.0" height="71.0"
+						phony-path="map_popup/menuitems/gate1/sprites/map_gate1_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="map_gate1_normal" unlocated="true" />
+					<image id="map_popup_gate1_map_gate1_normal" 
+						phony-path="map_popup/menuitems/gate1/sprites/map_gate1_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="gate2" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="map_gate2_active" unlocated="true" />
+					<image id="map_popup_gate2_map_gate2_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="75.0" height="58.0"
+						phony-path="map_popup/menuitems/gate2/sprites/map_gate2_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="map_gate2_normal" unlocated="true" />
+					<image id="map_popup_gate2_map_gate2_normal" 
+						phony-path="map_popup/menuitems/gate2/sprites/map_gate2_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="gate3" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="map_gate3_active" unlocated="true" />
+					<image id="map_popup_gate3_map_gate3_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="76.0" height="59.0"
+						phony-path="map_popup/menuitems/gate3/sprites/map_gate3_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="map_gate3_normal" unlocated="true" />
+					<image id="map_popup_gate3_map_gate3_normal" 
+						phony-path="map_popup/menuitems/gate3/sprites/map_gate3_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="gate4" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="map_gate4_active" unlocated="true" />
+					<image id="map_popup_gate4_map_gate4_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="62.0" height="67.0"
+						phony-path="map_popup/menuitems/gate4/sprites/map_gate4_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="map_gate4_normal" unlocated="true" />
+					<image id="map_popup_gate4_map_gate4_normal" 
+						phony-path="map_popup/menuitems/gate4/sprites/map_gate4_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="gate5" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="map_gate5_active" unlocated="true" />
+					<image id="map_popup_gate5_map_gate5_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="67.0" height="84.0"
+						phony-path="map_popup/menuitems/gate5/sprites/map_gate5_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="map_gate5_normal" unlocated="true" />
+					<image id="map_popup_gate5_map_gate5_normal" 
+						phony-path="map_popup/menuitems/gate5/sprites/map_gate5_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="gate6" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="map_gate6_active" unlocated="true" />
+					<image id="map_popup_gate6_map_gate6_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="75.0" height="72.0"
+						phony-path="map_popup/menuitems/gate6/sprites/map_gate6_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="map_gate6_normal" unlocated="true" />
+					<image id="map_popup_gate6_map_gate6_normal" 
+						phony-path="map_popup/menuitems/gate6/sprites/map_gate6_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+</view>

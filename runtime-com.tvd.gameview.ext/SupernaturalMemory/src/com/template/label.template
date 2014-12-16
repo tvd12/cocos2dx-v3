@@ -1,0 +1,28 @@
+#
+# create templates
+#
+
+#CCLabelTTF declaring template
+{tab}LabelTTF* {var_name};
+
+#end
+
+#CCLabelTTF implementing template
+{tab}{var_name} = LabelTTF::create("{label_text}",
+			{label_font},
+			{label_font_size});
+{tab}{var_name}->setAnchorPoint(Point({anchorpoint}));
+{tab}{var_name}->setPosition(GPARAMS()->{position_name});
+{tab}{parent_name}->addChild({var_name}, {z-index});
+
+#end
+								
+#Shadow CCLabelTTF template
+{tab}{var_name} = LabelTTF::create("{label_text}",
+			{label_font},
+			{label_font_size});
+{tab}{var_name}->setPosition(GPARAMS()->{position_name});
+{tab}{var_name}->enableShadow(SizeMake(0, -1), 0.5f, 1.0f);
+{tab}{parent_name}->addChild({var_name}, {z-index});
+
+#end

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="MainGameLayer" prefix="layer_main_game" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 480.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="main_game_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Desktop/Offline/main_game_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPadhd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPadhd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPadhd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPadhd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="main_board" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_layer_main_board" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="308.0" height="328.0"
+				phony-path="main_game_layer/sprites/main_board.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="main_off_o_ai" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_layer_main_off_o_ai" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="29.0" height="31.0"
+				phony-path="main_game_layer/sprites/main_off_o_ai.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="main_off_x_me" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_layer_main_off_x_me" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="29.0" height="31.0"
+				phony-path="main_game_layer/sprites/main_off_x_me.png"  />
+		</sprite>
+	</sprites>
+	<resource comment="resource for view">
+		<image id="main_game_layer_resource_main_symbol_o" 
+			phony-path="main_game_layer/resource/main_symbol_o.png"  />
+		<image id="main_game_layer_resource_main_symbol_x" 
+			phony-path="main_game_layer/resource/main_symbol_x.png"  />
+	</resource>
+</view>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="MainGameOnlineLayer" prefix="layer_main_game_online" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 568.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="main_game_online_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Downloads/Skype/Online_Ingame/main_game_online_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPadhd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPadhd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPadhd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPadhd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+	<background-image id="main_game_online_layer_background_mgo_bg" 
+		location-in-interfacebuilder="10.0, 10.0"
+		width="320.0" height="568.0"
+		phony-path="main_game_online_layer/background/mgo_bg.png"  />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="board" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_online_layer_board" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="320.0" height="320.0"
+				phony-path="main_game_online_layer/sprites/board.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="mgo_o_small" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_online_layer_mgo_o_small" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="32.0" height="32.0"
+				phony-path="main_game_online_layer/sprites/mgo_o_small.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="mgo_x_small" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_online_layer_mgo_x_small" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="32.0" height="32.0"
+				phony-path="main_game_online_layer/sprites/mgo_x_small.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="timer_bg" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_online_layer_timer_bg_mgo_timer_bg" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="102.0" height="12.0"
+				phony-path="main_game_online_layer/sprites/timer_bg/mgo_timer_bg.png"  />
+			<progressbar template-name="CCProgressTimer" visible="true" comment="">
+				<type value="kCCProgressTimerTypeBar" />
+				<mid-point value="0.0, 0.0" />
+				<bar-change-rate value="1.0, 0.0" />
+				<percent value="30.0" />
+				<position-name value="mgo_timer_over" unlocated="true" />
+				<anchorpoint value="0.0, 0.0" />
+				<sprite visible="true" comment="">
+					<position-name value="mgo_timer_over" unlocated="true" />
+					<image id="main_game_online_layer_timer_bg_progressbar_mgo_timer_over" 
+						phony-path="main_game_online_layer/sprites/timer_bg/progressbar/mgo_timer_over.png"  />
+				</sprite>
+			</progressbar>
+		</sprite>
+	</sprites>
+</view>

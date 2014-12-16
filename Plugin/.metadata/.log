@@ -5255,3 +5255,43 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2014-12-06 08:20:51.505
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-12-15 10:19:55.627 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/dungtavan/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/dungtavan/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-15 10:20:06.526
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-12-15 14:01:36.273 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/dungtavan/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/dungtavan/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-15 14:02:11.243
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-12-15 16:44:35.286 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/dungtavan/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/dungtavan/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-15 16:44:44.133
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-12-16 08:41:18.940 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/dungtavan/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/dungtavan/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-12-16 08:41:28.336
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

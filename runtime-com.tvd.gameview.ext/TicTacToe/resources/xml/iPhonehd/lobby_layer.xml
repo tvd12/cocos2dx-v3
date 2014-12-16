@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="LobbyLayer" prefix="layer_lobby" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 568.0"
+		template-name="Common"
+		exported="true"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="lobby_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Desktop/Multiplayer/lobby_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPhonehd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPhonehd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPhonehd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPhonehd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+	<background-image id="lobby_layer_background_bg_home" 
+		location-in-interfacebuilder="0.0, 0.0"
+		width="320.0" height="568.0"
+		phony-path="home_layer/background/bg_home.png"  />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="lobby_dock_bottom" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 22.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_dock_bottom" 
+				location-in-interfacebuilder="0.0, 524.0"
+				width="320.0" height="44.0"
+				phony-path="home_layer/sprites/home_dock_bottom.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_avatar_backend" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="39.5, 531.5" />
+			<z-index value="1" />
+			<image id="lobby_layer_lobby_avatar_backend" 
+				location-in-interfacebuilder="0.0, -3.0"
+				width="79.0" height="79.0"
+				phony-path="lobby_layer/sprites/lobby_avatar_backend.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_avatar_frontend" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="38.5, 529.5" />
+			<z-index value="2" />
+			<image id="lobby_layer_lobby_avatar_frontend" 
+				location-in-interfacebuilder="-1.0, -1.0"
+				width="79.0" height="79.0"
+				phony-path="lobby_layer/sprites/lobby_avatar_frontend.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_header" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 531.5" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_header" 
+				location-in-interfacebuilder="0.0, 0.0"
+				width="320.0" height="73.0"
+				phony-path="lobby_layer/sprites/lobby_header.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_icon_coin" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="53.0, 238.0" />
+			<z-index value="1" />
+			<image id="lobby_layer_lobby_icon_coin" 
+				location-in-interfacebuilder="23.0, 300.0"
+				width="60.0" height="60.0"
+				phony-path="lobby_layer/sprites/lobby_icon_coin.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_icon_facebook" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="53.0, 424.0" />
+			<z-index value="1" />
+			<image id="lobby_layer_lobby_icon_facebook" 
+				location-in-interfacebuilder="23.0, 114.0"
+				width="60.0" height="60.0"
+				phony-path="lobby_layer/sprites/lobby_icon_facebook.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_icon_time" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="162.0, 166.5" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_icon_time" 
+				location-in-interfacebuilder="151.0, 391.0"
+				width="22.0" height="21.0"
+				phony-path="lobby_layer/sprites/lobby_icon_time.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_icon_video" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="53.0, 330.0" />
+			<z-index value="1" />
+			<image id="lobby_layer_lobby_icon_video" 
+				location-in-interfacebuilder="23.0, 208.0"
+				width="60.0" height="60.0"
+				phony-path="lobby_layer/sprites/lobby_icon_video.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="user_flag" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="9.5, 561.0" />
+			<z-index value="3" />
+			<image id="lobby_layer_user_flag" 
+				location-in-interfacebuilder="2.0, 2.0"
+				width="15.0" height="10.0"
+				phony-path="lobby_layer/sprites/user_flag.png"  />
+		</sprite>
+	</sprites>
+	<labels array="false" comment="create group of labels">
+		<label visible="true" comment="">
+			<text value="Start A Tournament" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="67" green="19" blue="0" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="title" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="170.0, 473.0" />
+			<location-in-interfacebuilder value="62.0, 83.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Hello Nhung Em" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="username" />
+			<anchorpoint value="0.0, 0.5" />
+			<position value="71.0, 551.5" />
+			<location-in-interfacebuilder value="71.0, 8.0" />
+			<z-index value="1" />
+		</label>
+		<label visible="true" comment="">
+			<text value="1,234" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="254" green="172" blue="10" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="coins" />
+			<anchorpoint value="0.0, 0.5" />
+			<position value="71.0, 523.0" />
+			<location-in-interfacebuilder value="71.0, 33.0" />
+			<z-index value="1" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Share on FB" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="share_fb" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="169.0, 425.0" />
+			<location-in-interfacebuilder value="103.0, 131.0" />
+			<z-index value="1" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Watch a video" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="watch_a_video" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 337.0" />
+			<location-in-interfacebuilder value="82.0, 219.0" />
+			<z-index value="1" />
+		</label>
+		<label visible="true" comment="">
+			<text value="(15-30 seconds)" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="15.0" />
+			<position-name value="watch_a_video_note" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 317.5" />
+			<location-in-interfacebuilder value="104.0, 243.0" />
+			<z-index value="1" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Use 1 coin" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="user_1_coin" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 238.0" />
+			<location-in-interfacebuilder value="100.0, 318.0" />
+			<z-index value="1" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Wait" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="waiting" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="120.0, 168.0" />
+			<location-in-interfacebuilder value="96.0, 388.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="12:00" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="waiting_value" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="209.0, 168.0" />
+			<location-in-interfacebuilder value="179.0, 388.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="OR" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="133" green="77" blue="30" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="or1" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 377.5" />
+			<location-in-interfacebuilder value="152.0, 182.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="OR" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="133" green="77" blue="30" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="or2" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 284.5" />
+			<location-in-interfacebuilder value="152.0, 275.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="OR" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="133" green="77" blue="30" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="or3" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 192.5" />
+			<location-in-interfacebuilder value="152.0, 367.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="SHOP" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="shop_title" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="271.0, 536.5" />
+			<location-in-interfacebuilder value="254.0, 23.0" />
+			<z-index value="2" />
+		</label>
+	</labels>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="back" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="48.5, 48.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_back_active" unlocated="true" />
+					<image id="lobby_layer_back_lobby_back_active" 
+						location-in-interfacebuilder="19.0, 487.0"
+						width="59.0" height="66.0"
+						phony-path="lobby_layer/menuitems/back/sprites/lobby_back_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_back_normal" unlocated="true" />
+					<image id="lobby_layer_back_lobby_back_normal" 
+						phony-path="lobby_layer/menuitems/back/sprites/lobby_back_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="inapp" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="272.5, 48.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_inapp_active" unlocated="true" />
+					<image id="lobby_layer_inapp_lobby_inapp_active" 
+						location-in-interfacebuilder="243.0, 487.0"
+						width="59.0" height="66.0"
+						phony-path="lobby_layer/menuitems/inapp/sprites/lobby_inapp_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_inapp_normal" unlocated="true" />
+					<image id="lobby_layer_inapp_lobby_inapp_normal" 
+						phony-path="lobby_layer/menuitems/inapp/sprites/lobby_inapp_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="leaderboard" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="197.5, 48.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_leaderboard_active" unlocated="true" />
+					<image id="lobby_layer_leaderboard_lobby_leaderboard_active" 
+						location-in-interfacebuilder="168.0, 487.0"
+						width="59.0" height="66.0"
+						phony-path="lobby_layer/menuitems/leaderboard/sprites/lobby_leaderboard_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_leaderboard_normal" unlocated="true" />
+					<image id="lobby_layer_leaderboard_lobby_leaderboard_normal" 
+						phony-path="lobby_layer/menuitems/leaderboard/sprites/lobby_leaderboard_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="share_fb_selection" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 423.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_share_fb_active" unlocated="true" />
+					<image id="lobby_layer_share_fb_lobby_selection_active" 
+						location-in-interfacebuilder="23.0, 115.0"
+						width="275.0" height="59.0"
+						phony-path="lobby_layer/menuitems/selection/sprites/lobby_selection_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_share_fb_normal" unlocated="true" />
+					<image id="lobby_layer_share_fb_lobby_selection_normal" 
+						phony-path="lobby_layer/menuitems/selection/sprites/lobby_selection_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="watch_selection" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 330.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_watch_selection_active" unlocated="true" />
+					<image id="lobby_layer_watch_selection_lobby_selection_active" 
+						location-in-interfacebuilder="23.0, 208.0"
+						width="275.0" height="59.0"
+						phony-path="lobby_layer/menuitems/selection/sprites/lobby_selection_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_watch_selection_normal" unlocated="true" />
+					<image id="lobby_layer_watch_selection_lobby_selection_normal" 
+						phony-path="lobby_layer/menuitems/selection/sprites/lobby_selection_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="use_selection" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 238.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_use_selection_active" unlocated="true" />
+					<image id="lobby_layer_use_selection_lobby_selection_active" 
+						location-in-interfacebuilder="23.0, 300.0"
+						width="275.0" height="59.0"
+						phony-path="lobby_layer/menuitems/selection/sprites/lobby_selection_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_use_selection_normal" unlocated="true" />
+					<image id="lobby_layer_use_selection_lobby_selection_normal" 
+						phony-path="lobby_layer/menuitems/selection/sprites/lobby_selection_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="setting" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="122.5, 48.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_setting_active" unlocated="true" />
+					<image id="lobby_layer_setting_lobby_setting_active" 
+						location-in-interfacebuilder="93.0, 487.0"
+						width="59.0" height="66.0"
+						phony-path="lobby_layer/menuitems/setting/sprites/lobby_setting_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_setting_normal" unlocated="true" />
+					<image id="lobby_layer_setting_lobby_setting_normal" 
+						phony-path="lobby_layer/menuitems/setting/sprites/lobby_setting_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="shop" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="271.5, 536.5" />
+			<z-index value="1" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_shop_active" unlocated="true" />
+					<image id="lobby_layer_shop_lobby_shop_active" 
+						location-in-interfacebuilder="231.0, 14.0"
+						width="81.0" height="35.0"
+						phony-path="lobby_layer/menuitems/shop/sprites/lobby_shop_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_shop_normal" unlocated="true" />
+					<image id="lobby_layer_shop_lobby_shop_normal" 
+						phony-path="lobby_layer/menuitems/shop/sprites/lobby_shop_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+	<resource comment="resource for view">
+		<image id="lobby_layer_resource_lobby_back_disable" 
+			phony-path="lobby_layer/resource/lobby_back_disable.png"  />
+		<image id="lobby_layer_resource_lobby_inapp_disable" 
+			phony-path="lobby_layer/resource/lobby_inapp_disable.png"  />
+		<image id="lobby_layer_resource_lobby_leaderboard_disable" 
+			phony-path="lobby_layer/resource/lobby_leaderboard_disable.png"  />
+		<image id="lobby_layer_resource_lobby_selection_disable" 
+			phony-path="lobby_layer/resource/lobby_selection_disable.png"  />
+		<image id="lobby_layer_resource_lobby_setting_disable" 
+			phony-path="lobby_layer/resource/lobby_setting_disable.png"  />
+		<image id="lobby_layer_resource_lobby_shop_disable" 
+			phony-path="lobby_layer/resource/lobby_shop_disable.png"  />
+	</resource>
+</view>

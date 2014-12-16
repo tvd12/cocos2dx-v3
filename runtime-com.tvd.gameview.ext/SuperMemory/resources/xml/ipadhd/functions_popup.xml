@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="FunctionsPopupView" prefix="popup_functions" type="popup" exitable="false" 
+		super="PopUpLayerhaha" background-name="default" size="1024.0, 768.0"
+		template-name="Common extend table"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="functions_popup" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Downloads/Functions/functions_popup" />
+	<images-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/ipadhd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/screenshots/ipadhd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Wireframing/WireframingScreen/ipadhd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/proj.android/res/layout/ipadhd" />
+	<class-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/View/Popup" />
+	<background-image id="common_popup_background" 
+		location-in-interfacebuilder="10.0, 10.0"
+		phony-path="common/popup_background.png"  />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="func" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="functions_popup_func" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="22.0" height="20.0"
+				phony-path="functions_popup/sprites/func.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="func_avata" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="functions_popup_func_avata" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="45.0" height="45.0"
+				phony-path="functions_popup/sprites/func_avata.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="func_date" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="functions_popup_func_date" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="22.0" height="20.0"
+				phony-path="functions_popup/sprites/func_date.png"  />
+		</sprite>
+	</sprites>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="exit" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="func_exit_active" unlocated="true" />
+					<image id="functions_popup_exit_func_exit_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="40.0" height="40.0"
+						phony-path="functions_popup/menuitems/exit/sprites/func_exit_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="func_exit_normal" unlocated="true" />
+					<image id="functions_popup_exit_func_exit_normal" 
+						phony-path="functions_popup/menuitems/exit/sprites/func_exit_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="facebook" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="func_facebook_active" unlocated="true" />
+					<image id="functions_popup_facebook_func_facebook_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="30.0" height="30.0"
+						phony-path="functions_popup/menuitems/facebook/sprites/func_facebook_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="func_facebook_normal" unlocated="true" />
+					<image id="functions_popup_facebook_func_facebook_normal" 
+						phony-path="functions_popup/menuitems/facebook/sprites/func_facebook_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="shop" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="func_shop_active" unlocated="true" />
+					<image id="functions_popup_shop_func_shop_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="40.0" height="40.0"
+						phony-path="functions_popup/menuitems/shop/sprites/func_shop_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="func_shop_normal" unlocated="true" />
+					<image id="functions_popup_shop_func_shop_normal" 
+						phony-path="functions_popup/menuitems/shop/sprites/func_shop_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+</view>

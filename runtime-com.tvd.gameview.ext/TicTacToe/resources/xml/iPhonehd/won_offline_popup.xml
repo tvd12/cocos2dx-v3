@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="WonOfflinePopup" prefix="popup_won_offline" type="popup" exitable="true" 
+		super="PopupLayer" background-name="default" size="261.0, 261.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="won_offline_popup" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Desktop/Dialog/won_offline_popup" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPhonehd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPhonehd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPhonehd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPhonehd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Popup/Dialog" />
+	<background-image id="won_offline_popup_background_won_offline_bg" 
+		location-in-interfacebuilder="30.0, 153.0"
+		width="261.0" height="261.0"
+		phony-path="won_offline_popup/background/won_offline_bg.png"  />
+	<exit-image position="0.0, 0.0" location-in-interfacebuilder="100.0, 100.0" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="won_offline_player" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="130.5, 191.5" />
+			<z-index value="0" />
+			<image id="won_offline_player" 
+				location-in-interfacebuilder="132.0, 194.0"
+				width="57.0" height="57.0"
+				phony-path="main_game_layer/resource/main_symbol_x.png"  />
+		</sprite>
+	</sprites>
+	<labels array="false" comment="create group of labels">
+		<label visible="true" comment="">
+			<text value="You win!" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="notify" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="130.0, 143.0" />
+			<location-in-interfacebuilder value="112.0, 259.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="GOOD LUCK NEXT TIME" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="255" green="255" blue="255" alpha="255" />
+			<font-size value="13.0" />
+			<position-name value="finish_title" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="130.0, 39.5" />
+			<location-in-interfacebuilder value="78.0, 366.0" />
+			<z-index value="0" />
+		</label>
+	</labels>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="finish" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="130.5, 39.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="won_offline_finish_active" unlocated="true" />
+					<image id="won_offline_popup_finish_won_offline_finish_active" 
+						location-in-interfacebuilder="72.0, 352.0"
+						width="177.0" height="45.0"
+						phony-path="won_offline_popup/menuitems/finish/sprites/won_offline_finish_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="won_offline_finish_normal" unlocated="true" />
+					<image id="won_offline_popup_finish_won_offline_finish_normal" 
+						phony-path="won_offline_popup/menuitems/finish/sprites/won_offline_finish_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+	<resource comment="resource for view">
+		<image id="won_offline_popup_resource_won_offline_finish_disable" 
+			phony-path="won_offline_popup/resource/won_offline_finish_disable.png"  />
+	</resource>
+</view>

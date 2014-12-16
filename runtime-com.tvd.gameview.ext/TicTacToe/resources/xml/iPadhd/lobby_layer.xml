@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="LobbyLayer" prefix="layer_lobby" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 480.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="lobby_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Desktop/Multiplayer/lobby_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPadhd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPadhd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPadhd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPadhd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="lobby_avatar_backend" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_avatar_backend" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="79.0" height="79.0"
+				phony-path="lobby_layer/sprites/lobby_avatar_backend.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_avatar_frontend" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_avatar_frontend" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="79.0" height="79.0"
+				phony-path="lobby_layer/sprites/lobby_avatar_frontend.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_header" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_header" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="320.0" height="73.0"
+				phony-path="lobby_layer/sprites/lobby_header.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_icon_coin" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_icon_coin" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="60.0" height="60.0"
+				phony-path="lobby_layer/sprites/lobby_icon_coin.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_icon_facebook" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_icon_facebook" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="60.0" height="60.0"
+				phony-path="lobby_layer/sprites/lobby_icon_facebook.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_icon_time" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_icon_time" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="22.0" height="21.0"
+				phony-path="lobby_layer/sprites/lobby_icon_time.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="lobby_icon_video" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_lobby_icon_video" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="60.0" height="60.0"
+				phony-path="lobby_layer/sprites/lobby_icon_video.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="user_flag" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="lobby_layer_user_flag" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="15.0" height="10.0"
+				phony-path="lobby_layer/sprites/user_flag.png"  />
+		</sprite>
+	</sprites>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="back" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_back_active" unlocated="true" />
+					<image id="lobby_layer_back_lobby_back_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="59.0" height="66.0"
+						phony-path="lobby_layer/menuitems/back/sprites/lobby_back_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_back_normal" unlocated="true" />
+					<image id="lobby_layer_back_lobby_back_normal" 
+						phony-path="lobby_layer/menuitems/back/sprites/lobby_back_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="inapp" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_inapp_active" unlocated="true" />
+					<image id="lobby_layer_inapp_lobby_inapp_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="59.0" height="66.0"
+						phony-path="lobby_layer/menuitems/inapp/sprites/lobby_inapp_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_inapp_normal" unlocated="true" />
+					<image id="lobby_layer_inapp_lobby_inapp_normal" 
+						phony-path="lobby_layer/menuitems/inapp/sprites/lobby_inapp_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="leaderboard" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_leaderboard_active" unlocated="true" />
+					<image id="lobby_layer_leaderboard_lobby_leaderboard_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="59.0" height="66.0"
+						phony-path="lobby_layer/menuitems/leaderboard/sprites/lobby_leaderboard_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_leaderboard_normal" unlocated="true" />
+					<image id="lobby_layer_leaderboard_lobby_leaderboard_normal" 
+						phony-path="lobby_layer/menuitems/leaderboard/sprites/lobby_leaderboard_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="selection" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_selection_active" unlocated="true" />
+					<image id="lobby_layer_selection_lobby_selection_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="275.0" height="59.0"
+						phony-path="lobby_layer/menuitems/selection/sprites/lobby_selection_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_selection_normal" unlocated="true" />
+					<image id="lobby_layer_selection_lobby_selection_normal" 
+						phony-path="lobby_layer/menuitems/selection/sprites/lobby_selection_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="setting" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="lobby_setting_active" unlocated="true" />
+					<image id="lobby_layer_setting_lobby_setting_active" 
+						location-in-interfacebuilder="10.0, 10.0"
+						width="59.0" height="66.0"
+						phony-path="lobby_layer/menuitems/setting/sprites/lobby_setting_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="lobby_setting_normal" unlocated="true" />
+					<image id="lobby_layer_setting_lobby_setting_normal" 
+						phony-path="lobby_layer/menuitems/setting/sprites/lobby_setting_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="shop" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="lobby_shop_active.png" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="lobby_shop_normal.png" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="0.0, 0.0" />
+			<z-index value="0" />
+		</menuitem>
+	</menuitems>
+	<resource comment="resource for view">
+		<image id="lobby_layer_resource_lobby_back_disable" 
+			phony-path="lobby_layer/resource/lobby_back_disable.png"  />
+		<image id="lobby_layer_resource_lobby_inapp_disable" 
+			phony-path="lobby_layer/resource/lobby_inapp_disable.png"  />
+		<image id="lobby_layer_resource_lobby_leaderboard_disable" 
+			phony-path="lobby_layer/resource/lobby_leaderboard_disable.png"  />
+		<image id="lobby_layer_resource_lobby_selection_disable" 
+			phony-path="lobby_layer/resource/lobby_selection_disable.png"  />
+		<image id="lobby_layer_resource_lobby_setting_disable" 
+			phony-path="lobby_layer/resource/lobby_setting_disable.png"  />
+		<image id="lobby_layer_resource_lobby_shop_disable" 
+			phony-path="lobby_layer/resource/lobby_shop_disable.png"  />
+	</resource>
+</view>

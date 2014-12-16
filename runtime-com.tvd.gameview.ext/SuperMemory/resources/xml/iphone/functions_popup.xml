@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="FunctionsPopupView" prefix="popup_functions" type="popup" exitable="false" 
+		super="PopupLayer" background-name="default" size="288.0, 408.0"
+		template-name="Common"
+		exported="true"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="functions_popup" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Downloads/Functions/functions_popup" />
+	<images-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/iphone" />
+	<xibcontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/screenshots/iphone" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Wireframing/WireframingScreen/iphone" />
+	<androidcontainer-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/proj.android/res/layout/iphone" />
+	<class-path value="/Volumes/DATA/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/View/Popup" />
+	<background-image id="common_popup_background" 
+		location-in-interfacebuilder="10.0, 10.0"
+		width="288.0" height="408.0"
+		phony-path="common/popup_background.png"  />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="func" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="100.0, 323.0" />
+			<z-index value="0" />
+			<image id="functions_popup_func" 
+				location-in-interfacebuilder="99.0, 85.0"
+				width="22.0" height="20.0"
+				phony-path="functions_popup/sprites/func.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="func_avata" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="66.5, 310.5" />
+			<z-index value="0" />
+			<image id="functions_popup_func_avata" 
+				location-in-interfacebuilder="54.0, 85.0"
+				width="45.0" height="45.0"
+				phony-path="functions_popup/sprites/func_avata.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="func_date" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="100.0, 298.0" />
+			<z-index value="0" />
+			<image id="functions_popup_func_date" 
+				location-in-interfacebuilder="99.0, 110.0"
+				width="22.0" height="20.0"
+				phony-path="functions_popup/sprites/func_date.png"  />
+		</sprite>
+	</sprites>
+	<labels array="false" comment="create group of labels">
+		<label visible="true" comment="">
+			<text value="Functions" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="title" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.5, 390.5" />
+			<location-in-interfacebuilder value="22.0, 19.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="+5" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="live_plus" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="219.5, 390.5" />
+			<location-in-interfacebuilder value="219.0, 19.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Ta Van Dung" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="full_name" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="161.0, 323.5" />
+			<location-in-interfacebuilder value="124.0, 86.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Unknown" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="birthday" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="144.0, 298.5" />
+			<location-in-interfacebuilder value="124.0, 111.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="0.0.15" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="time" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="144.0, 232.0" />
+			<location-in-interfacebuilder value="118.0, 174.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="The best result:" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="the_best" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="115.0, 170.5" />
+			<location-in-interfacebuilder value="57.0, 239.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="12s" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="the_best_time" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="182.0, 170.5" />
+			<location-in-interfacebuilder value="177.0, 239.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="15 click" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="the_best_click" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="201.0, 145.5" />
+			<location-in-interfacebuilder value="177.0, 264.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Login with" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="login_with" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="123.5, 101.5" />
+			<location-in-interfacebuilder value="91.0, 308.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="+5 live free" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="live_free" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="132.0, 76.5" />
+			<location-in-interfacebuilder value="91.0, 333.0" />
+			<z-index value="0" />
+		</label>
+	</labels>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="exit" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="144.0, 33.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="func_exit_active" unlocated="true" />
+					<image id="functions_popup_exit_func_exit_active" 
+						location-in-interfacebuilder="134.0, 365.0"
+						width="40.0" height="40.0"
+						phony-path="functions_popup/menuitems/exit/sprites/func_exit_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="func_exit_normal" unlocated="true" />
+					<image id="functions_popup_exit_func_exit_normal" 
+						phony-path="functions_popup/menuitems/exit/sprites/func_exit_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="facebook" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="182.0, 97.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="func_facebook_active" unlocated="true" />
+					<image id="functions_popup_facebook_func_facebook_active" 
+						location-in-interfacebuilder="177.0, 306.0"
+						width="30.0" height="30.0"
+						phony-path="functions_popup/menuitems/facebook/sprites/func_facebook_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="func_facebook_normal" unlocated="true" />
+					<image id="functions_popup_facebook_func_facebook_normal" 
+						phony-path="functions_popup/menuitems/facebook/sprites/func_facebook_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="shop" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="253.0, 390.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="func_shop_active" unlocated="true" />
+					<image id="functions_popup_shop_func_shop_active" 
+						location-in-interfacebuilder="243.0, 8.0"
+						width="40.0" height="40.0"
+						phony-path="functions_popup/menuitems/shop/sprites/func_shop_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="func_shop_normal" unlocated="true" />
+					<image id="functions_popup_shop_func_shop_normal" 
+						phony-path="functions_popup/menuitems/shop/sprites/func_shop_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+</view>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="MainGameOnlineLayer" prefix="layer_main_game_online" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 568.0"
+		template-name="Common"
+		exported="true"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="main_game_online_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Downloads/Skype/Online_Ingame/main_game_online_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPhonehd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPhonehd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPhonehd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPhonehd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+	<background-image id="main_game_online_layer_background_mgo_bg" 
+		location-in-interfacebuilder="0.0, 0.0"
+		width="320.0" height="568.0"
+		phony-path="main_game_online_layer/background/mgo_bg.png"  />
+
+	<sprites array="true" length="2" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="main_game_online_layer_avatar_default" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="33.0, 536.0" />
+			<z-index value="0" />
+			<image id="main_game_online_layer_avatar_default" 
+				location-in-interfacebuilder="9.0, 8.0"
+				width="48.0" height="48.0"
+				phony-path="profile_popup/sprites/profile_avatar_default.png"  />
+		</sprite>
+		<next visible="true" comment="">
+			<position value="288.0, 536.0" />
+			<image id="main_game_online_layer_avatar_default_1" 
+				location-in-interfacebuilder="264.0, 8.0"
+				width="48.0" height="48.0" />
+		</next>
+	</sprites>
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="board" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 243.0" />
+			<z-index value="0" />
+			<image id="main_game_online_layer_board" 
+				location-in-interfacebuilder="0.0, 165.0"
+				width="320.0" height="320.0"
+				phony-path="main_game_layer/resource/board.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="mgo_o_small" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="76.0, 546.0" />
+			<z-index value="0" />
+			<image id="main_game_online_layer_mgo_o_small" 
+				location-in-interfacebuilder="60.0, 6.0"
+				width="32.0" height="32.0"
+				phony-path="main_game_online_layer/sprites/mgo_o_small.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="mgo_x_small" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="246.0, 546.0" />
+			<z-index value="0" />
+			<image id="main_game_online_layer_mgo_x_small" 
+				location-in-interfacebuilder="230.0, 6.0"
+				width="32.0" height="32.0"
+				phony-path="main_game_online_layer/sprites/mgo_x_small.png"  />
+		</sprite>
+	</sprites>
+	<sprites array="true" length="2" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="timer_bg" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="60.0, 485.0" />
+			<z-index value="0" />
+			<image id="main_game_online_layer_timer_bg_mgo_timer_bg" 
+				location-in-interfacebuilder="9.0, 77.0"
+				width="102.0" height="12.0"
+				phony-path="main_game_online_layer/sprites/timer_bg/mgo_timer_bg.png"  />
+			<progressbar template-name="CCProgressTimer" visible="true" comment="">
+				<type value="kCCProgressTimerTypeBar" />
+				<mid-point value="0.0, 0.0" />
+				<bar-change-rate value="1.0, 0.0" />
+				<percent value="30.0" />
+				<position-name value="mgo_timer_over" unlocated="true" />
+				<anchorpoint value="0.0, 0.0" />
+				<sprite visible="true" comment="">
+					<position-name value="mgo_timer_over" unlocated="true" />
+					<image id="main_game_online_layer_timer_bg_progressbar_mgo_timer_over" 
+						phony-path="main_game_online_layer/sprites/timer_bg/progressbar/mgo_timer_over.png"  />
+				</sprite>
+			</progressbar>
+		</sprite>
+		<next visible="true" comment="">
+			<position value="261.0, 485.0" />
+			<image id="timer_bg_1" 
+				location-in-interfacebuilder="210.0, 77.0"
+				width="102.0" height="12.0" />
+		</next>
+	</sprites>
+	<labels array="false" comment="create group of labels">
+		<label visible="true" comment="">
+			<text value="VS" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="24.0" />
+			<position-name value="vs" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 536.5" />
+			<location-in-interfacebuilder value="144.0, 20.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Ta Van Dung" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="15.0" />
+			<position-name value="user_1_fullname" />
+			<anchorpoint value="0.0, 0.5" />
+			<position value="9.0, 501.5" />
+			<location-in-interfacebuilder value="9.0, 59.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="Luu Hai Duong" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="15.0" />
+			<position-name value="user_2_fullname" />
+			<anchorpoint value="1.0, 0.5" />
+			<position value="312.0, 501.5" />
+			<location-in-interfacebuilder value="214.0, 59.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="5s" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="user_1_time" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="123.5, 487.0" />
+			<location-in-interfacebuilder value="114.0, 71.0" />
+			<z-index value="0" />
+		</label>
+		<label visible="true" comment="">
+			<text value="5s" />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="user_2_time" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="200.0, 487.5" />
+			<location-in-interfacebuilder value="189.0, 72.0" />
+			<z-index value="0" />
+		</label>
+	</labels>
+</view>
