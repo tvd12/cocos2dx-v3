@@ -1,8 +1,0 @@
-#
-# create templates
-#
-
-#vector template
-{tab}vector<{type}> {name};
-
-#end

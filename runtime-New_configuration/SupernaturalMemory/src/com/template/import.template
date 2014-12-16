@@ -1,8 +1,0 @@
-#
-# create templates
-#
-
-#Import template
-#include "{class_name}.h"
-
-#end
