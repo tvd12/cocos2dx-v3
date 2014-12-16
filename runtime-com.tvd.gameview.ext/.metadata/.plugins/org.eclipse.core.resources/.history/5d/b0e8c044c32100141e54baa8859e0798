@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://www.tvd.com/tools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class-name="VipclubPopupView" comment="" prefix="pop_vipclub" super="default" type="popup" xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view.xsd">
+    <position-name>default</position-name>
+    <position>default</position>
+    <define-path>/Volumes/Working/GitHub/workspace-test/GameView/Classes/Utils/Defines</define-path>
+    <parameters-path>/Volumes/Working/GitHub/workspace-test/GameView/Classes/Utils/GameParams</parameters-path>
+    <images-inputpath>/Users/apple/Downloads/Skype/vipclub_popup</images-inputpath>
+    <images-path>/Volumes/Working/GitHub/workspace-test/GameView/Resources</images-path>
+    <xibcontainer-path>/Volumes/Working/GitHub/workspace-test/GameView/Resources/screenshots</xibcontainer-path>
+    <class-path>/Volumes/Working/GitHub/workspace-test/GameView/Classes</class-path>
+    <screencontainer-path>/Volumes/Working/GitHub/workspace-test/GameView/Wireframing/WireframingScreen</screencontainer-path>
+    <sprites>
+    	<sprite>
+    		
+    	</sprite>
+    </sprites>
+</view>

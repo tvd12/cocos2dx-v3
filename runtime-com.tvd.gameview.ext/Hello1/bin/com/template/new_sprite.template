@@ -1,0 +1,39 @@
+#
+# create templates
+#
+
+#CCSprite template
+{tab}{var_name} = //{n}{tab}{tab}CCSprite::create(D::id.{image_name}.c_str());
+{tab}{var_name}->setPosition(GPARAMS().{position_name});
+{tab}{parent_name}->addChild({var_name}, {z-index});
+
+#end
+
+#CCSprite in function template
+{tab}CCSprite* {var_name} = //{n}{tab}{tab}CCSprite::create(D::id.{image_name}.c_str());
+{tab}{var_name}->setPosition(GPARAMS().{position_name});
+{tab}{parent_name}->addChild({var_name}, {z-index});
+
+#end
+
+#CCSprite non-add template
+{tab}{var_name} = //{n}{tab}{tab}CCSprite::create(D::id.{image_name}.c_str());
+{tab}{var_name}->setPosition(GPARAMS().{position_name});
+
+#end
+
+#CCSprite in function unlocated template
+{tab}CCSprite* {var_name} = //{n}{tab}{tab}CCSprite::create(D::id.{image_name}.c_str());
+
+#end
+
+#CCSprite non-add unlocated template
+{tab}{var_name} = //{n}{tab}{tab}CCSprite::create(D::id.{image_name}.c_str());
+
+#end
+
+#CCSprite unlocated template
+{tab}{var_name} = //{n}{tab}{tab}CCSprite::create(D::id.{image_name}.c_str());
+
+#end
+

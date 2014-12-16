@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Xin Chào</string>
+    
+    <!--VIP Club-->
+    <string name="BRONZE CARD">ĐỒNG</string>
+    <string name="SILVER CARD">BẠC</string>
+    <string name="GOLD CARD">VÀNG</string>
+    <string name="PLATINUM CARD">BẠCH KIM</string>
+    <string name="DIAMOND CARD">KIM CƯƠNG</string>
+
+</resources>

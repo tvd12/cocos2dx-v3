@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<!--create a view-->
+	<extension
+         point="org.eclipse.ui.views">
+	  	<category
+            	name="Game view"
+            id="com.tvd.gameview.ext.views">
+      	</category>
+      	<view
+            category="com.tvd.gameview.ext.views"
+            class="com.tvd.gameview.ext.views.BuildingTreeViewer"
+            icon="icons/4_viewer.gif"
+            id="com.tvd.gameview.ext.views.BuildingTreeViewer"
+            name="Building list"
+            restorable="true">
+      	</view>	
+    </extension>
+    
+    <!--for sdk files-->
+    <extension
+          point="org.eclipse.ui.editors">
+       <editor
+       		 class="com.tvd.gameview.ext.ui.editors.SdkXMLEditor"
+             default="false"
+             id="com.tvd.gameview.ext.ui.SdkXMLEditor"
+             name="name">
+       </editor>
+    </extension>
+    
+    <extension
+          id="SdkXMLFileBuilder"
+          name="Sdk XML File Builder"
+          point="org.eclipse.core.resources.builders">
+       <builder
+       		hasNature="true">
+       		<run
+               class="com.tvd.gameview.ext.ui.builder.SdkXMLFileBuilder">
+       		</run>
+       </builder>
+    </extension>
+    
+    <extension
+          id="SdkPropertiesFileBuilder"
+          name="Sdk Properties File Builder"
+          point="org.eclipse.core.resources.builders">
+       <builder
+       		hasNature="true">
+       		<run
+               class="com.tvd.gameview.ext.ui.builder.SdkPropertiesFileBuilder">
+       		</run>
+       </builder>
+    </extension>
+    
+    <extension
+    		id="SdkFileNature"
+          	point="org.eclipse.core.resources.natures">
+          <runtime>
+             <run
+                   class="com.tvd.gameview.ext.ui.natures.SdkFileNature">
+             </run>
+          </runtime>
+          <builder id="com.tvd.gameview.ext.SdkPropertiesFileBuilder" />
+          <builder id="com.tvd.gameview.ext.SdkPropertiesFileBuilder" />
+    </extension>
+    
+    <extension
+          id="com.tvd.gameview.ext.ui.KeyValueMarker"
+          point="org.eclipse.core.resources.markers">
+          <persistent value="false" />
+          <super
+                type="org.eclipse.core.resources.problemmarker">
+          </super>
+    </extension>
+    
+    <extension
+          id="com.tvd.gameview.ext.ui.FormatMarker"
+          point="org.eclipse.core.resources.markers">
+          <persistent value="false" />
+          <super
+                type="org.eclipse.core.resources.problemmarker">
+          </super>
+    </extension>
+    
+    <!--create a project -->
+	<extension
+	      	point="org.eclipse.ui.newWizards">
+	    <category
+	          id="com.tvd.gameview.plugin.category.wizards"
+	          name="Gext">
+	    </category>
+	    
+    	<wizard 
+	    	class="com.tvd.gameview.ext.wizards.NewPopupCreationWizard"
+	    	icon="icons/2_view.gif"
+	    	name="Popup view"
+	    	category="com.tvd.gameview.plugin.category.wizards"
+           	id="com.tvd.gameview.ext.wizards.NewPopupCreationWizard">
+           	<description>
+               create new popup wizard
+           	</description>
+           	<selection
+                  class="org.eclipse.core.resources.IResource">
+           	</selection>
+	    </wizard>
+	    
+	    <wizard 
+	    	class="com.tvd.gameview.ext.wizards.NewLayerCreationWizard"
+	    	icon="icons/2_view.gif"
+	    	name="Layer view"
+	    	category="com.tvd.gameview.plugin.category.wizards"
+           	id="com.tvd.gameview.ext.wizards.NewLayerCreationWizard">
+           	<description>
+               create new layer wizard
+           	</description>
+           	<selection
+                  class="org.eclipse.core.resources.IResource">
+           	</selection>
+	    </wizard>
+	    
+	    <wizard 
+	    	class="com.tvd.gameview.ext.wizards.NewSceneCreationWizard"
+	    	icon="icons/2_view.gif"
+	    	name="Scene view"
+	    	category="com.tvd.gameview.plugin.category.wizards"
+           	id="com.tvd.gameview.ext.wizards.NewSceneCreationWizard">
+           	<description>
+               create new scene wizard
+           	</description>
+           	<selection
+                  class="org.eclipse.core.resources.IResource">
+           	</selection>
+	    </wizard>
+	    
+	    <wizard 
+	    	class="com.tvd.gameview.ext.wizards.NewInterfaceBuilderTemplate"
+	    	icon="icons/2_view.gif"
+	    	name="IB template"
+	    	category="com.tvd.gameview.plugin.category.wizards"
+           	id="com.tvd.gameview.ext.wizards.NewInterfaceBuilderTemplate">
+           	<description>
+               create new interface builder template wizard
+           	</description>
+           	<selection
+                  class="org.eclipse.core.resources.IResource">
+           	</selection>
+	    </wizard>
+	    
+	    <wizard
+			id="com.tvd.gameview.ext.wizards.GameViewProjectCreationWizard"
+			name="Game view project"
+			class="com.tvd.gameview.ext.wizards.GameViewProjectCreationWizard"
+			category="com.tvd.gameview.plugin.category.wizards"
+			project="true"
+			finalPerspective="org.eclipse.jdt.ui.JavaPerspective"
+			icon="icons/1_project.gif">
+			<description>Game view project</description>
+    	</wizard>
+	</extension>
+	
+	 <extension
+	       point="org.eclipse.ui.views">
+	    <view
+	          class="org.eclipse.ui.navigator.CommonNavigator"
+	          icon="icons/4_viewer.gif"
+	          id="com.tvd.gameview.ext.navigator"
+	          name="TVD Common Navigator">
+	    </view>
+	 </extension>
+	 <extension
+	       point="org.eclipse.ui.navigator.viewer">
+	    <viewerActionBinding
+	          viewerId="com.tvd.gameview.ext.navigator">
+	       <includes>
+	          <actionExtension
+	                pattern="org.eclipse.ui.navigator.resources.*">
+	          </actionExtension>
+	       </includes>
+	    </viewerActionBinding>
+	    <viewerContentBinding
+	          viewerId="com.tvd.gameview.ext.navigator">
+	       <includes>
+	          <contentExtension
+	                pattern="org.eclipse.ui.navigator.resourceContent">
+	          </contentExtension>
+	          <contentExtension
+	                pattern="org.eclipse.ui.navigator.resources.filters.*">
+	          </contentExtension>
+	          <contentExtension
+	                pattern="org.eclipse.ui.navigator.resources.linkHelper">
+	          </contentExtension>
+	          <contentExtension
+	                pattern="org.eclipse.ui.navigator.resources.workingSets">
+	          </contentExtension>
+	       </includes>
+	    </viewerContentBinding>
+	 </extension>
+	 <extension
+	       point="org.eclipse.ui.perspectiveExtensions">
+	    <perspectiveExtension
+	          targetID="org.eclipse.ui.resourcePerspective">
+	       <view
+	             id="com.tvd.gameview.ext.navigator"
+	             ratio="0.5"
+	             relationship="stack"
+	             relative="org.eclipse.ui.navigator.ProjectExplorer">
+	       </view>
+	    </perspectiveExtension>
+	 </extension>
+
+	<!-- Create Game View preference page -->
+	<extension
+	      point="org.eclipse.ui.preferencePages">
+	    <page
+	          class="com.tvd.gameview.ext.preference.GameViewPreferencePage"
+	          id="com.tvd.gameview.ext.preference.GameViewPreferencePage"
+	          name="Game View">
+	          <keywordReference
+                 id="com.tvd.gameview.ext.preference.keywords">
+	          </keywordReference>
+	    </page>
+	</extension>
+	<extension
+	      point="org.eclipse.ui.preferencePages">
+	    <page
+	          class="com.tvd.gameview.ext.preference.GameViewPreferencePage"
+	          id="com.tvd.gameview.ext.preference.GameViewPreferencePage"
+	          category="com.tvd.gameview.ext.preference.GameViewPreferencePage"
+	          name="Sdk">
+	          <keywordReference
+                 id="com.tvd.gameview.ext.preference.keywords">
+	          </keywordReference>
+	    </page>
+	</extension>
+	<extension
+	      	point="org.eclipse.ui.keywords">
+	      <keyword
+             id="com.tvd.gameview.ext.preference.keywords"
+             label="game view">
+	      </keyword>
+	</extension>
+	
+	<!--Properties viewer-->
+	<extension
+	      point="org.eclipse.core.runtime.adapters">
+	    <factory
+	          adaptableType="com.tvd.gameview.ext.views.BuildingListElement"
+	          class="com.tvd.gameview.ext.ui.internal.TreeViewAdapterFactory">
+	       <adapter
+	             type="org.eclipse.ui.views.properties.IPropertySource">
+	       </adapter>
+	    </factory>
+	</extension>
+	
+	<!--Contribute to package explorer-->
+	<extension
+	      point="org.eclipse.ui.menus">
+		<menuContribution allPopups="false"
+        		locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+        	<command
+               commandId="com.tvd.gameview.ext.ui.AddPopupView"
+               icon="icons/2_view.gif"
+               mnemonic="M1+P"
+               label="Popup View">
+        	</command>
+		</menuContribution>
+		<menuContribution allPopups="false"
+        		locationURI="toolbar:com.tvd.gameview.ext.views.BuildingListToolbar">
+        	<command
+               commandId="com.tvd.gameview.ext.ui.RemoveTreeViewElement"
+               label="remove"
+               style="push">
+        	</command>
+		</menuContribution>
+	</extension>
+	<extension
+	      point="org.eclipse.ui.commands">
+	     <command name="Popup View"
+            id="com.tvd.gameview.ext.ui.AddPopupView"
+            defaultHandler="com.tvd.gameview.ext.ui.AddPopupView" />
+         <command name="remove"
+            id="com.tvd.gameview.ext.ui.RemoveTreeViewElement"
+            defaultHandler="com.tvd.gameview.ext.ui.AddPopupView" />
+	</extension>
+</plugin>

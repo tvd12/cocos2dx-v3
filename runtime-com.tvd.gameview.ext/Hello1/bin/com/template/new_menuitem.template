@@ -1,0 +1,24 @@
+#
+# create templates
+#
+
+
+#CCMenuItemSprite template
+{tab}{var_name} = CCMenuItemSprite::create({normal_sprite},
+						{selected_sprite},
+						this,
+						menu_selector({class_name}::{callback_function}));
+{tab}{var_name}->setPosition(GPARAMS().{position_name});
+{tab}{parent_name}->addChild({var_name}, {z-index}, {tag_name});
+
+#end
+
+#CCMenuItemSprite in function template
+{tab}CCMenuItem* {var_name} = CCMenuItemSprite::create({normal_sprite},
+						{selected_sprite},
+						this,
+						menu_selector({class_name}::{callback_function}));
+{tab}{var_name}->setPosition(GPARAMS().{position_name});
+{tab}{parent_name}->addChild({var_name}, {z-index}, {tag_name});
+
+#end

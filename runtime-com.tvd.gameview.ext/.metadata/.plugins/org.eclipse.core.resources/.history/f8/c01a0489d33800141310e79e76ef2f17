@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="CrazyShoppingPopupView" prefix="popup_crazy_shopping" type="popup" exitable="true" 
+		super="PopUpLayer" background-name="default" size="296.0, 447.0" 
+		template-name="Common extend table"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="crazy_shopping_popup" />
+	<position value="default" />
+	<define-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/Defines" />
+	<parameters-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/GameParams" />
+	<images-inputpath value="/Users/apple/Downloads/crazy_shopping_popup" />
+	<images-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/demohd" />
+	<xibcontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/screenshots/demohd" used="true" />
+	<screencontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Wireframing/WireframingScreen/demohd" />
+	<androidcontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/proj.android/res/layout/demohd" />
+	<class-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/UI/PopUp" />
+	<background-image id="pop_common_bg" 
+		location-in-interfacebuilder="10.0, 10.0"
+		width="296.0" height="447.0"
+		phony-path="pop_common_bg.png"  />
+	<exit-image position="148.0, 30.0" location-in-interfacebuilder="136.0, 405.0" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="czs_header" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="148.5, 414.5" />
+			<z-index value="0" />
+			<image id="crazy_shopping_popup_czs_header" 
+				location-in-interfacebuilder="20.0, 20.0"
+				width="277.0" height="45.0"
+				phony-path="crazy_shopping_popup/sprites/czs_header.png"  />
+		</sprite>
+	</sprites>
+	<tables array="false" comment="create group of tables">
+		<table rows="3" columns="2" visible="true" 
+				comment="">
+			<position-name value="shopping" />
+			<anchorpoint value="0.0, 0.0" />
+			<position value="16.0, 65.0" />
+			<size value="264.0, 319.0" />
+			<z-index value="0" />
+			<image id="crazy_shopping_popup_shopping_background" 
+				location-in-interfacebuilder="26.0, 73.0"
+				width="264.0" height="319.0" />
+			<cell class-name="CrazyShoppingPopupCellView" prefix="cell_crazy_shopping_popup"
+					super="ITableCellView" visible="true" 
+					comment="">
+				<position value="132.0, 255.0" />
+				<size value="264.0, 128.0" />
+				<image id="crazy_shopping_popup_shopping_cell_background" 
+					location-in-interfacebuilder="26.0, 73.0"
+					width="264.0" height="128.0" />
+				<menus array="true" comment="create group of menus">
+					<menu visible="true" comment="">
+						<position-name value="shopping_bg" />
+						<anchorpoint value="0.5, 0.5" />
+						<position value="0.0, 0.0" />
+						<z-index value="0" />
+						<menuitems array="false" comment="create group of menuitems">
+							<menuitem generate-class="true" 
+								visible="true" comment="">
+								<position-name value="package" />
+								<anchorpoint value="0.5, 0.5" />
+								<position value="64.0, 68.0" />
+								<z-index value="0" />
+								<sprites array="false" comment="create group of sprites">
+									<sprite visible="true" comment="">
+										<position-name value="blue_active" unlocated="true" />
+										<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_active_czs_bg_blue_active" 
+											location-in-interfacebuilder="26.0, 73.0"
+											width="128.0" height="120.0"
+											phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_active/czs_bg_blue_active.png"  />
+										<sprites array="false" comment="create group of sprites">
+											<sprite visible="true" comment="">
+												<position-name value="czs_chip_icon_active" />
+												<anchorpoint value="0.5, 0.5" />
+												<position value="19.5, 28.5" />
+												<z-index value="0" />
+												<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_active_czs_chip_icon" 
+													location-in-interfacebuilder="39.0, 158.0"
+													width="13.0" height="13.0"
+													phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_active/sprites/czs_chip_icon.png"  />
+											</sprite>
+											<sprite visible="true" comment="">
+												<position-name value="czs_main_icon_active" />
+												<anchorpoint value="0.5, 0.5" />
+												<position value="64.0, 65.0" />
+												<z-index value="0" />
+												<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_active_czs_main_icon_1" 
+													location-in-interfacebuilder="69.0, 106.0"
+													width="42.0" height="44.0"
+													phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_active/sprites/czs_main_icon_1.png"  />
+											</sprite>
+										</sprites>
+										<menus array="false" comment="create group of menus">
+											<menu visible="true" comment="">
+												<position-name value="buy_active" />
+												<anchorpoint value="0.5, 0.5" />
+												<position value="0.0, 0.0" />
+												<z-index value="0" />
+												<menuitems array="false" comment="create group of menuitems">
+													<menuitem visible="true" comment="">
+														<position-name value="child_active" />
+														<anchorpoint value="0.5, 0.5" />
+														<position value="97.0, 22.5" />
+														<z-index value="0" />
+														<sprites array="false" comment="create group of sprites">
+															<sprite visible="true" comment="">
+																<position-name value="czs_buy_active" unlocated="true" />
+																<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_active_buy_child_czs_buy_active" 
+																	location-in-interfacebuilder="99.0, 158.0"
+																	width="48.0" height="25.0"
+																	phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_active/menus/buy/menuitems/child/sprites/czs_buy_active.png"  />
+															</sprite>
+															<sprite visible="true" comment="">
+																<position-name value="czs_buy_normal" unlocated="true" />
+																<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_active_buy_child_czs_buy_normal" 
+																	phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_active/menus/buy/menuitems/child/sprites/czs_buy_normal.png"  />
+															</sprite>
+														</sprites>
+													</menuitem>
+												</menuitems>
+											</menu>
+										</menus>
+									</sprite>
+									<sprite visible="true" comment="">
+										<position-name value="blue_normal" unlocated="true" />
+										<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_normal_czs_bg_blue_normal" 
+											phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_normal/czs_bg_blue_normal.png"  />
+										<sprites array="false" comment="create group of sprites">
+											<sprite visible="true" comment="">
+												<position-name value="czs_chip_icon" />
+												<anchorpoint value="0.5, 0.5" />
+												<position value="19.5, 28.5" />
+												<z-index value="0" />
+												<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_normal_czs_chip_icon" 
+													location-in-interfacebuilder="39.0, 158.0"
+													width="13.0" height="13.0"
+													phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_normal/sprites/czs_chip_icon.png"  />
+											</sprite>
+											<sprite visible="true" comment="">
+												<position-name value="czs_main_icon_1" />
+												<anchorpoint value="0.5, 0.5" />
+												<position value="64.0, 65.0" />
+												<z-index value="0" />
+												<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_normal_czs_main_icon_1" 
+													location-in-interfacebuilder="69.0, 106.0"
+													width="42.0" height="44.0"
+													phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_normal/sprites/czs_main_icon_1.png"  />
+											</sprite>
+										</sprites>
+										<menus array="false" comment="create group of menus">
+											<menu visible="true" comment="">
+												<position-name value="buy" />
+												<anchorpoint value="0.5, 0.5" />
+												<position value="0.0, 0.0" />
+												<z-index value="0" />
+												<menuitems array="false" comment="create group of menuitems">
+													<menuitem visible="true" comment="">
+														<position-name value="child" />
+														<anchorpoint value="0.5, 0.5" />
+														<position value="97.0, 22.5" />
+														<z-index value="0" />
+														<sprites array="false" comment="create group of sprites">
+															<sprite visible="true" comment="">
+																<position-name value="czs_buy_active" unlocated="true" />
+																<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_normal_buy_child_czs_buy_active" 
+																	location-in-interfacebuilder="99.0, 158.0"
+																	width="48.0" height="25.0"
+																	phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_normal/menus/buy/menuitems/child/sprites/czs_buy_active.png"  />
+															</sprite>
+															<sprite visible="true" comment="">
+																<position-name value="czs_buy_normal" unlocated="true" />
+																<image id="crazy_shopping_popup_shopping_cell_shopping_bg_package_blue_normal_buy_child_czs_buy_normal" 
+																	phony-path="crazy_shopping_popup/tables/shopping/cell/menus/shopping_bg/menuitems/package/sprites/blue_normal/menus/buy/menuitems/child/sprites/czs_buy_normal.png"  />
+															</sprite>
+														</sprites>
+													</menuitem>
+												</menuitems>
+											</menu>
+										</menus>
+									</sprite>
+								</sprites>
+							</menuitem>
+						</menuitems>
+					</menu>
+				</menus>
+			</cell>
+
+		</table>
+	</tables>
+	<resource comment="resource for view">
+		<image id="crazy_shopping_popup_resource_czs_main_icon_2" 
+			phony-path="crazy_shopping_popup/resource/czs_main_icon_2.png"  />
+		<image id="crazy_shopping_popup_resource_czs_main_icon_3" 
+			phony-path="crazy_shopping_popup/resource/czs_main_icon_3.png"  />
+		<image id="crazy_shopping_popup_resource_czs_main_icon_4" 
+			phony-path="crazy_shopping_popup/resource/czs_main_icon_4.png"  />
+		<image id="crazy_shopping_popup_resource_czs_main_icon_5" 
+			phony-path="crazy_shopping_popup/resource/czs_main_icon_5.png"  />
+		<image id="crazy_shopping_popup_resource_czs_main_icon_6" 
+			phony-path="crazy_shopping_popup/resource/czs_main_icon_6.png"  />
+		<image id="crazy_shopping_popup_resource_czs_orange_active" 
+			phony-path="crazy_shopping_popup/resource/czs_orange_active.png"  />
+		<image id="crazy_shopping_popup_resource_czs_orange_normal" 
+			phony-path="crazy_shopping_popup/resource/czs_orange_normal.png"  />
+	</resource>
+</view>

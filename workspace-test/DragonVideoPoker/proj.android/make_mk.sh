@@ -1,0 +1,1 @@
+java -jar /Volumes/Data/Android/ADT/android-ndk-r9b/custom-tools/MakeMkFile.jar "../Classes" "jni" "../libs/smartfox" "../libs/eziSocial" ";" "ZLib" "md5main.c"

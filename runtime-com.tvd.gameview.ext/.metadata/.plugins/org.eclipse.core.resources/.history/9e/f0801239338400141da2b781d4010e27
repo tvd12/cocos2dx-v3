@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="TrainingLayer" prefix="layer_training" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 568.0"
+		template-name="Common"
+		exported="flase"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="training_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Desktop/Training/training_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPhonehd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPhonehd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPhonehd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPhonehd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+	<background-image id="training_layer_background_bg_home" 
+		location-in-interfacebuilder="0.0, 0.0"
+		width="320.0" height="568.0"
+		phony-path="home_layer/background/bg_home.png"  />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="training_easy_text" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 399.5" />
+			<z-index value="1" />
+			<image id="training_layer_training_easy_text" 
+				location-in-interfacebuilder="132.0, 155.0"
+				width="56.0" height="27.0"
+				phony-path="training_layer/sprites/training_easy_text.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="training_hard_text" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 197.5" />
+			<z-index value="1" />
+			<image id="training_layer_training_hard_text" 
+				location-in-interfacebuilder="127.0, 357.0"
+				width="67.0" height="27.0"
+				phony-path="training_layer/sprites/training_hard_text.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="tranining_normal_text" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 298.5" />
+			<z-index value="1" />
+			<image id="training_layer_tranining_normal_text" 
+				location-in-interfacebuilder="115.0, 256.0"
+				width="91.0" height="27.0"
+				phony-path="training_layer/sprites/tranining_normal_text.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="home_header" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 518.5" />
+			<z-index value="0" />
+			<image id="training_layer_home_header" 
+				location-in-interfacebuilder="0.0, 0.0"
+				width="320.0" height="99.0"
+				phony-path="home_layer/sprites/home_header.png"  />
+		</sprite>
+	</sprites>
+	<sprites array="true" length="6" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="training_star" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 375.5" />
+			<z-index value="1" />
+			<image id="training_layer_training_star" 
+				location-in-interfacebuilder="149.0, 182.0"
+				width="22.0" height="21.0"
+				phony-path="training_layer/sprites/training_star.png"  />
+		</sprite>
+		<next visible="true" comment="">
+			<position value="143.0, 274.5" />
+			<image id="training_star_1" 
+				location-in-interfacebuilder="132.0, 283.0"
+				width="22.0" height="21.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="174.0, 274.5" />
+			<image id="training_star_2" 
+				location-in-interfacebuilder="163.0, 283.0"
+				width="22.0" height="21.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="130.0, 170.5" />
+			<image id="training_star_3" 
+				location-in-interfacebuilder="119.0, 387.0"
+				width="22.0" height="21.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="160.0, 170.5" />
+			<image id="training_star_4" 
+				location-in-interfacebuilder="149.0, 387.0"
+				width="22.0" height="21.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="190.0, 170.5" />
+			<image id="training_star_5" 
+				location-in-interfacebuilder="179.0, 387.0"
+				width="22.0" height="21.0" />
+		</next>
+	</sprites>
+	<labels array="false" comment="create group of labels">
+		<label visible="true" comment="">
+			<text value="Nguoi di sau se thang, neu ..." />
+			<font name="HelveticaNeue" family="Helvetica Neue" />
+			<font-color red="0" green="0" blue="255" alpha="255" />
+			<font-size value="17.0" />
+			<position-name value="notify" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.5, 76.5" />
+			<location-in-interfacebuilder value="33.0, 483.0" />
+			<z-index value="0" />
+		</label>
+	</labels>
+	<menuitems array="true" length="3" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="deep" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 380.0" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="training_deep_active" unlocated="true" />
+					<image id="training_layer_deep_training_deep_active" 
+						location-in-interfacebuilder="16.0, 141.0"
+						width="288.0" height="94.0"
+						phony-path="training_layer/menuitems/deep/sprites/training_deep_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="training_deep_normal" unlocated="true" />
+					<image id="training_layer_deep_training_deep_normal" 
+						phony-path="training_layer/menuitems/deep/sprites/training_deep_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<next visible="true" comment="">
+			<position value="160.0, 280.0" />
+			<image id="deep_1" 
+				location-in-interfacebuilder="16.0, 241.0"
+				width="288.0" height="94.0" />
+		</next>
+		<next visible="true" comment="">
+			<position value="160.0, 179.0" />
+			<image id="deep_2" 
+				location-in-interfacebuilder="16.0, 342.0"
+				width="288.0" height="94.0" />
+		</next>
+	</menuitems>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="back" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="18.0, 541.5" />
+			<z-index value="1" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="training_back_normal" unlocated="true" />
+					<image id="training_layer_back_training_back_normal" 
+						location-in-interfacebuilder="8.0, 11.0"
+						width="20.0" height="31.0"
+						phony-path="training_layer/menuitems/back/sprites/training_back_normal.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="training_back_active" unlocated="true" />
+					<image id="training_layer_back_training_back_active" 
+						phony-path="training_layer/menuitems/back/sprites/training_back_active.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="setting" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="297.0, 542.0" />
+			<z-index value="1" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="training_setting_active" unlocated="true" />
+					<image id="training_layer_setting_training_setting_active" 
+						location-in-interfacebuilder="282.0, 11.0"
+						width="30.0" height="30.0"
+						phony-path="training_layer/menuitems/setting/sprites/training_setting_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="training_setting_normal" unlocated="true" />
+					<image id="training_layer_setting_training_setting_normal" 
+						phony-path="training_layer/menuitems/setting/sprites/training_setting_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+	<resource comment="resource for view">
+		<image id="training_layer_resource_training_back_disable" 
+			phony-path="training_layer/resource/training_back_disable.png"  />
+		<image id="training_layer_resource_training_button_disable" 
+			phony-path="training_layer/resource/training_button_disable.png"  />
+		<image id="training_layer_resource_training_setting_disable" 
+			phony-path="training_layer/resource/training_setting_disable.png"  />
+	</resource>
+</view>

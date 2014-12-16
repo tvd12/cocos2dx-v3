@@ -1,0 +1,13 @@
+#
+# create templates
+#
+
+#MakePointCommon template
+{var_name} 		= MakePointCommon({position});
+
+#end
+
+#CCPoint template
+{var_name} 		= CCPoint({position});
+
+#end	

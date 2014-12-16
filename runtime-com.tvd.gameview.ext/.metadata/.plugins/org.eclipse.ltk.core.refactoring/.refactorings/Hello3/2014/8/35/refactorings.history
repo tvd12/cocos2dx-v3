@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.config&apos; to &apos;Hello2/src&apos;&#x0A;- Original project: &apos;Hello3&apos;&#x0A;- Destination element: &apos;Hello2/src&apos;&#x0A;- Original element: &apos;Hello3/src/com.config&apos;" description="Copy package" destination="=Hello2/src" element1="/src&lt;com.config" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1409301571267" version="1.0"/>
+</session>

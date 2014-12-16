@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ResourcesSelectionDialog">
+		<item value="false" key="showFilesInAllProjects"/>
+	</section>
+	<section name="NewProjectWizard">
+	</section>
+</section>

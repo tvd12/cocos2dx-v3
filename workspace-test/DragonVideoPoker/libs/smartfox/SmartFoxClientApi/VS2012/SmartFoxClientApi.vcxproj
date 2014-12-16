@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Bitswarm\BaseController.h" />
+    <ClInclude Include="..\..\Bitswarm\BBox\BBClient.h" />
+    <ClInclude Include="..\..\Bitswarm\BBox\BBEvent.h" />
+    <ClInclude Include="..\..\Bitswarm\BitSwarmClient.h" />
+    <ClInclude Include="..\..\Bitswarm\BitSwarmEvent.h" />
+    <ClInclude Include="..\..\Bitswarm\ConnectionModes.h" />
+    <ClInclude Include="..\..\Bitswarm\IController.h" />
+    <ClInclude Include="..\..\Bitswarm\IMessage.h" />
+    <ClInclude Include="..\..\Bitswarm\IoHandler.h" />
+    <ClInclude Include="..\..\Bitswarm\IUDPManager.h" />
+    <ClInclude Include="..\..\Bitswarm\Message.h" />
+    <ClInclude Include="..\..\Bitswarm\PacketReadState.h" />
+    <ClInclude Include="..\..\Bitswarm\PacketReadTransition.h" />
+    <ClInclude Include="..\..\Bitswarm\PendingPacket.h" />
+    <ClInclude Include="..\..\Bitswarm\UDPManager.h" />
+    <ClInclude Include="..\..\Controllers\ExtensionController.h" />
+    <ClInclude Include="..\..\Controllers\SystemController.h" />
+    <ClInclude Include="..\..\Core\BaseEvent.h" />
+    <ClInclude Include="..\..\Core\IDispatchable.h" />
+    <ClInclude Include="..\..\Core\PacketHeader.h" />
+    <ClInclude Include="..\..\Core\SFSBuddyEvent.h" />
+    <ClInclude Include="..\..\Core\SFSEvent.h" />
+    <ClInclude Include="..\..\Core\SFSIOHandler.h" />
+    <ClInclude Include="..\..\Core\SFSProtocolCodec.h" />
+    <ClInclude Include="..\..\Core\Sockets\IPAddress.h" />
+    <ClInclude Include="..\..\Core\Sockets\ISocketLayer.h" />
+    <ClInclude Include="..\..\Core\Sockets\SocketErrors.h" />
+    <ClInclude Include="..\..\Core\Sockets\TCPClient.h" />
+    <ClInclude Include="..\..\Core\Sockets\TCPSocketLayer.h" />
+    <ClInclude Include="..\..\Core\Sockets\UDPClient.h" />
+    <ClInclude Include="..\..\Core\Sockets\UDPSocketLayer.h" />
+    <ClInclude Include="..\..\Core\SynchronizationObject.h" />
+    <ClInclude Include="..\..\Core\ThreadManager.h" />
+    <ClInclude Include="..\..\Entities\Buddy.h" />
+    <ClInclude Include="..\..\Entities\Data\ISFSArray.h" />
+    <ClInclude Include="..\..\Entities\Data\ISFSObject.h" />
+    <ClInclude Include="..\..\Entities\Data\SFSArray.h" />
+    <ClInclude Include="..\..\Entities\Data\SFSDataType.h" />
+    <ClInclude Include="..\..\Entities\Data\SFSDataWrapper.h" />
+    <ClInclude Include="..\..\Entities\Data\SFSObject.h" />
+    <ClInclude Include="..\..\Entities\Data\Vec3D.h" />
+    <ClInclude Include="..\..\Entities\IMMOItem.h" />
+    <ClInclude Include="..\..\Entities\Invitation\Invitation.h" />
+    <ClInclude Include="..\..\Entities\Invitation\InvitationReply.h" />
+    <ClInclude Include="..\..\Entities\Invitation\SFSInvitation.h" />
+    <ClInclude Include="..\..\Entities\Managers\IBuddyManager.h" />
+    <ClInclude Include="..\..\Entities\Managers\IRoomManager.h" />
+    <ClInclude Include="..\..\Entities\Managers\IUserManager.h" />
+    <ClInclude Include="..\..\Entities\Managers\SFSBuddyManager.h" />
+    <ClInclude Include="..\..\Entities\Managers\SFSGlobalUserManager.h" />
+    <ClInclude Include="..\..\Entities\Managers\SFSRoomManager.h" />
+    <ClInclude Include="..\..\Entities\Managers\SFSUserManager.h" />
+    <ClInclude Include="..\..\Entities\Match\BoolMatch.h" />
+    <ClInclude Include="..\..\Entities\Match\IMatcher.h" />
+    <ClInclude Include="..\..\Entities\Match\LogicOperator.h" />
+    <ClInclude Include="..\..\Entities\Match\MatchExpression.h" />
+    <ClInclude Include="..\..\Entities\Match\NumberMatch.h" />
+    <ClInclude Include="..\..\Entities\Match\RoomProperties.h" />
+    <ClInclude Include="..\..\Entities\Match\StringMatch.h" />
+    <ClInclude Include="..\..\Entities\Match\UserProperties.h" />
+    <ClInclude Include="..\..\Entities\MMOItem.h" />
+    <ClInclude Include="..\..\Entities\MMORoom.h" />
+    <ClInclude Include="..\..\Entities\Room.h" />
+    <ClInclude Include="..\..\Entities\SFSBuddy.h" />
+    <ClInclude Include="..\..\Entities\SFSConstants.h" />
+    <ClInclude Include="..\..\Entities\SFSRoom.h" />
+    <ClInclude Include="..\..\Entities\SFSUser.h" />
+    <ClInclude Include="..\..\Entities\User.h" />
+    <ClInclude Include="..\..\Entities\UserPrivileges.h" />
+    <ClInclude Include="..\..\Entities\Variables\BuddyVariable.h" />
+    <ClInclude Include="..\..\Entities\Variables\IMMOItemVariable.h" />
+    <ClInclude Include="..\..\Entities\Variables\MMOItemVariable.h" />
+    <ClInclude Include="..\..\Entities\Variables\ReservedBuddyVariables.h" />
+    <ClInclude Include="..\..\Entities\Variables\ReservedRoomVariables.h" />
+    <ClInclude Include="..\..\Entities\Variables\RoomVariable.h" />
+    <ClInclude Include="..\..\Entities\Variables\SFSBuddyVariable.h" />
+    <ClInclude Include="..\..\Entities\Variables\SFSRoomVariable.h" />
+    <ClInclude Include="..\..\Entities\Variables\SFSUserVariable.h" />
+    <ClInclude Include="..\..\Entities\Variables\UserVariable.h" />
+    <ClInclude Include="..\..\Entities\Variables\VariableType.h" />
+    <ClInclude Include="..\..\Exceptions\SFSCodecError.h" />
+    <ClInclude Include="..\..\Exceptions\SFSError.h" />
+    <ClInclude Include="..\..\Exceptions\SFSValidationError.h" />
+    <ClInclude Include="..\..\FSM\FiniteStateMachine.h" />
+    <ClInclude Include="..\..\FSM\FSMState.h" />
+    <ClInclude Include="..\..\Http\SFSWebClient.h" />
+    <ClInclude Include="..\..\Logging\Logger.h" />
+    <ClInclude Include="..\..\Logging\LoggerEvent.h" />
+    <ClInclude Include="..\..\Logging\LogLevel.h" />
+    <ClInclude Include="..\..\Protocol\IProtocolCodec.h" />
+    <ClInclude Include="..\..\Protocol\Serialization\DefaultObjectDumpFormatter.h" />
+    <ClInclude Include="..\..\Protocol\Serialization\DefaultSFSDataSerializer.h" />
+    <ClInclude Include="..\..\Protocol\Serialization\ISFSDataSerializer.h" />
+    <ClInclude Include="..\..\Protocol\Serialization\SerializableSFSType.h" />
+    <ClInclude Include="..\..\Requests\AdminMessageRequest.h" />
+    <ClInclude Include="..\..\Requests\BanMode.h" />
+    <ClInclude Include="..\..\Requests\BanUserRequest.h" />
+    <ClInclude Include="..\..\Requests\BaseRequest.h" />
+    <ClInclude Include="..\..\Requests\Buddylist\AddBuddyRequest.h" />
+    <ClInclude Include="..\..\Requests\Buddylist\BlockBuddyRequest.h" />
+    <ClInclude Include="..\..\Requests\Buddylist\BuddyMessageRequest.h" />
+    <ClInclude Include="..\..\Requests\Buddylist\GoOnlineRequest.h" />
+    <ClInclude Include="..\..\Requests\Buddylist\InitBuddyListRequest.h" />
+    <ClInclude Include="..\..\Requests\Buddylist\RemoveBuddyRequest.h" />
+    <ClInclude Include="..\..\Requests\Buddylist\SetBuddyVariablesRequest.h" />
+    <ClInclude Include="..\..\Requests\ChangeRoomCapacityRequest.h" />
+    <ClInclude Include="..\..\Requests\ChangeRoomNameRequest.h" />
+    <ClInclude Include="..\..\Requests\ChangeRoomPasswordStateRequest.h" />
+    <ClInclude Include="..\..\Requests\CreateRoomRequest.h" />
+    <ClInclude Include="..\..\Requests\ExtensionRequest.h" />
+    <ClInclude Include="..\..\Requests\FindRoomsRequest.h" />
+    <ClInclude Include="..\..\Requests\FindUsersRequest.h" />
+    <ClInclude Include="..\..\Requests\Game\CreateSFSGameRequest.h" />
+    <ClInclude Include="..\..\Requests\Game\InvitationReplyRequest.h" />
+    <ClInclude Include="..\..\Requests\Game\InviteUsersRequest.h" />
+    <ClInclude Include="..\..\Requests\Game\QuickJoinGameRequest.h" />
+    <ClInclude Include="..\..\Requests\Game\SFSGameSettings.h" />
+    <ClInclude Include="..\..\Requests\GenericMessageRequest.h" />
+    <ClInclude Include="..\..\Requests\GenericMessageType.h" />
+    <ClInclude Include="..\..\Requests\HandshakeRequest.h" />
+    <ClInclude Include="..\..\Requests\IRequest.h" />
+    <ClInclude Include="..\..\Requests\JoinRoomRequest.h" />
+    <ClInclude Include="..\..\Requests\KickUserRequest.h" />
+    <ClInclude Include="..\..\Requests\LeaveRoomRequest.h" />
+    <ClInclude Include="..\..\Requests\LoginRequest.h" />
+    <ClInclude Include="..\..\Requests\LogoutRequest.h" />
+    <ClInclude Include="..\..\Requests\ManualDisconnectionRequest.h" />
+    <ClInclude Include="..\..\Requests\MessageRecipientMode.h" />
+    <ClInclude Include="..\..\Requests\MMO\MapLimits.h" />
+    <ClInclude Include="..\..\Requests\MMO\MMORoomSettings.h" />
+    <ClInclude Include="..\..\Requests\MMO\SetMMOItemVariables.h" />
+    <ClInclude Include="..\..\Requests\MMO\SetUserPositionRequest.h" />
+    <ClInclude Include="..\..\Requests\ModeratorMessageRequest.h" />
+    <ClInclude Include="..\..\Requests\ObjectMessageRequest.h" />
+    <ClInclude Include="..\..\Requests\PingPongRequest.h" />
+    <ClInclude Include="..\..\Requests\PlayerToSpectatorRequest.h" />
+    <ClInclude Include="..\..\Requests\PrivateMessageRequest.h" />
+    <ClInclude Include="..\..\Requests\PublicMessageRequest.h" />
+    <ClInclude Include="..\..\Requests\RequestType.h" />
+    <ClInclude Include="..\..\Requests\RoomEvents.h" />
+    <ClInclude Include="..\..\Requests\RoomExtension.h" />
+    <ClInclude Include="..\..\Requests\RoomPermissions.h" />
+    <ClInclude Include="..\..\Requests\RoomSettings.h" />
+    <ClInclude Include="..\..\Requests\SetRoomVariablesRequest.h" />
+    <ClInclude Include="..\..\Requests\SetUserVariablesRequest.h" />
+    <ClInclude Include="..\..\Requests\SpectatorToPlayerRequest.h" />
+    <ClInclude Include="..\..\Requests\SubscribeRoomGroupRequest.h" />
+    <ClInclude Include="..\..\Requests\UnsubscribeRoomGroupRequest.h" />
+    <ClInclude Include="..\..\SmartFox.h" />
+    <ClInclude Include="..\..\Util\BuddyOnlineState.h" />
+    <ClInclude Include="..\..\Util\ByteArray.h" />
+    <ClInclude Include="..\..\Util\ClientDisconnectionReason.h" />
+    <ClInclude Include="..\..\Util\Common.h" />
+    <ClInclude Include="..\..\Util\ConfigData.h" />
+    <ClInclude Include="..\..\Util\ConfigLoader.h" />
+    <ClInclude Include="..\..\Util\DelegateOneArgument.h" />
+    <ClInclude Include="..\..\Util\DelegateThreeArguments.h" />
+    <ClInclude Include="..\..\Util\DelegateTwoArguments.h" />
+    <ClInclude Include="..\..\Util\DelegateZeroArgument.h" />
+    <ClInclude Include="..\..\Util\EventDispatcher.h" />
+    <ClInclude Include="..\..\Util\EventOneArgument.h" />
+    <ClInclude Include="..\..\Util\EventThreeArguments.h" />
+    <ClInclude Include="..\..\Util\EventTwoArguments.h" />
+    <ClInclude Include="..\..\Util\EventZeroArgument.h" />
+    <ClInclude Include="..\..\Util\LagMonitor.h" />
+    <ClInclude Include="..\..\Util\md5\md5.h" />
+    <ClInclude Include="..\..\Util\PasswordUtil.h" />
+    <ClInclude Include="..\..\Util\SFSErrorCodes.h" />
+    <ClInclude Include="..\..\Util\StringFormatter.h" />
+    <ClInclude Include="..\..\Util\XMLParser\XMLNode.h" />
+    <ClInclude Include="..\..\Util\XMLParser\XMLNodeList.h" />
+    <ClInclude Include="..\..\Util\XMLParser\XMLNodeValue.h" />
+    <ClInclude Include="..\..\Util\XMLParser\XMLObject.h" />
+    <ClInclude Include="..\..\Util\XMLParser\XMLParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Bitswarm\BaseController.cpp" />
+    <ClCompile Include="..\..\Bitswarm\BBox\BBClient.cpp" />
+    <ClCompile Include="..\..\Bitswarm\BBox\BBEvent.cpp" />
+    <ClCompile Include="..\..\Bitswarm\BitSwarmClient.cpp" />
+    <ClCompile Include="..\..\Bitswarm\BitSwarmEvent.cpp" />
+    <ClCompile Include="..\..\Bitswarm\ConnectionModes.cpp" />
+    <ClCompile Include="..\..\Bitswarm\Message.cpp" />
+    <ClCompile Include="..\..\Bitswarm\PendingPacket.cpp" />
+    <ClCompile Include="..\..\Bitswarm\UDPManager.cpp" />
+    <ClCompile Include="..\..\Controllers\ExtensionController.cpp" />
+    <ClCompile Include="..\..\Controllers\SystemController.cpp" />
+    <ClCompile Include="..\..\Core\BaseEvent.cpp" />
+    <ClCompile Include="..\..\Core\PacketHeader.cpp" />
+    <ClCompile Include="..\..\Core\SFSBuddyEvent.cpp" />
+    <ClCompile Include="..\..\Core\SFSEvent.cpp" />
+    <ClCompile Include="..\..\Core\SFSIOHandler.cpp" />
+    <ClCompile Include="..\..\Core\SFSProtocolCodec.cpp" />
+    <ClCompile Include="..\..\Core\Sockets\IPAddress.cpp" />
+    <ClCompile Include="..\..\Core\Sockets\TCPClient.cpp" />
+    <ClCompile Include="..\..\Core\Sockets\TCPSocketLayer.cpp" />
+    <ClCompile Include="..\..\Core\Sockets\UDPClient.cpp" />
+    <ClCompile Include="..\..\Core\Sockets\UDPSocketLayer.cpp" />
+    <ClCompile Include="..\..\Core\ThreadManager.cpp" />
+    <ClCompile Include="..\..\Entities\Data\SFSArray.cpp" />
+    <ClCompile Include="..\..\Entities\Data\SFSDataWrapper.cpp" />
+    <ClCompile Include="..\..\Entities\Data\SFSObject.cpp" />
+    <ClCompile Include="..\..\Entities\Data\Vec3D.cpp" />
+    <ClCompile Include="..\..\Entities\Invitation\SFSInvitation.cpp" />
+    <ClCompile Include="..\..\Entities\Managers\SFSBuddyManager.cpp" />
+    <ClCompile Include="..\..\Entities\Managers\SFSGlobalUserManager.cpp" />
+    <ClCompile Include="..\..\Entities\Managers\SFSRoomManager.cpp" />
+    <ClCompile Include="..\..\Entities\Managers\SFSUserManager.cpp" />
+    <ClCompile Include="..\..\Entities\Match\BoolMatch.cpp" />
+    <ClCompile Include="..\..\Entities\Match\LogicOperator.cpp" />
+    <ClCompile Include="..\..\Entities\Match\MatchExpression.cpp" />
+    <ClCompile Include="..\..\Entities\Match\NumberMatch.cpp" />
+    <ClCompile Include="..\..\Entities\Match\RoomProperties.cpp" />
+    <ClCompile Include="..\..\Entities\Match\StringMatch.cpp" />
+    <ClCompile Include="..\..\Entities\Match\UserProperties.cpp" />
+    <ClCompile Include="..\..\Entities\MMOItem.cpp" />
+    <ClCompile Include="..\..\Entities\MMORoom.cpp" />
+    <ClCompile Include="..\..\Entities\SFSBuddy.cpp" />
+    <ClCompile Include="..\..\Entities\SFSConstants.cpp" />
+    <ClCompile Include="..\..\Entities\SFSRoom.cpp" />
+    <ClCompile Include="..\..\Entities\SFSUser.cpp" />
+    <ClCompile Include="..\..\Entities\Variables\MMOItemVariable.cpp" />
+    <ClCompile Include="..\..\Entities\Variables\ReservedBuddyVariables.cpp" />
+    <ClCompile Include="..\..\Entities\Variables\ReservedRoomVariables.cpp" />
+    <ClCompile Include="..\..\Entities\Variables\SFSBuddyVariable.cpp" />
+    <ClCompile Include="..\..\Entities\Variables\SFSRoomVariable.cpp" />
+    <ClCompile Include="..\..\Entities\Variables\SFSUserVariable.cpp" />
+    <ClCompile Include="..\..\Exceptions\SFSCodecError.cpp" />
+    <ClCompile Include="..\..\Exceptions\SFSError.cpp" />
+    <ClCompile Include="..\..\Exceptions\SFSValidationError.cpp" />
+    <ClCompile Include="..\..\FSM\FiniteStateMachine.cpp" />
+    <ClCompile Include="..\..\FSM\FSMState.cpp" />
+    <ClCompile Include="..\..\Http\SFSWebClient.cpp" />
+    <ClCompile Include="..\..\Logging\Logger.cpp" />
+    <ClCompile Include="..\..\Logging\LoggerEvent.cpp" />
+    <ClCompile Include="..\..\Protocol\Serialization\DefaultObjectDumpFormatter.cpp" />
+    <ClCompile Include="..\..\Protocol\Serialization\DefaultSFSDataSerializer.cpp" />
+    <ClCompile Include="..\..\Requests\AdminMessageRequest.cpp" />
+    <ClCompile Include="..\..\Requests\BanUserRequest.cpp" />
+    <ClCompile Include="..\..\Requests\BaseRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Buddylist\AddBuddyRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Buddylist\BlockBuddyRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Buddylist\BuddyMessageRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Buddylist\GoOnlineRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Buddylist\InitBuddyListRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Buddylist\RemoveBuddyRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Buddylist\SetBuddyVariablesRequest.cpp" />
+    <ClCompile Include="..\..\Requests\ChangeRoomCapacityRequest.cpp" />
+    <ClCompile Include="..\..\Requests\ChangeRoomNameRequest.cpp" />
+    <ClCompile Include="..\..\Requests\ChangeRoomPasswordStateRequest.cpp" />
+    <ClCompile Include="..\..\Requests\CreateRoomRequest.cpp" />
+    <ClCompile Include="..\..\Requests\ExtensionRequest.cpp" />
+    <ClCompile Include="..\..\Requests\FindRoomsRequest.cpp" />
+    <ClCompile Include="..\..\Requests\FindUsersRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Game\CreateSFSGameRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Game\InvitationReplyRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Game\InviteUsersRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Game\QuickJoinGameRequest.cpp" />
+    <ClCompile Include="..\..\Requests\Game\SFSGameSettings.cpp" />
+    <ClCompile Include="..\..\Requests\GenericMessageRequest.cpp" />
+    <ClCompile Include="..\..\Requests\HandshakeRequest.cpp" />
+    <ClCompile Include="..\..\Requests\JoinRoomRequest.cpp" />
+    <ClCompile Include="..\..\Requests\KickUserRequest.cpp" />
+    <ClCompile Include="..\..\Requests\LeaveRoomRequest.cpp" />
+    <ClCompile Include="..\..\Requests\LoginRequest.cpp" />
+    <ClCompile Include="..\..\Requests\LogoutRequest.cpp" />
+    <ClCompile Include="..\..\Requests\ManualDisconnectionRequest.cpp" />
+    <ClCompile Include="..\..\Requests\MessageRecipientMode.cpp" />
+    <ClCompile Include="..\..\Requests\MMO\MapLimits.cpp" />
+    <ClCompile Include="..\..\Requests\MMO\MMORoomSettings.cpp" />
+    <ClCompile Include="..\..\Requests\MMO\SetMMOItemVariables.cpp" />
+    <ClCompile Include="..\..\Requests\MMO\SetUserPositionRequest.cpp" />
+    <ClCompile Include="..\..\Requests\ModeratorMessageRequest.cpp" />
+    <ClCompile Include="..\..\Requests\ObjectMessageRequest.cpp" />
+    <ClCompile Include="..\..\Requests\PingPongRequest.cpp" />
+    <ClCompile Include="..\..\Requests\PlayerToSpectatorRequest.cpp" />
+    <ClCompile Include="..\..\Requests\PrivateMessageRequest.cpp" />
+    <ClCompile Include="..\..\Requests\PublicMessageRequest.cpp" />
+    <ClCompile Include="..\..\Requests\RoomEvents.cpp" />
+    <ClCompile Include="..\..\Requests\RoomExtension.cpp" />
+    <ClCompile Include="..\..\Requests\RoomPermissions.cpp" />
+    <ClCompile Include="..\..\Requests\RoomSettings.cpp" />
+    <ClCompile Include="..\..\Requests\SetRoomVariablesRequest.cpp" />
+    <ClCompile Include="..\..\Requests\SetUserVariablesRequest.cpp" />
+    <ClCompile Include="..\..\Requests\SpectatorToPlayerRequest.cpp" />
+    <ClCompile Include="..\..\Requests\SubscribeRoomGroupRequest.cpp" />
+    <ClCompile Include="..\..\Requests\UnsubscribeRoomGroupRequest.cpp" />
+    <ClCompile Include="..\..\SmartFox.cpp" />
+    <ClCompile Include="..\..\Util\ByteArray.cpp" />
+    <ClCompile Include="..\..\Util\ClientDisconnectionReason.cpp" />
+    <ClCompile Include="..\..\Util\ConfigData.cpp" />
+    <ClCompile Include="..\..\Util\ConfigLoader.cpp" />
+    <ClCompile Include="..\..\Util\EventDispatcher.cpp" />
+    <ClCompile Include="..\..\Util\LagMonitor.cpp" />
+    <ClCompile Include="..\..\Util\md5\md5.c" />
+    <ClCompile Include="..\..\Util\PasswordUtil.cpp" />
+    <ClCompile Include="..\..\Util\SFSErrorCodes.cpp" />
+    <ClCompile Include="..\..\Util\XMLParser\XMLNode.cpp" />
+    <ClCompile Include="..\..\Util\XMLParser\XMLNodeList.cpp" />
+    <ClCompile Include="..\..\Util\XMLParser\XMLNodeValue.cpp" />
+    <ClCompile Include="..\..\Util\XMLParser\XMLObject.cpp" />
+    <ClCompile Include="..\..\Util\XMLParser\XMLParser.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88004475-FE82-4CB5-9320-404EF8AC4D8E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SmartFoxClientApi</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN32_WINNT=0x0501;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;SMARTFOXCLIENTAPI_EXPORTS;ZLIB_WINAPI;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../Core/BoostAsio/Windows/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)../../Core/BoostAsio/Windows/stage\lib;$(ProjectDir)..\..\ZLib\contrib\vstudio\vc11\x86\ZlibDllDebug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlibwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(ProjectDir)\..\..\Deploy\VisualStudio2012\Debug" md "$(ProjectDir)\..\..\Deploy\VisualStudio2012\Debug"
+copy "$(OutDir)$(TargetName)$(TargetExt)" "$(ProjectDir)\..\..\Deploy\VisualStudio2012\Debug"
+copy "$(OutDir)$(TargetName).lib" "$(ProjectDir)\..\..\Deploy\VisualStudio2012\Debug"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN32_WINNT=0x0501;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;SMARTFOXCLIENTAPI_EXPORTS;ZLIB_WINAPI;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../Core/BoostAsio/Windows/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)../../Core/BoostAsio/Windows/stage\lib;$(ProjectDir)..\..\ZLib\contrib\vstudio\vc11\x86\ZlibDllRelease;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlibwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(ProjectDir)\..\..\Deploy\VisualStudio2012\Release" md "$(ProjectDir)\..\..\Deploy\VisualStudio2012\Release"
+copy "$(OutDir)$(TargetName)$(TargetExt)" "$(ProjectDir)\..\..\Deploy\VisualStudio2012\Release"
+copy "$(OutDir)$(TargetName).lib" "$(ProjectDir)\..\..\Deploy\VisualStudio2012\Release"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

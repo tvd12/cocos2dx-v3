@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello</string>
+
+    <!--VIP Club-->
+    <string name="BRONZE CARD">BRONZE</string>
+    <string name="SILVER CARD">SILVER</string>
+    <string name="GOLD CARD">GOLD</string>
+    <string name="PLATINUM CARD">PLATINUM</string>
+    <string name="DIAMOND CARD">DIAMOND</string>
+
+</resources>

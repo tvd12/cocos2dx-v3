@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources xmlns:tools="http://schemas.android.com/tools"
+	tools:ignore="TypographyDashes">
+  <!--Replace placeholder ID with your tracking ID-->
+  <string name="ga_trackingId">UA-36352887-7</string>
+  <string name="ga_appName">Dragon Video Poker</string>
+  <string name="ga_appVersion">1.0</string>
+  <!-- <string name="ga_dispatchPeriod">1</string> -->
+  <!--Enable automatic activity tracking-->
+  <bool name="ga_autoActivityTracking">true</bool>
+
+  <!--Enable automatic exception tracking-->
+  <bool name="ga_reportUncaughtExceptions">true</bool>
+  
+	
+  <!-- The screen names that will appear in reports -->
+  <!-- <string name="com.google.android.tagmanager.examples.cuteanimals.MainActivity">Home Screen</string>
+  <string name="com.google.android.tagmanager.examples.cuteanimals.CategoryViewActivity">Category View</string>
+  <string name="com.google.android.tagmanager.examples.cuteanimals.ImageViewActivity">Image View</string>
+  <string name="com.google.android.tagmanager.examples.cuteanimals.SplashScreenActivity">Splash Screen</string> -->
+  
+</resources>

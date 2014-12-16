@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="MainGameLayernull" prefix="layer_main_game" type="layer" 
+		super="null" background-name="default"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="main_game_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Utils/Defines" />
+	<parameters-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Utils/GameParams" />
+	<images-inputpath value="/Users/apple/Downloads/memory_game/main_game_layer" />
+	<images-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/ipadhd" />
+	<xibcontainer-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Resources/screenshots/ipadhd" used="true" />
+	<screencontainer-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Wireframing/WireframingScreen/ipadhd" />
+	<androidcontainer-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/proj.android/res/layout/ipadhd" />
+	<class-path value="/Volumes/Working/Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/View/Layer" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="background" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_layer_background_mg_bg" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="640.0" height="960.0"
+				phony-path="main_game_layer/sprites/background/mg_bg.png"  />
+			<menuitems array="false" comment="create group of menuitems">
+				<menuitem visible="true" comment="">
+					<position-name value="exit" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="0.0, 0.0" />
+					<z-index value="0" />
+					<sprites array="false" comment="create group of sprites">
+						<sprite visible="true" comment="">
+							<position-name value="ex_active" unlocated="true" />
+							<image id="main_game_layer_background_exit_ex_active" 
+								location-in-interfacebuilder="10.0, 10.0"
+								width="108.0" height="50.0"
+								phony-path="main_game_layer/sprites/background/menuitems/exit/sprites/ex_active.png"  />
+						</sprite>
+						<sprite visible="true" comment="">
+							<position-name value="ex_normal" unlocated="true" />
+							<image id="main_game_layer_background_exit_ex_normal" 
+								location-in-interfacebuilder="10.0, 10.0"
+								width="108.0" height="50.0"
+								phony-path="main_game_layer/sprites/background/menuitems/exit/sprites/ex_normal.png"  />
+						</sprite>
+					</sprites>
+					<sprites array="false" comment="create group of sprites">
+					</sprites>
+				</menuitem>
+				<menuitem visible="true" comment="">
+					<position-name value="replay" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="0.0, 0.0" />
+					<z-index value="0" />
+				</menuitem>
+				<menuitem visible="true" comment="">
+					<position-name value="rp_active.png" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="0.0, 0.0" />
+					<z-index value="0" />
+				</menuitem>
+				<menuitem visible="true" comment="">
+					<position-name value="rp_normal.png" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="0.0, 0.0" />
+					<z-index value="0" />
+				</menuitem>
+				<menuitem visible="true" comment="">
+					<position-name value="square" />
+					<anchorpoint value="0.5, 0.5" />
+					<position value="0.0, 0.0" />
+					<z-index value="0" />
+					<sprites array="false" comment="create group of sprites">
+						<sprite visible="true" comment="">
+							<position-name value="default_normal" unlocated="true" />
+							<image id="main_game_layer_background_square_default_normal" 
+								location-in-interfacebuilder="10.0, 10.0"
+								width="72.0" height="72.0"
+								phony-path="main_game_layer/sprites/background/menuitems/square/sprites/default_normal.png"  />
+						</sprite>
+						<sprite visible="true" comment="">
+							<position-name value="text_active" unlocated="true" />
+							<image id="main_game_layer_background_square_text_active" 
+								location-in-interfacebuilder="10.0, 10.0"
+								width="72.0" height="72.0"
+								phony-path="main_game_layer/sprites/background/menuitems/square/sprites/text_active.png"  />
+						</sprite>
+					</sprites>
+				</menuitem>
+			</menuitems>
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="time_bg" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_layer_time_bg" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="144.0" height="72.0"
+				phony-path="main_game_layer/sprites/time_bg.png"  />
+		</sprite>
+	</sprites>
+</view>

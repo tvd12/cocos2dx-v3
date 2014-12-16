@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="CzaAvatarsPopupView" prefix="popup_cza_avatars" type="popup" exitable="false" 
+		super="PopUpLayer" background-name="default" size="296.0, 447.0" 
+		template-name="Common extend table"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="null" />
+	<position value="default" />
+	<define-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/Defines" />
+	<parameters-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/GameParams" />
+	<images-inputpath value="/Users/apple/Downloads/cza_avatars_popup" />
+	<images-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/demohd" />
+	<xibcontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/screenshots/demohd" used="true" />
+	<screencontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Wireframing/WireframingScreen/demohd" />
+	<androidcontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/proj.android/res/layout/demohd" />
+	<class-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/UI/PopUp" />
+
+</view>

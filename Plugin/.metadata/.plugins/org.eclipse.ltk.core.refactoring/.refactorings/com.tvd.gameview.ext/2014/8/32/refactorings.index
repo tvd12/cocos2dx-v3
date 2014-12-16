@@ -1,0 +1,24 @@
+1407376093522	Delete elements
+1407376112127	Delete element
+1407386966623	Rename type 'BuildingListView'
+1407401398014	Rename type 'ViewHelper'
+1407469372655	Move compilation unit
+1407469494963	Delete element
+1407469916205	Delete element
+1407482614937	Rename type 'SdkFileNature'
+1407482801471	Move compilation unit
+1407484140231	Rename type 'SdkFileBuilder'
+1407484150513	Rename type 'SdkFileVisitor'
+1407484719437	Rename package 'com.tvd.study.linuxsagas.plugin'
+1407484730710	Rename package 'com.tvd.study.linuxsagas.plugin.constants'
+1407484741187	Rename package 'com.tvd.study.linuxsagas.plugin.file'
+1407484750283	Rename package 'com.tvd.study.linuxsagas.plugin.natures'
+1407484761683	Rename package 'com.tvd.study.linuxsagas.plugin.page'
+1407484777610	Rename package 'com.tvd.study.linuxsagas.plugin.preference'
+1407484787873	Rename package 'com.tvd.study.linuxsagas.plugin.test'
+1407484804204	Rename package 'com.tvd.gamview.ext.test'
+1407484817950	Rename package 'com.tvd.study.linuxsagas.plugin.utils'
+1407484832545	Rename package 'com.tvd.study.linuxsagas.plugin.wizard'
+1407484842141	Delete element
+1407550597716	Rename type 'SdkXMLFileNature'
+1407552653035	Rename package 'com.tvd.gamview.ext.page'

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Panel" id="0" width="320" height="480" locked="true" measuredWidth="320" measuredHeight="480"/>
+  <widgets xsi:type="model:Image" id="1" x="100" y="100" width="320" height="320" measuredWidth="320" measuredHeight="320" src="assets/demohd/levelup_popup/sprites/shine_circle.png"/>
+  <widgets xsi:type="model:Image" id="2" x="32" y="155" width="296" height="170" measuredWidth="296" measuredHeight="170" src="assets/demohd/levelup_popup/background/level.png"/>
+  <widgets xsi:type="model:Image" id="4" x="200" y="184" width="84" height="37" measuredWidth="84" measuredHeight="37" src="assets/demohd/common_ok_normal.png"/>
+  <widgets xsi:type="model:Image" id="6" x="96" y="161" width="84" height="37" measuredWidth="84" measuredHeight="37" src="assets/demohd/common_share_normal.png"/>
+  <widgets xsi:type="model:Image" id="7" x="128" y="240" width="214" height="103" measuredWidth="214" measuredHeight="103" src="assets/demohd/levelup_popup/sprites/star_shine.png"/>
+  <widgets xsi:type="model:Image" id="8" x="16" y="24" width="103" height="103" measuredWidth="103" measuredHeight="103" src="assets/demohd/levelup_popup/sprites/circle_container_1.png"/>
+  <widgets xsi:type="model:Image" id="9" x="168" y="82" width="103" height="103" measuredWidth="103" measuredHeight="103" src="assets/demohd/levelup_popup/sprites/circle_container_2.png"/>
+  <widgets xsi:type="model:Image" id="10" x="160" y="218" width="201" height="62" measuredWidth="201" measuredHeight="62" src="assets/demohd/levelup_popup/sprites/ribbon.png"/>
+  <widgets xsi:type="model:Image" id="11" x="57" y="218" width="44" height="44" measuredWidth="44" measuredHeight="44" src="assets/demohd/levelup_popup/sprites/star1.png"/>
+  <widgets xsi:type="model:Image" id="12" x="100" y="197" width="44" height="44" measuredWidth="44" measuredHeight="44" src="assets/demohd/levelup_popup/sprites/star2.png"/>
+  <widgets xsi:type="model:Image" id="13" x="69" y="171" width="44" height="44" measuredWidth="44" measuredHeight="44" src="assets/demohd/levelup_popup/sprites/star3.png"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

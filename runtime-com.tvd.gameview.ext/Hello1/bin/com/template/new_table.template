@@ -1,0 +1,14 @@
+#
+# create templates
+#
+
+#TableView template
+{tab}{var_name} = TableView::create({nodes_array},
+					CCSizeMake({size}),
+					{rows},
+					{columns});
+{tab}{var_name}->setAnchorPoint({anchor_point_name});
+{tab}{var_name}->setPosition(GPARAMS().{position_name});
+{tab}{parent_name}->addChild({var_name});
+
+#end

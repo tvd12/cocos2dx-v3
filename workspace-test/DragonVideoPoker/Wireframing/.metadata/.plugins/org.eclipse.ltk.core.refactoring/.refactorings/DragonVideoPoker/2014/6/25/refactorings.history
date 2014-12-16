@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DragonVideoPoker/NewScreen.screen&apos; to &apos;template.screen&apos;" description="Rename resource &apos;NewScreen.screen&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="NewScreen.screen" name="template.screen" stamp="1402909660138" updateReferences="true"/>
+</session>

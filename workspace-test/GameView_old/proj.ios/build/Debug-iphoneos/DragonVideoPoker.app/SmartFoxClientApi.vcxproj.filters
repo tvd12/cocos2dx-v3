@@ -1,0 +1,1065 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{4cca972a-bf84-4296-ac02-18b75fbf7af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{356a265f-8094-4ed6-8fdd-f992133f2ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bitswarm">
+      <UniqueIdentifier>{d7801823-6ab4-460a-a2ff-6e650f4951af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bitswarm">
+      <UniqueIdentifier>{a87cb53b-e04c-4fe9-bbc7-07195326f375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Controllers">
+      <UniqueIdentifier>{18ce64be-e688-45d0-b467-37071c1eafc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controllers">
+      <UniqueIdentifier>{efe478d3-0b23-455a-876e-9c2b52321f64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bitswarm\BBox">
+      <UniqueIdentifier>{a79552cb-a206-4570-91bd-9990d92bc52d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bitswarm\BBox">
+      <UniqueIdentifier>{17e7fab3-6edc-4753-b0cf-29b679ca8387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Sockets">
+      <UniqueIdentifier>{4ebbd621-c624-4ccd-9c12-335a46b0e6be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\Sockets">
+      <UniqueIdentifier>{8df2b666-4aac-4db3-a27d-0554aea5ccc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{92dd51e3-b346-4fc1-bf40-533847bc77b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{8fc15e90-36db-472b-8b2c-7394ad1fd194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Data">
+      <UniqueIdentifier>{9368792a-131e-45c4-a23d-e55007d3b4fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Data">
+      <UniqueIdentifier>{49be7ad7-667f-48ff-a508-3766c7bc3b2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Invitation">
+      <UniqueIdentifier>{f8185896-d012-46c4-89ac-485ac5aca398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Invitation">
+      <UniqueIdentifier>{097beb1b-6b41-404d-9d6c-a4ec61648369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Managers">
+      <UniqueIdentifier>{fc1e02a8-256d-4c37-9434-fea82181b0ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Managers">
+      <UniqueIdentifier>{15bb3381-e91c-43fa-8362-8a717825da6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Match">
+      <UniqueIdentifier>{e022b93f-ac9f-46dd-9fa6-0cffe5d837fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Match">
+      <UniqueIdentifier>{91df97f5-9db3-4062-8362-74a91242dae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Variables">
+      <UniqueIdentifier>{4561ad8b-871d-4ea7-ba36-dac50fd2213c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Variables">
+      <UniqueIdentifier>{b6dce677-57c4-4dc4-a9ab-eb75d9775e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{a3ffdf95-0410-4058-a7b9-38db6fc19315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exceptions">
+      <UniqueIdentifier>{b6c51c45-513f-4cc9-ac7a-aa9f1928d089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FSM">
+      <UniqueIdentifier>{a6df037f-0067-4a12-85b0-72374ce58a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FSM">
+      <UniqueIdentifier>{c28036ea-a7a7-4677-9b1f-48ceeded608d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Http">
+      <UniqueIdentifier>{34114d40-0629-4343-95ea-962c1bdcc11c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Http">
+      <UniqueIdentifier>{635fb950-4503-4889-b331-788e66951354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logging">
+      <UniqueIdentifier>{18f00fb7-6696-4326-9703-b31fa7c8a2c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logging">
+      <UniqueIdentifier>{025a5ed7-6ec3-495f-9dcb-9a60f11faf16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Protocol">
+      <UniqueIdentifier>{d2ad11c9-5008-4f93-b3d9-c990aee73c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol">
+      <UniqueIdentifier>{f13113cc-5d4d-454d-89c3-7330f61c155e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Protocol\Serialization">
+      <UniqueIdentifier>{8f41b839-b532-440a-82cb-60db16bfeaeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protocol\Serialization">
+      <UniqueIdentifier>{d3b24f8e-052c-46e1-b655-47c8a06ef332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Requests">
+      <UniqueIdentifier>{00ab8510-e889-435d-8658-35226b738309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Requests">
+      <UniqueIdentifier>{aa713e59-bb1a-4437-a971-129992d2f250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Requests\Buddylist">
+      <UniqueIdentifier>{78d1dcb7-a9c1-4e31-ae1e-91b51f72b171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Requests\Buddylist">
+      <UniqueIdentifier>{195169df-7bad-4267-9ab4-d6b6e9168292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Requests\Game">
+      <UniqueIdentifier>{c4292749-0d8d-4057-ac00-7904237771f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Requests\Game">
+      <UniqueIdentifier>{af369378-db8d-46e1-81f2-c265918a38f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{caee9f69-2a93-40a3-9f56-dac46f538c51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{0862dda3-87a2-4c66-81e0-e3a3e9ad3591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util\XMLParser">
+      <UniqueIdentifier>{d03edff8-15ef-47a0-8298-26286af429be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util\XMLParser">
+      <UniqueIdentifier>{8f8d670b-d6c4-42c5-8d5d-42dd8f5e3358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util\MD5">
+      <UniqueIdentifier>{1373af38-6f3a-460d-a462-eb68c718c156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util\MD5">
+      <UniqueIdentifier>{6b89339b-8c9b-468a-aa5c-08d1bec58e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Requests\MMO">
+      <UniqueIdentifier>{9a69ae73-8775-4e5b-ba30-de97c7757b80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Requests\MMO">
+      <UniqueIdentifier>{a41fbf90-1ed8-49a7-bf2b-afa10ebfde39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Bitswarm\BBox\BBClient.h">
+      <Filter>Header Files\Bitswarm\BBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\BBox\BBEvent.h">
+      <Filter>Header Files\Bitswarm\BBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\BaseController.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\BitSwarmClient.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\BitSwarmEvent.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\ConnectionModes.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\IController.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\IMessage.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\IoHandler.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\IUDPManager.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\Message.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\PacketReadState.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\PacketReadTransition.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\PendingPacket.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bitswarm\UDPManager.h">
+      <Filter>Header Files\Bitswarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Controllers\ExtensionController.h">
+      <Filter>Header Files\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Controllers\SystemController.h">
+      <Filter>Header Files\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Sockets\IPAddress.h">
+      <Filter>Header Files\Core\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Sockets\ISocketLayer.h">
+      <Filter>Header Files\Core\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Sockets\SocketErrors.h">
+      <Filter>Header Files\Core\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Sockets\TCPClient.h">
+      <Filter>Header Files\Core\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Sockets\TCPSocketLayer.h">
+      <Filter>Header Files\Core\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Sockets\UDPSocketLayer.h">
+      <Filter>Header Files\Core\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\BaseEvent.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\IDispatchable.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\PacketHeader.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\SFSBuddyEvent.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\SFSEvent.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\SFSIOHandler.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\SFSProtocolCodec.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\SynchronizationObject.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\ThreadManager.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Data\ISFSArray.h">
+      <Filter>Header Files\Entities\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Data\ISFSObject.h">
+      <Filter>Header Files\Entities\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Data\SFSArray.h">
+      <Filter>Header Files\Entities\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Data\SFSDataType.h">
+      <Filter>Header Files\Entities\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Data\SFSDataWrapper.h">
+      <Filter>Header Files\Entities\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Data\SFSObject.h">
+      <Filter>Header Files\Entities\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Invitation\Invitation.h">
+      <Filter>Header Files\Entities\Invitation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Invitation\InvitationReply.h">
+      <Filter>Header Files\Entities\Invitation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Invitation\SFSInvitation.h">
+      <Filter>Header Files\Entities\Invitation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Managers\IBuddyManager.h">
+      <Filter>Header Files\Entities\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Managers\IRoomManager.h">
+      <Filter>Header Files\Entities\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Managers\IUserManager.h">
+      <Filter>Header Files\Entities\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Managers\SFSBuddyManager.h">
+      <Filter>Header Files\Entities\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Managers\SFSGlobalUserManager.h">
+      <Filter>Header Files\Entities\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Managers\SFSRoomManager.h">
+      <Filter>Header Files\Entities\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Managers\SFSUserManager.h">
+      <Filter>Header Files\Entities\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Match\BoolMatch.h">
+      <Filter>Header Files\Entities\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Match\IMatcher.h">
+      <Filter>Header Files\Entities\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Match\LogicOperator.h">
+      <Filter>Header Files\Entities\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Match\MatchExpression.h">
+      <Filter>Header Files\Entities\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Match\NumberMatch.h">
+      <Filter>Header Files\Entities\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Match\RoomProperties.h">
+      <Filter>Header Files\Entities\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Match\StringMatch.h">
+      <Filter>Header Files\Entities\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Match\UserProperties.h">
+      <Filter>Header Files\Entities\Match</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\BuddyVariable.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\ReservedBuddyVariables.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\ReservedRoomVariables.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\RoomVariable.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\SFSBuddyVariable.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\SFSRoomVariable.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\SFSUserVariable.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\UserVariable.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\VariableType.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Buddy.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Room.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\SFSBuddy.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\SFSConstants.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\SFSRoom.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\SFSUser.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\User.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\UserPrivileges.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Exceptions\SFSCodecError.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Exceptions\SFSError.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Exceptions\SFSValidationError.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FSM\FiniteStateMachine.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FSM\FSMState.h">
+      <Filter>Header Files\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Http\SFSWebClient.h">
+      <Filter>Header Files\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Logging\Logger.h">
+      <Filter>Header Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Logging\LoggerEvent.h">
+      <Filter>Header Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Logging\LogLevel.h">
+      <Filter>Header Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protocol\IProtocolCodec.h">
+      <Filter>Header Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protocol\Serialization\DefaultObjectDumpFormatter.h">
+      <Filter>Header Files\Protocol\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protocol\Serialization\DefaultSFSDataSerializer.h">
+      <Filter>Header Files\Protocol\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protocol\Serialization\ISFSDataSerializer.h">
+      <Filter>Header Files\Protocol\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protocol\Serialization\SerializableSFSType.h">
+      <Filter>Header Files\Protocol\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Buddylist\AddBuddyRequest.h">
+      <Filter>Header Files\Requests\Buddylist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Buddylist\BlockBuddyRequest.h">
+      <Filter>Header Files\Requests\Buddylist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Buddylist\BuddyMessageRequest.h">
+      <Filter>Header Files\Requests\Buddylist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Buddylist\GoOnlineRequest.h">
+      <Filter>Header Files\Requests\Buddylist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Buddylist\InitBuddyListRequest.h">
+      <Filter>Header Files\Requests\Buddylist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Buddylist\RemoveBuddyRequest.h">
+      <Filter>Header Files\Requests\Buddylist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Buddylist\SetBuddyVariablesRequest.h">
+      <Filter>Header Files\Requests\Buddylist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Game\CreateSFSGameRequest.h">
+      <Filter>Header Files\Requests\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Game\InvitationReplyRequest.h">
+      <Filter>Header Files\Requests\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Game\InviteUsersRequest.h">
+      <Filter>Header Files\Requests\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Game\SFSGameSettings.h">
+      <Filter>Header Files\Requests\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\AdminMessageRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\BanMode.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\BanUserRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\BaseRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\ChangeRoomCapacityRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\ChangeRoomNameRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\ChangeRoomPasswordStateRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\CreateRoomRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\ExtensionRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\FindRoomsRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\FindUsersRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\GenericMessageRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\GenericMessageType.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\HandshakeRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\IRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\JoinRoomRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\KickUserRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\LeaveRoomRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\LoginRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\LogoutRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\ManualDisconnectionRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\MessageRecipientMode.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\ModeratorMessageRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\ObjectMessageRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\PingPongRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\PlayerToSpectatorRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\PrivateMessageRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\PublicMessageRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\RequestType.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\RoomEvents.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\RoomExtension.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\RoomPermissions.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\RoomSettings.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\SetRoomVariablesRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\SetUserVariablesRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\SpectatorToPlayerRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\SubscribeRoomGroupRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\UnsubscribeRoomGroupRequest.h">
+      <Filter>Header Files\Requests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SmartFox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\md5\md5.h">
+      <Filter>Header Files\Util\MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\XMLParser\XMLNode.h">
+      <Filter>Header Files\Util\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\XMLParser\XMLNodeList.h">
+      <Filter>Header Files\Util\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\XMLParser\XMLParser.h">
+      <Filter>Header Files\Util\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\BuddyOnlineState.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\ByteArray.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\ClientDisconnectionReason.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\Common.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\ConfigData.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\ConfigLoader.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\DelegateOneArgument.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\DelegateThreeArguments.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\DelegateTwoArguments.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\DelegateZeroArgument.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\EventDispatcher.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\EventOneArgument.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\EventThreeArguments.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\EventTwoArguments.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\EventZeroArgument.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\LagMonitor.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\SFSErrorCodes.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\StringFormatter.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\XMLParser\XMLNodeValue.h">
+      <Filter>Header Files\Util\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\XMLParser\XMLObject.h">
+      <Filter>Header Files\Util\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Sockets\UDPClient.h">
+      <Filter>Header Files\Core\Sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\PasswordUtil.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\Game\QuickJoinGameRequest.h">
+      <Filter>Header Files\Requests\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Data\Vec3D.h">
+      <Filter>Header Files\Entities\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\IMMOItemVariable.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\Variables\MMOItemVariable.h">
+      <Filter>Header Files\Entities\Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\IMMOItem.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\MMOItem.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Entities\MMORoom.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\MMO\SetMMOItemVariables.h">
+      <Filter>Header Files\Requests\MMO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\MMO\MapLimits.h">
+      <Filter>Header Files\Requests\MMO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\MMO\MMORoomSettings.h">
+      <Filter>Header Files\Requests\MMO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Requests\MMO\SetUserPositionRequest.h">
+      <Filter>Header Files\Requests\MMO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Bitswarm\BaseController.cpp">
+      <Filter>Source Files\Bitswarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bitswarm\BitSwarmClient.cpp">
+      <Filter>Source Files\Bitswarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bitswarm\BitSwarmEvent.cpp">
+      <Filter>Source Files\Bitswarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bitswarm\ConnectionModes.cpp">
+      <Filter>Source Files\Bitswarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bitswarm\Message.cpp">
+      <Filter>Source Files\Bitswarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bitswarm\PendingPacket.cpp">
+      <Filter>Source Files\Bitswarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Controllers\ExtensionController.cpp">
+      <Filter>Source Files\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Controllers\SystemController.cpp">
+      <Filter>Source Files\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Sockets\IPAddress.cpp">
+      <Filter>Source Files\Core\Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Sockets\TCPClient.cpp">
+      <Filter>Source Files\Core\Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Sockets\TCPSocketLayer.cpp">
+      <Filter>Source Files\Core\Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\BaseEvent.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\PacketHeader.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\SFSEvent.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\SFSIOHandler.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\SFSProtocolCodec.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\ThreadManager.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Data\SFSArray.cpp">
+      <Filter>Source Files\Entities\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Data\SFSDataWrapper.cpp">
+      <Filter>Source Files\Entities\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Data\SFSObject.cpp">
+      <Filter>Source Files\Entities\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Managers\SFSBuddyManager.cpp">
+      <Filter>Source Files\Entities\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Managers\SFSGlobalUserManager.cpp">
+      <Filter>Source Files\Entities\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Managers\SFSRoomManager.cpp">
+      <Filter>Source Files\Entities\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Managers\SFSUserManager.cpp">
+      <Filter>Source Files\Entities\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Variables\SFSRoomVariable.cpp">
+      <Filter>Source Files\Entities\Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Variables\SFSUserVariable.cpp">
+      <Filter>Source Files\Entities\Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\SFSRoom.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\SFSUser.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Exceptions\SFSCodecError.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Exceptions\SFSError.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Exceptions\SFSValidationError.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FSM\FiniteStateMachine.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FSM\FSMState.cpp">
+      <Filter>Source Files\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Logging\Logger.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Logging\LoggerEvent.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protocol\Serialization\DefaultObjectDumpFormatter.cpp">
+      <Filter>Source Files\Protocol\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protocol\Serialization\DefaultSFSDataSerializer.cpp">
+      <Filter>Source Files\Protocol\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\BaseRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\HandshakeRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\LoginRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\LogoutRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\md5\md5.c">
+      <Filter>Source Files\Util\MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\ByteArray.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\ClientDisconnectionReason.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\ConfigData.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\ConfigLoader.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\EventDispatcher.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\SFSErrorCodes.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SmartFox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\SFSConstants.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Invitation\SFSInvitation.cpp">
+      <Filter>Source Files\Entities\Invitation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Match\BoolMatch.cpp">
+      <Filter>Source Files\Entities\Match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\CreateRoomRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\RoomSettings.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\RoomPermissions.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\RoomExtension.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\RoomEvents.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\ManualDisconnectionRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\AdminMessageRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\MessageRecipientMode.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\GenericMessageRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\ExtensionRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\BanUserRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\ChangeRoomCapacityRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\ChangeRoomNameRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\ChangeRoomPasswordStateRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Variables\ReservedRoomVariables.cpp">
+      <Filter>Source Files\Entities\Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\FindRoomsRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Match\MatchExpression.cpp">
+      <Filter>Source Files\Entities\Match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Match\LogicOperator.cpp">
+      <Filter>Source Files\Entities\Match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Match\NumberMatch.cpp">
+      <Filter>Source Files\Entities\Match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Match\RoomProperties.cpp">
+      <Filter>Source Files\Entities\Match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Match\StringMatch.cpp">
+      <Filter>Source Files\Entities\Match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Match\UserProperties.cpp">
+      <Filter>Source Files\Entities\Match</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\FindUsersRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\JoinRoomRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\KickUserRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\LeaveRoomRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\ModeratorMessageRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\ObjectMessageRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\PingPongRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\PlayerToSpectatorRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\PrivateMessageRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\PublicMessageRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\SetRoomVariablesRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\SetUserVariablesRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\SpectatorToPlayerRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\SubscribeRoomGroupRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\UnsubscribeRoomGroupRequest.cpp">
+      <Filter>Source Files\Requests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Game\CreateSFSGameRequest.cpp">
+      <Filter>Source Files\Requests\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Game\SFSGameSettings.cpp">
+      <Filter>Source Files\Requests\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Game\InvitationReplyRequest.cpp">
+      <Filter>Source Files\Requests\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Game\InviteUsersRequest.cpp">
+      <Filter>Source Files\Requests\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\LagMonitor.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Buddylist\AddBuddyRequest.cpp">
+      <Filter>Source Files\Requests\Buddylist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Buddylist\BlockBuddyRequest.cpp">
+      <Filter>Source Files\Requests\Buddylist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Buddylist\BuddyMessageRequest.cpp">
+      <Filter>Source Files\Requests\Buddylist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Buddylist\GoOnlineRequest.cpp">
+      <Filter>Source Files\Requests\Buddylist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Buddylist\InitBuddyListRequest.cpp">
+      <Filter>Source Files\Requests\Buddylist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Buddylist\RemoveBuddyRequest.cpp">
+      <Filter>Source Files\Requests\Buddylist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Buddylist\SetBuddyVariablesRequest.cpp">
+      <Filter>Source Files\Requests\Buddylist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Variables\ReservedBuddyVariables.cpp">
+      <Filter>Source Files\Entities\Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Variables\SFSBuddyVariable.cpp">
+      <Filter>Source Files\Entities\Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\SFSBuddy.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\SFSBuddyEvent.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\XMLParser\XMLNode.cpp">
+      <Filter>Source Files\Util\XMLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\XMLParser\XMLNodeList.cpp">
+      <Filter>Source Files\Util\XMLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\XMLParser\XMLParser.cpp">
+      <Filter>Source Files\Util\XMLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\XMLParser\XMLNodeValue.cpp">
+      <Filter>Source Files\Util\XMLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\XMLParser\XMLObject.cpp">
+      <Filter>Source Files\Util\XMLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Sockets\UDPClient.cpp">
+      <Filter>Source Files\Core\Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Sockets\UDPSocketLayer.cpp">
+      <Filter>Source Files\Core\Sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bitswarm\UDPManager.cpp">
+      <Filter>Source Files\Bitswarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bitswarm\BBox\BBClient.cpp">
+      <Filter>Source Files\Bitswarm\BBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bitswarm\BBox\BBEvent.cpp">
+      <Filter>Source Files\Bitswarm\BBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Http\SFSWebClient.cpp">
+      <Filter>Source Files\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Util\PasswordUtil.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\Game\QuickJoinGameRequest.cpp">
+      <Filter>Source Files\Requests\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Data\Vec3D.cpp">
+      <Filter>Source Files\Entities\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\Variables\MMOItemVariable.cpp">
+      <Filter>Source Files\Entities\Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\MMOItem.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Entities\MMORoom.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\MMO\SetMMOItemVariables.cpp">
+      <Filter>Source Files\Requests\MMO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\MMO\MapLimits.cpp">
+      <Filter>Source Files\Requests\MMO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\MMO\MMORoomSettings.cpp">
+      <Filter>Source Files\Requests\MMO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Requests\MMO\SetUserPositionRequest.cpp">
+      <Filter>Source Files\Requests\MMO</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

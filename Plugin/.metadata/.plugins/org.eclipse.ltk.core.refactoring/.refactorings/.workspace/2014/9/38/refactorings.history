@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;com.tvd.gamview.ext&apos; to &apos;com.tvd.gameview.ext&apos;&#x0A;- Original element: &apos;com.tvd.gamview.ext&apos;&#x0A;- Renamed element: &apos;com.tvd.gamview.ext&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;com.tvd.gamview.ext&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=com.tvd.gamview.ext" name="com.tvd.gameview.ext" references="true" stamp="1411097416059" version="1.0"/>
+</session>

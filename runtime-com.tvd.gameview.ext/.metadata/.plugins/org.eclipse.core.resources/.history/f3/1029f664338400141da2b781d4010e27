@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="HomeLayer" prefix="layer_home" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 568.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="home_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Desktop/Home/home_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPhonehd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPhonehd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPhonehd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPhonehd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+	<background-image id="home_layer_background_bg_home" 
+		location-in-interfacebuilder="0.0, 0.0"
+		width="320.0" height="568.0"
+		phony-path="home_layer/background/bg_home.png"  />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="home_dock_bottom" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 22.0" />
+			<z-index value="0" />
+			<image id="home_layer_home_dock_bottom" 
+				location-in-interfacebuilder="0.0, 524.0"
+				width="320.0" height="44.0"
+				phony-path="home_layer/sprites/home_dock_bottom.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="home_header" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 518.5" />
+			<z-index value="0" />
+			<image id="home_layer_home_header" 
+				location-in-interfacebuilder="0.0, 0.0"
+				width="320.0" height="99.0"
+				phony-path="home_layer/sprites/home_header.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="home_xo" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 87.0" />
+			<z-index value="0" />
+			<image id="home_layer_home_xo" 
+				location-in-interfacebuilder="131.0, 421.0"
+				width="58.0" height="120.0"
+				phony-path="home_layer/sprites/home_xo.png"  />
+		</sprite>
+	</sprites>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="facebook" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="257.0, 47.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="home_facebook_active" unlocated="true" />
+					<image id="home_layer_facebook_home_facebook_active" 
+						location-in-interfacebuilder="227.0, 487.0"
+						width="60.0" height="67.0"
+						phony-path="home_layer/menuitems/facebook/sprites/home_facebook_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="home_facebook_normal" unlocated="true" />
+					<image id="home_layer_facebook_home_facebook_normal" 
+						phony-path="home_layer/menuitems/facebook/sprites/home_facebook_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="multiplayer" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 240.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="home_multiplayer_active" unlocated="true" />
+					<image id="home_layer_multiplayer_home_multiplayer_active" 
+						location-in-interfacebuilder="17.0, 281.0"
+						width="286.0" height="93.0"
+						phony-path="home_layer/menuitems/multiplayer/sprites/home_multiplayer_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="home_multiplayer_normal" unlocated="true" />
+					<image id="home_layer_multiplayer_home_multiplayer_normal" 
+						phony-path="home_layer/menuitems/multiplayer/sprites/home_multiplayer_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="rate" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="61.0, 47.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="home_rate_active" unlocated="true" />
+					<image id="home_layer_rate_home_rate_active" 
+						location-in-interfacebuilder="31.0, 487.0"
+						width="60.0" height="67.0"
+						phony-path="home_layer/menuitems/rate/sprites/home_rate_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="home_rate_normal" unlocated="true" />
+					<image id="home_layer_rate_home_rate_normal" 
+						phony-path="home_layer/menuitems/rate/sprites/home_rate_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="training" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 341.5" />
+			<z-index value="0" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="home_training_active" unlocated="true" />
+					<image id="home_layer_training_home_training_active" 
+						location-in-interfacebuilder="17.0, 180.0"
+						width="286.0" height="93.0"
+						phony-path="home_layer/menuitems/training/sprites/home_training_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="home_training_normal" unlocated="true" />
+					<image id="home_layer_training_home_training_normal" 
+						phony-path="home_layer/menuitems/training/sprites/home_training_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+	<resource comment="resource for view">
+		<image id="home_layer_resource_home_facebook_disable" 
+			phony-path="home_layer/resource/home_facebook_disable.png"  />
+		<image id="home_layer_resource_home_multiplayer_disable" 
+			phony-path="home_layer/resource/home_multiplayer_disable.png"  />
+		<image id="home_layer_resource_home_rate_disable" 
+			phony-path="home_layer/resource/home_rate_disable.png"  />
+		<image id="home_layer_resource_home_training_disable" 
+			phony-path="home_layer/resource/home_training_disable.png"  />
+	</resource>
+</view>

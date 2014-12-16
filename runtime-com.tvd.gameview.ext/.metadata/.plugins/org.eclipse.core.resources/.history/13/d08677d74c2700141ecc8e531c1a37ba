@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view.xsd"
+		class-name="CzaAvatarsPopupView" comment="" prefix="pop_cza_avatars" super="default" type="popup">
+    <position-name>default</position-name>
+    <position>default</position>
+    <define-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/Defines</define-path>
+    <parameters-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/GameParams</parameters-path>
+    <images-inputpath>/Users/apple/Downloads/cza_avatars_popup</images-inputpath>
+    <images-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/demohd</images-path>
+    <xibcontainer-path used="true">/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/screenshots/demohd</xibcontainer-path>
+    <screencontainer-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Wireframing/WireframingScreen/demohd</screencontainer-path>
+    <androidcontainer-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/proj.android/res/layout/demohd</androidcontainer-path>
+    <class-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/UI/PopUp</class-path>
+    <image id="cza_avatars_popup_background_cza_bg">
+		cza_avatars_popup/background/cza_bg.png
+	</image>
+    <sprites array="false" comment="create group of elements">
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>cza_come_back_text</position-name>
+            <z-index>0</z-index>
+            <image id="cza_avatars_popup_cza_come_back_text">
+				cza_avatars_popup/sprites/cza_come_back_text.png
+			</image>
+        </sprite>
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>cza_header</position-name>
+            <z-index>0</z-index>
+            <image id="cza_avatars_popup_cza_header">
+				cza_avatars_popup/sprites/cza_header.png
+			</image>
+        </sprite>
+    </sprites>
+    <tables array="false" comment="create group of elements">
+        <table columns="1" comment="" rows="1" size="100, 150">
+            <position-name>container</position-name>
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <z-index>0</z-index>
+            <image height="350" width="300"/>
+            <cell comment="">
+                <sprites array="false" comment="create group of elements">
+                    <sprite background="false" comment="" visible="true">
+                        <anchorpoint>default</anchorpoint>
+                        <position>0, 0</position>
+                        <position-name>cza_current_background</position-name>
+                        <z-index>0</z-index>
+                        <image id="cza_avatars_popup_container_cell_cza_current_background_cza_current_background">
+							cza_avatars_popup/tables/container/cell/sprites/cza_current_background/cza_current_background.png
+						</image>
+                        <sprites array="false" comment="create group of elements">
+                            <sprite background="false" comment="" visible="true">
+                                <anchorpoint>default</anchorpoint>
+                                <position>0, 0</position>
+                                <position-name>cza_facebook_icon</position-name>
+                                <z-index>0</z-index>
+                                <image id="cza_avatars_popup_container_cell_cza_current_background_cza_facebook_icon">
+									cza_avatars_popup/tables/container/cell/sprites/cza_current_background/sprites/cza_facebook_icon.png
+								</image>
+                            </sprite>
+                            <sprite background="false" comment="" visible="true">
+                                <anchorpoint>default</anchorpoint>
+                                <position>0, 0</position>
+                                <position-name>cza_inframe</position-name>
+                                <z-index>0</z-index>
+                                <image id="cza_avatars_popup_container_cell_cza_current_background_cza_inframe">
+									cza_avatars_popup/tables/container/cell/sprites/cza_current_background/sprites/cza_inframe.png
+								</image>
+                            </sprite>
+                            <sprite background="false" comment="" visible="true">
+                                <anchorpoint>default</anchorpoint>
+                                <position>0, 0</position>
+                                <position-name>cza_selected</position-name>
+                                <z-index>0</z-index>
+                                <image id="cza_avatars_popup_container_cell_cza_current_background_cza_selected">
+									cza_avatars_popup/tables/container/cell/sprites/cza_current_background/sprites/cza_selected.png
+								</image>
+                            </sprite>
+                            <sprite background="false" comment="" visible="true">
+                                <anchorpoint>default</anchorpoint>
+                                <position>0, 0</position>
+                                <position-name>cza_use_background</position-name>
+                                <z-index>0</z-index>
+                                <image id="cza_avatars_popup_container_cell_cza_current_background_cza_use_background">
+									cza_avatars_popup/tables/container/cell/sprites/cza_current_background/sprites/cza_use_background.png
+								</image>
+                            </sprite>
+                        </sprites>
+                    </sprite>
+                </sprites>
+            </cell>
+        </table>
+    </tables>
+</view>

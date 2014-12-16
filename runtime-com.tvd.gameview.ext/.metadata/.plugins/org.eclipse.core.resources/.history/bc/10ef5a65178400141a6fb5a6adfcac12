@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="MainGameLayer" prefix="layer_main_game" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 480.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="main_game_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Desktop/Offline/main_game_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPhonehd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPhonehd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPhonehd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPhonehd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="main_board" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_layer_main_board" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="308.0" height="328.0"
+				phony-path="main_game_layer/sprites/main_board.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="main_off_o_ai" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_layer_main_off_o_ai" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="29.0" height="31.0"
+				phony-path="main_game_layer/sprites/main_off_o_ai.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="main_off_x_me" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="50.0, 50.0" />
+			<z-index value="0" />
+			<image id="main_game_layer_main_off_x_me" 
+				location-in-interfacebuilder="10.0, 10.0"
+				width="29.0" height="31.0"
+				phony-path="main_game_layer/sprites/main_off_x_me.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="main_off_header" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="160.0, 518.5" />
+			<z-index value="0" />
+			<image id="main_game_layer_home_header" 
+				location-in-interfacebuilder="0.0, 0.0"
+				width="320.0" height="99.0"
+				phony-path="home_layer/sprites/home_header.png"  />
+		</sprite>
+	</sprites>
+	<menuitems array="false" comment="create group of menuitems">
+		<menuitem visible="true" comment="">
+			<position-name value="back" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="18.0, 541.5" />
+			<z-index value="1" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="main_off_back_normal" unlocated="true" />
+					<image id="main_game_layer_back_training_back_normal" 
+						location-in-interfacebuilder="8.0, 11.0"
+						width="20.0" height="31.0"
+						phony-path="training_layer/menuitems/back/sprites/training_back_normal.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="training_back_active" unlocated="true" />
+					<image id="training_layer_back_training_back_active" 
+						phony-path="training_layer/menuitems/back/sprites/training_back_active.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+		<menuitem visible="true" comment="">
+			<position-name value="setting" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="297.0, 542.0" />
+			<z-index value="1" />
+			<sprites array="false" comment="create group of sprites">
+				<sprite visible="true" comment="">
+					<position-name value="training_setting_active" unlocated="true" />
+					<image id="training_layer_setting_training_setting_active" 
+						location-in-interfacebuilder="282.0, 11.0"
+						width="30.0" height="30.0"
+						phony-path="training_layer/menuitems/setting/sprites/training_setting_active.png"  />
+				</sprite>
+				<sprite visible="true" comment="">
+					<position-name value="training_setting_normal" unlocated="true" />
+					<image id="training_layer_setting_training_setting_normal" 
+						phony-path="training_layer/menuitems/setting/sprites/training_setting_normal.png"  />
+				</sprite>
+			</sprites>
+		</menuitem>
+	</menuitems>
+	<resource comment="resource for view">
+		<image id="main_game_layer_resource_main_symbol_o" 
+			phony-path="main_game_layer/resource/main_symbol_o.png"  />
+		<image id="main_game_layer_resource_main_symbol_x" 
+			phony-path="main_game_layer/resource/main_symbol_x.png"  />
+	</resource>
+</view>

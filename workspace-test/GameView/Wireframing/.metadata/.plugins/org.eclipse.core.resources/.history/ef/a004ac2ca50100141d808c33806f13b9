@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+	<widgets xsi:type="model:Panel" id="0" width="768" height="1024" locked="true" measuredWidth="768" measuredHeight="1024"/>
+  	
+	<widgets xsi:type="model:Image" id="1" x="100" y="100" width="363" height="23" measuredWidth="363" measuredHeight="23" src="assets/ipadhd/avatars_popup/sprites/come_back_text.png" />
+	<widgets xsi:type="model:Image" id="2" x="100" y="100" width="277" height="45" measuredWidth="277" measuredHeight="45" src="assets/ipadhd/avatars_popup/sprites/header.png" />
+	<widgets xsi:type="model:Image" id="3" x="100" y="100" width="140" height="190" measuredWidth="140" measuredHeight="190" src="assets/ipadhd/avatars_popup/tables/container/sprites/resources/sprites/current_background.png" />
+	<widgets xsi:type="model:Image" id="4" x="100" y="100" width="43" height="43" measuredWidth="43" measuredHeight="43" src="assets/ipadhd/avatars_popup/tables/container/sprites/resources/sprites/facebook_icon.png" />
+	<widgets xsi:type="model:Image" id="5" x="100" y="100" width="93" height="93" measuredWidth="93" measuredHeight="93" src="assets/ipadhd/avatars_popup/tables/container/sprites/resources/sprites/inframe.png" />
+	<widgets xsi:type="model:Image" id="6" x="100" y="100" width="37" height="27" measuredWidth="37" measuredHeight="27" src="assets/ipadhd/avatars_popup/tables/container/sprites/resources/sprites/selected.png" />
+	<widgets xsi:type="model:Image" id="7" x="100" y="100" width="140" height="190" measuredWidth="140" measuredHeight="190" src="assets/ipadhd/avatars_popup/tables/container/sprites/resources/sprites/use_background.png" />
+	<widgets xsi:type="model:Image" id="9" x="100" y="100" width="116" height="49" measuredWidth="116" measuredHeight="49" src="assets/ipadhd/avatars_popup/tables/container/sprites/resources/menus/use/menuitems/use/sprites/use_normal.png" />
+
+  	<hRuler/>
+  	<vRuler/>
+  	<font size="12px"/>
+</model:Screen>

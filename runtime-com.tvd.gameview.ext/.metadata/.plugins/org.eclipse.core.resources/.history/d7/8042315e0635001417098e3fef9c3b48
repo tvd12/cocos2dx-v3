@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="CzaAvatarsPopupView" prefix="popup_cza_avatars" type="popup" exitable="true" 
+		super="PopUpLayer" background-name="default" size="296.0, 447.0" 
+		template-name="Common extend table"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="cza_avatars_popup" />
+	<position value="default" />
+	<define-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/Defines" />
+	<parameters-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/GameParams" />
+	<images-inputpath value="/Users/apple/Downloads/cza_avatars_popup" />
+	<images-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/demohd" />
+	<xibcontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/screenshots/demohd" used="true" />
+	<screencontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Wireframing/WireframingScreen/demohd" />
+	<androidcontainer-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/proj.android/res/layout/demohd" />
+	<class-path value="/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/UI/PopUp" />
+	<exit-image position="148.0, 30.0" location-in-interfacebuilder="136.0, 405.0" />
+
+	<sprites array="false" comment="create group of sprites">
+		<sprite visible="true" comment="">
+			<position-name value="cza_come_back_text" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="148.0, 67.0" />
+			<z-index value="0" />
+			<image id="cza_avatars_popup_cza_come_back_text" 
+				location-in-interfacebuilder="60.0, 383.0"
+				width="196.0" height="14.0"
+				phony-path="cza_avatars_popup/sprites/cza_come_back_text.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="cza_header" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="148.5, 414.5" />
+			<z-index value="0" />
+			<image id="cza_avatars_popup_cza_header" 
+				location-in-interfacebuilder="20.0, 20.0"
+				width="277.0" height="45.0"
+				phony-path="cza_avatars_popup/sprites/cza_header.png"  />
+		</sprite>
+		<sprite visible="true" comment="">
+			<position-name value="cza_lv_progress_bg" />
+			<anchorpoint value="0.5, 0.5" />
+			<position value="104.0, 374.0" />
+			<z-index value="0" />
+			<image id="cza_avatars_popup_cza_lv_progress_bg_cza_lv_progress_bg" 
+				location-in-interfacebuilder="30.0, 71.0"
+				width="168.0" height="24.0"
+				phony-path="cza_avatars_popup/sprites/cza_lv_progress_bg/cza_lv_progress_bg.png"  />
+			<progressbar template-name="CCProgressTimer" visible="true" comment="">
+				<type value="kCCProgressTimerTypeBar" />
+				<mid-point value="0.0, 0.0" />
+				<bar-change-rate value="1.0, 0.0" />
+				<percent value="30.0" />
+				<position-name value="cza_lv_progress_over" unlocated="true" />
+				<anchorpoint value="0.0, 0.0" />
+				<sprite visible="true" comment="">
+					<position-name value="cza_lv_progress_over" unlocated="true" />
+					<image id="cza_avatars_popup_cza_lv_progress_bg_progressbar_cza_lv_progress_over" 
+						phony-path="cza_avatars_popup/sprites/cza_lv_progress_bg/progressbar/cza_lv_progress_over.png"  />
+				</sprite>
+			</progressbar>
+		</sprite>
+	</sprites>
+</view>

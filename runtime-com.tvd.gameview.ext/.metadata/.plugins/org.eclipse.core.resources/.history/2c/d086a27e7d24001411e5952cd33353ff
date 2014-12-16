@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="CrazyUpgradePopupView" comment="" prefix="pop_crazy_upgrade" super="default" type="popup"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://www.tvd.com/tools" 
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view.xsd">
+    <position-name>default</position-name>
+    <position>default</position>
+    <define-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/Defines</define-path>
+    <parameters-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/GameParams</parameters-path>
+    <images-inputpath>/Users/apple/Downloads/crazy_upgrade_popup</images-inputpath>
+    <images-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/demohd</images-path>
+    <xibcontainer-path used="true">/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/screenshots/demohd</xibcontainer-path>
+    <screencontainer-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Wireframing/WireframingScreen/demohd</screencontainer-path>
+    <androidcontainer-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/proj.android/res/layout/demohd</androidcontainer-path>
+    <class-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/UI/Popup</class-path>
+    <image background="true">crazy_upgrade_popup/background/cz_container.png</image>
+    <sprites array="false" comment="create group of elements">
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>113.5, 63.0</position>
+            <position-name>cz_reward_icon</position-name>
+            <z-index>0</z-index>
+            <image id="crazy_upgrade_popup_cz_reward_icon">
+				crazy_upgrade_popup/sprites/cz_reward_icon.png
+			</image>
+        </sprite>
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>154.0, 128.0</position>
+            <position-name>cz_vip_level_ribbon</position-name>
+            <z-index>0</z-index>
+            <image id="crazy_upgrade_popup_cz_vip_level_ribbon">
+				crazy_upgrade_popup/sprites/cz_vip_level_ribbon.png
+			</image>
+			<sprites array="false" comment="sprites for ribbon">
+	    		<sprite background="false" comment="" visible="true">
+		            <anchorpoint>default</anchorpoint>
+		            <position>122.5, 63.0</position>
+		            <position-name>haha_haha</position-name>
+		            <z-index>0</z-index>
+		            <image id="crazy_on_ribbon">
+						crazy_upgrade_popup/sprites/cz_reward_icon.png
+					</image>
+				</sprite>
+    		</sprites>
+			<labels array="false" comment="example labels">
+    			<label comment="" visible="true">
+	    			<text>Hello Nhung em</text>
+	    			<font>DEFAULT_FONT_NAME</font>
+	    			<font-size s-value="GPARAMS().CMM_FONT_SIZE_3">18</font-size>
+	    			<position-name>hello_nhung_em</position-name>
+	    			<anchorpoint>0, 0.5</anchorpoint>
+	    			<position>133.0, -49.0</position>
+	    			<z-index>100</z-index>
+    			</label>
+    		</labels>
+        </sprite>
+    </sprites>
+    <labels array="false" comment="example labels">
+    	<label comment="" visible="true">
+    		<text>Hello I'm Dung Ta Van</text>
+    		<font>DEFAULT_FONT_NAME</font>
+    		<font-size s-value="GPARAMS().CMM_FONT_SIZE_3">18</font-size>
+    		<position-name>dung_ta_van</position-name>
+    		<anchorpoint>0, 0.5</anchorpoint>
+    		<position>161.0, 27.0</position>
+    		<z-index>100</z-index>
+    	</label>
+    </labels>
+</view>

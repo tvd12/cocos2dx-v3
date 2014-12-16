@@ -1,0 +1,23 @@
+1410766341356	Rename type 'Cell'
+1410771002206	Delete element
+1411008418038	Rename type 'Activator'
+1411095380552	Rename type 'SdkViewModelPropertySource'
+1411095805261	Rename type 'ViewModelAdapterFactory'
+1411095818308	Rename type 'ViewModelPropertySource'
+1411096549875	Rename package 'com.tvd.gameview.ui.builder'
+1411096585264	Rename package 'com.tvd.gameview.plugin.model'
+1411096632929	Rename package 'com.tvd.gameview.ui.editors'
+1411096651663	Rename package 'com.tvd.gameview.ui.internal'
+1411096663211	Rename package 'com.tvd.gameview.ui.natures'
+1411096674284	Rename package 'com.tvd.gameview.ui.ext.natures'
+1411096690352	Rename package 'com.tvd.gameview.views'
+1411096954728	Delete element
+1411097005063	Rename package 'com.tvd.gamview.ext'
+1411097016004	Rename package 'com.tvd.gamview.ext.file'
+1411097034433	Rename package 'com.tvd.gamview.ext.constants'
+1411097042236	Rename package 'com.tvd.gamview.ext.pages'
+1411097052698	Rename package 'com.tvd.gamview.ext.preference'
+1411097060838	Rename package 'com.tvd.gamview.ext.support'
+1411097068508	Rename package 'com.tvd.gamview.ext.utils'
+1411097074972	Rename package 'com.tvd.gamview.ext.wizards'
+1411100438019	Infer generic type arguments

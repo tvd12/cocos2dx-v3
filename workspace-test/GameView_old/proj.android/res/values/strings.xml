@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Video Poker</string>
+    <string name="app_id">1433456060256187</string>
+    <string name="send_mail_title">[Video Poker JACKPOT] Feedback</string>
+    <string name="chartboost_app_id">53b285f989b0bb2857c068fc</string>
+    <string name="chartboost_app_signature">7581f55aff5b1112f5badf16fa4fc18ef211f727</string>
+    <string name="chartboost_bonus_interstitial">GOT HOURLY BONUS</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="center" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="paytable.jpg" id="COg-AT-3gl">
+                    <rect key="frame" x="4" y="228" width="320" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_up_common_bg.png" id="oPm-BV-ub5">
+                    <rect key="frame" x="0.0" y="191" width="555" height="833"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="come_back_text.png" id="h2x-yp-jqn">
+                    <rect key="frame" x="96" y="800" width="363" height="23"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_dailybonus_days_bg.png" id="lI5-QO-Wf5">
+                    <rect key="frame" x="35" y="312" width="234" height="147"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_dailybonus_facebook_friend_bg.png" id="WbH-GU-hyK">
+                    <rect key="frame" x="289" y="312" width="234" height="147"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_dailybonus_level_bg.png" id="b3k-z0-N3d">
+                    <rect key="frame" x="35" y="488" width="234" height="147"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_dailybonus_vip_bg.png" id="n3W-c8-5hS">
+                    <rect key="frame" x="289" y="488" width="234" height="147"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_dailybonus_total_bonus_bg.png" id="7N4-uI-iNi">
+                    <rect key="frame" x="35" y="673" width="479" height="110"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_dailybonus_claim_menuitem_normal.png" id="I9F-pd-GFC">
+                    <rect key="frame" x="225" y="854" width="104" height="37"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_dailybonus_facebook_separate_line.png" id="vie-eX-hT8">
+                    <rect key="frame" x="170" y="536" width="80" height="4"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_dailybonus_facebook_separate_line.png" id="Tx1-co-tGK">
+                    <rect key="frame" x="423" y="359" width="80" height="4"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="common_vip_card_sprite_2.png" id="0Hh-9e-diP">
+                    <rect key="frame" x="307" y="515" width="102" height="66"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="XsR-Y1-gto">
+                    <rect key="frame" x="123" y="419" width="74" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="JfW-M9-UVq">
+                    <rect key="frame" x="165" y="330" width="91" height="61"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sfq-Rg-fbb">
+                    <rect key="frame" x="417" y="516" width="91" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="vgT-nj-dPw">
+                    <rect key="frame" x="56" y="700" width="182" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jEB-1w-vqv">
+                    <rect key="frame" x="289" y="700" width="114" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_dailybonus_header_bg.png" id="wkQ-kU-KpM">
+                    <rect key="frame" x="20" y="208" width="516" height="84"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="pop_common_close_normal.png" id="Ngc-t7-5Gl">
+                    <rect key="frame" x="237" y="927" width="82" height="82"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="S5K-aD-qBy">
+                    <rect key="frame" x="79" y="338" width="65" height="61"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="come_back_text.png" width="726" height="46"/>
+        <image name="common_vip_card_sprite_2.png" width="204" height="132"/>
+        <image name="paytable.jpg" width="1110" height="1666"/>
+        <image name="pop_common_close_normal.png" width="164" height="164"/>
+        <image name="pop_dailybonus_claim_menuitem_normal.png" width="384" height="136"/>
+        <image name="pop_dailybonus_days_bg.png" width="468" height="294"/>
+        <image name="pop_dailybonus_facebook_friend_bg.png" width="468" height="294"/>
+        <image name="pop_dailybonus_facebook_separate_line.png" width="174" height="8"/>
+        <image name="pop_dailybonus_header_bg.png" width="1032" height="168"/>
+        <image name="pop_dailybonus_level_bg.png" width="468" height="294"/>
+        <image name="pop_dailybonus_total_bonus_bg.png" width="958" height="220"/>
+        <image name="pop_dailybonus_vip_bg.png" width="468" height="294"/>
+        <image name="pop_up_common_bg.png" width="1110" height="1666"/>
+    </resources>
+</document>

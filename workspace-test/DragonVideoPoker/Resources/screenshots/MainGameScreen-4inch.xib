@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg.png" id="BFi-Zj-kQN">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_pay_table.png" id="omX-VE-R3x">
+                    <rect key="frame" x="2" y="49" width="320" height="204"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="header_ingame.png" id="NhZ-Wp-l21">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="level.png" id="owP-rI-bcl">
+                    <rect key="frame" x="4" y="0.0" width="107" height="74"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="table_title.png" id="FsM-0m-aum">
+                    <rect key="frame" x="110" y="5" width="169" height="50"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="exit_normal.png" id="z31-2J-Bbt">
+                    <rect key="frame" x="273" y="0.0" width="47" height="32"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="setting_normal.png" id="C48-1L-eS2">
+                    <rect key="frame" x="272" y="31" width="48" height="35"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_chip_statistic.png" id="DQI-xJ-ppX">
+                    <rect key="frame" x="0.0" y="244" width="320" height="70"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bottom_ingame.png" id="0Zw-gJ-Ubq">
+                    <rect key="frame" x="0.0" y="500" width="320" height="68"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_chip_blue.png" id="6du-9L-JBm">
+                    <rect key="frame" x="7" y="515" width="41" height="41"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_chip_blue.png" id="i7g-qc-rF0">
+                    <rect key="frame" x="56" y="519" width="41" height="41"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_chip_blue.png" id="Bum-HW-RkV">
+                    <rect key="frame" x="104" y="520" width="41" height="41"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_chip_blue.png" id="Z4j-zT-KTw">
+                    <rect key="frame" x="152" y="521" width="41" height="41"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bottom2_ingame.png" id="9rD-zy-xL2">
+                    <rect key="frame" x="197" y="488" width="123" height="80"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="deal_active.png" id="jbP-Cl-nXa">
+                    <rect key="frame" x="214" y="501" width="100" height="62"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_jackpot.png" id="mpN-Gi-QeI">
+                    <rect key="frame" x="129" y="31" width="41" height="12"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="text_natural_royal_flush.png" id="gUn-PH-pRt">
+                    <rect key="frame" x="129" y="13" width="120" height="15"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="lCZ-4p-k55">
+                    <rect key="frame" x="173" y="28" width="62" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ypK-Vv-Whd">
+                    <rect key="frame" x="36" y="11" width="43" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold_shine.png" id="ddH-s2-lwT">
+                    <rect key="frame" x="125" y="371" width="71" height="89"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold_shine.png" id="a1t-vf-YTx">
+                    <rect key="frame" x="64" y="371" width="71" height="89"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold_shine.png" id="bNE-oQ-XZc">
+                    <rect key="frame" x="4" y="372" width="71" height="89"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold_shine.png" id="BwE-SQ-3Dy">
+                    <rect key="frame" x="245" y="370" width="71" height="89"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold_shine.png" id="cUz-GM-px3">
+                    <rect key="frame" x="185" y="371" width="71" height="89"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_text_chips.png" id="9Yp-4v-I7h">
+                    <rect key="frame" x="7" y="257" width="149" height="43"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_text_bet.png" id="rvM-NH-LjC">
+                    <rect key="frame" x="191" y="259" width="122" height="41"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_chip.png" id="hJS-B2-lZK">
+                    <rect key="frame" x="11" y="260" width="35" height="35"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_chips_bet.png" id="3oJ-zL-ihb">
+                    <rect key="frame" x="173" y="260" width="36" height="37"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_bet.png" id="GPk-Dw-0O2">
+                    <rect key="frame" x="211" y="272" width="21" height="12"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="YwV-59-RV7">
+                    <rect key="frame" x="238" y="269" width="62" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3Q3-Cf-RuY">
+                    <rect key="frame" x="54" y="269" width="62" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="add_chips_normal.png" id="l67-fQ-G7P">
+                    <rect key="frame" x="131" y="266" width="23" height="23"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold.png" id="vra-pW-KVl">
+                    <rect key="frame" x="157" y="380" width="31" height="31"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold.png" id="pg8-FA-bjG">
+                    <rect key="frame" x="217" y="380" width="31" height="31"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold.png" id="lge-yL-3lY">
+                    <rect key="frame" x="276" y="380" width="31" height="31"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold.png" id="lLQ-yi-8CH">
+                    <rect key="frame" x="37" y="380" width="31" height="31"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hold.png" id="oh2-ho-2SS">
+                    <rect key="frame" x="97" y="381" width="31" height="31"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="level_active.png" id="Ifn-eg-OXJ">
+                    <rect key="frame" x="15" y="-22" width="85" height="85"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="grl-pw-0yR">
+                    <rect key="frame" x="6" y="79" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="sFb-2j-gCG">
+                    <rect key="frame" x="6" y="111" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="kRv-qn-qgD">
+                    <rect key="frame" x="7" y="143" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="Mfy-8a-m9e">
+                    <rect key="frame" x="7" y="175" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="YAl-b8-az6">
+                    <rect key="frame" x="7" y="207" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="y97-0l-uts">
+                    <rect key="frame" x="163" y="79" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="vYk-YW-xUA">
+                    <rect key="frame" x="163" y="111" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="48O-Av-bU5">
+                    <rect key="frame" x="163" y="143" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="PxM-UW-2u9">
+                    <rect key="frame" x="163" y="175" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text_box_normal.png" id="ZNE-Up-Tnl">
+                    <rect key="frame" x="163" y="207" width="151" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_chips_normal.png" width="46" height="46"/>
+        <image name="bg.png" width="522" height="108"/>
+        <image name="bg_chip_statistic.png" width="640" height="140"/>
+        <image name="bg_pay_table.png" width="640" height="324"/>
+        <image name="bg_text_bet.png" width="244" height="82"/>
+        <image name="bg_text_chips.png" width="298" height="86"/>
+        <image name="bottom2_ingame.png" width="246" height="160"/>
+        <image name="bottom_ingame.png" width="640" height="136"/>
+        <image name="deal_active.png" width="200" height="124"/>
+        <image name="exit_normal.png" width="94" height="64"/>
+        <image name="header_ingame.png" width="640" height="134"/>
+        <image name="hold.png" width="62" height="62"/>
+        <image name="hold_shine.png" width="142" height="178"/>
+        <image name="icon_chip.png" width="70" height="70"/>
+        <image name="icon_chip_blue.png" width="82" height="82"/>
+        <image name="icon_chips_bet.png" width="72" height="74"/>
+        <image name="level.png" width="214" height="148"/>
+        <image name="level_active.png" width="170" height="170"/>
+        <image name="setting_normal.png" width="96" height="70"/>
+        <image name="table_title.png" width="338" height="100"/>
+        <image name="text_bet.png" width="42" height="24"/>
+        <image name="text_box_normal.png" width="304" height="44"/>
+        <image name="text_jackpot.png" width="82" height="24"/>
+        <image name="text_natural_royal_flush.png" width="120" height="15"/>
+    </resources>
+</document>

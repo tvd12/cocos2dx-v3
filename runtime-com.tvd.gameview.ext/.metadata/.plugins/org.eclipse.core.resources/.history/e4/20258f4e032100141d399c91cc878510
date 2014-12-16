@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="GameViewView" comment="" prefix="" super="default" type="">
+    <position-name>default</position-name>
+    <position>default</position>
+    <define-path>/Volumes/Working/GitHub/workspace-test/GameView/Classes/Utils/Defines</define-path>
+    <parameters-path>/Volumes/Working/GitHub/workspace-test/GameView/Classes/Utils/GameParams</parameters-path>
+    <images-inputpath>/Volumes/Working/GitHub/workspace-test/GameView</images-inputpath>
+    <images-path>/Volumes/Working/GitHub/workspace-test/GameView/Resources</images-path>
+    <xibcontainer-path>/Volumes/Working/GitHub/workspace-test/GameView/Resources/screenshots</xibcontainer-path>
+    <class-path>/Volumes/Working/GitHub/workspace-test/GameView/Classes</class-path>
+    <screencontainer-path>haha/Volumes/Working/GitHub/workspace-test/GameView/Wireframing/WireframingScreen</screencontainer-path>
+</view>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Panel" id="6" width="320" height="480" locked="true" measuredWidth="320" measuredHeight="480"/>
+  <widgets xsi:type="model:Image" id="8" x="128" y="160" width="23" height="23" measuredWidth="23" measuredHeight="23" src="assets/demohd/add_chips_active.png"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

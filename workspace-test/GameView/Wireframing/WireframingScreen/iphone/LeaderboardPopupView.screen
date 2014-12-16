@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+	<widgets xsi:type="model:Panel" id="0" width="320" height="480" locked="true" measuredWidth="320" measuredHeight="480"/>
+  	
+	<widgets xsi:type="model:Image" id="1" x="100" y="100" width="296" height="447" measuredWidth="296" measuredHeight="447" src="assets/iphone/pop_common_bg.png" />
+	<widgets xsi:type="model:Image" id="2" x="100" y="100" width="478" height="98" measuredWidth="478" measuredHeight="98" src="assets/iphone/leaderboard_popup/sprites/bg.png" />
+	<widgets xsi:type="model:Image" id="3" x="100" y="100" width="62" height="62" measuredWidth="62" measuredHeight="62" src="assets/iphone/leaderboard_popup/sprites/bg_number.png" />
+	<widgets xsi:type="model:Image" id="4" x="100" y="100" width="516" height="84" measuredWidth="516" measuredHeight="84" src="assets/iphone/leaderboard_popup/sprites/leaderboard_banner.png" />
+	<widgets xsi:type="model:Image" id="5" x="100" y="100" width="54" height="66" measuredWidth="54" measuredHeight="66" src="assets/iphone/leaderboard_popup/sprites/number_1.png" />
+	<widgets xsi:type="model:Image" id="6" x="100" y="100" width="54" height="66" measuredWidth="54" measuredHeight="66" src="assets/iphone/leaderboard_popup/sprites/number_2.png" />
+	<widgets xsi:type="model:Image" id="7" x="100" y="100" width="54" height="66" measuredWidth="54" measuredHeight="66" src="assets/iphone/leaderboard_popup/sprites/number_3.png" />
+
+  	<hRuler/>
+  	<vRuler/>
+  	<font size="12px"/>
+</model:Screen>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://www.tvd.com/tools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class-name="CrazyUpgradePopupView" comment="" prefix="pop_crazy_upgrade" super="default" type="popup" xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view.xsd">
+    <position-name>default</position-name>
+    <position>default</position>
+    <define-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/Defines</define-path>
+    <parameters-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/Utils/GameParams</parameters-path>
+    <images-inputpath>/Users/apple/Downloads/crazy_upgrade_popup</images-inputpath>
+    <images-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/ipadhd</images-path>
+    <xibcontainer-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Resources/screenshots/ipadhd</xibcontainer-path>
+    <screencontainer-path used="true">/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Wireframing/WireframingScreen/ipadhd</screencontainer-path>
+    <screencontainer-path>null/ipadhd</screencontainer-path>
+    <class-path>/Volumes/Working/GitHub/workspace-test/DragonVideoPoker/Classes/UI/PopUp</class-path>
+    <image background="true">crazy_upgrade_popup/background/cz_container.png</image>
+    <sprites array="false" comment="create group of elements">
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>cz_reward_icon</position-name>
+            <z-index>0</z-index>
+            <image id="crazy_upgrade_popup_cz_reward_icon">
+				crazy_upgrade_popup/sprites/cz_reward_icon.png
+			</image>
+        </sprite>
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>cz_vip_level_ribbon</position-name>
+            <z-index>0</z-index>
+            <image id="crazy_upgrade_popup_cz_vip_level_ribbon">
+				crazy_upgrade_popup/sprites/cz_vip_level_ribbon.png
+			</image>
+        </sprite>
+    </sprites>
+</view>

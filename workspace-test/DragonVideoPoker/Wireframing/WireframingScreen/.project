@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>DragonVideoPoker</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>assets/demohd</name>
+			<type>2</type>
+			<location>/Volumes/Working/DragonVideoPokerV2.x/dragonvideopoker-cocos2dx-2.2.x/DragonVideoPoker/Resources/demohd</location>
+		</link>
+		<link>
+			<name>assets/ipadhd</name>
+			<type>2</type>
+			<location>/Volumes/Working/DragonVideoPokerV2.x/dragonvideopoker-cocos2dx-2.2.x/DragonVideoPoker/Resources/ipadhd</location>
+		</link>
+	</linkedResources>
+</projectDescription>

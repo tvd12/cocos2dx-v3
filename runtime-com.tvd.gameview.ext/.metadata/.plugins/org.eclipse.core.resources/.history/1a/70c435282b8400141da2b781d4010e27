@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view class-name="LobbyLayer" prefix="layer_lobby" type="layer" exitable="false" 
+		super="CommonLayer" background-name="default" size="320.0, 480.0"
+		template-name="Common"
+		exported="false"
+		comment=""
+		xmlns="http://www.tvd.com/tools"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view_2_0.xsd">
+	<position-name value="lobby_layer" />
+	<position value="default" />
+	<define-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/Defines" />
+	<parameters-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/Other/Utils/GameParams" />
+	<images-inputpath value="/Users/dungtavan/Desktop/Multiplayer/lobby_layer" />
+	<images-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/iPadhd" />
+	<xibcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Resources/screenshots/iPadhd" used="true" />
+	<screencontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Wireframing/WireframingScreen/iPadhd" />
+	<androidcontainer-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/proj.android/res/layout/iPadhd" />
+	<class-path value="/Volumes/DATA/Working/TicTacToe/client/caroonline/CaroOnline/Classes/View/UI/Layer" />
+	<background-image id="lobby_layer_" 
+		location-in-interfacebuilder="10.0, 10.0"
+		phony-path="lobby_layer/menuitems"  />
+
+	<sprites array="false" comment="create group of sprites">
+	</sprites>
+	<resource comment="resource for view">
+		<image id="lobby_layer_resource_lobby_back_disable" 
+			phony-path="lobby_layer/resource/lobby_back_disable.png"  />
+		<image id="lobby_layer_resource_lobby_inapp_disable" 
+			phony-path="lobby_layer/resource/lobby_inapp_disable.png"  />
+		<image id="lobby_layer_resource_lobby_leaderboard_disable" 
+			phony-path="lobby_layer/resource/lobby_leaderboard_disable.png"  />
+		<image id="lobby_layer_resource_lobby_selection_disable" 
+			phony-path="lobby_layer/resource/lobby_selection_disable.png"  />
+		<image id="lobby_layer_resource_lobby_setting_disable" 
+			phony-path="lobby_layer/resource/lobby_setting_disable.png"  />
+		<image id="lobby_layer_resource_lobby_shop_disable" 
+			phony-path="lobby_layer/resource/lobby_shop_disable.png"  />
+	</resource>
+</view>

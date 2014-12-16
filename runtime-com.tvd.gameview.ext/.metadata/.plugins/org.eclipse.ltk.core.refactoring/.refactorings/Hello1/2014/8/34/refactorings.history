@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Hello1&apos;&#x0A;- Original project: &apos;Hello1&apos;&#x0A;- Original element: &apos;crazy_upgrade_popup.xml&apos;" description="Delete element" element1="resources/xml/iphone/crazy_upgrade_popup.xml" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1408381814780" subPackages="false" version="1.0"/>
+</session>

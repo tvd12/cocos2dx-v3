@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://www.tvd.com/tools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class-name="LeaderboardPopupView" comment="" prefix="pop_leaderboard" super="default" type="popup" xsi:schemaLocation="http://www.tvd.com/tools ../xsd/view.xsd">
+    <position-name>default</position-name>
+    <position>default</position>
+    <define-path>/Volumes/Working/GitHub/workspace-test/GameView/Classes/Utils/Defines</define-path>
+    <parameters-path>/Volumes/Working/GitHub/workspace-test/GameView/Classes/Utils/GameParams</parameters-path>
+    <images-inputpath>/Users/apple/Downloads/Skype/Leaderboard/iPad/leaderboard_popup</images-inputpath>
+    <images-path>/Volumes/Working/GitHub/workspace-test/GameView/Resources/iphone</images-path>
+    <xibcontainer-path>/Volumes/Working/GitHub/workspace-test/GameView/Resources/screenshots/iphone</xibcontainer-path>
+    <class-path>/Volumes/Working/GitHub/workspace-test/GameView/Classes</class-path>
+    <screencontainer-path>/Volumes/Working/GitHub/workspace-test/GameView/Wireframing/WireframingScreen</screencontainer-path>
+    <sprites array="false" comment="create group of elements">
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>bg</position-name>
+            <z-index>0</z-index>
+            <image id="leaderboard_popup_bg">leaderboard_popup/sprites/bg.png</image>
+        </sprite>
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>bg_number</position-name>
+            <z-index>0</z-index>
+            <image id="leaderboard_popup_bg_number">
+				leaderboard_popup/sprites/bg_number.png
+			</image>
+        </sprite>
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>leaderboard_banner</position-name>
+            <z-index>0</z-index>
+            <image id="leaderboard_popup_leaderboard_banner">
+				leaderboard_popup/sprites/leaderboard_banner.png
+			</image>
+        </sprite>
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>number_1</position-name>
+            <z-index>0</z-index>
+            <image id="leaderboard_popup_number_1">
+				leaderboard_popup/sprites/number_1.png
+			</image>
+        </sprite>
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>number_2</position-name>
+            <z-index>0</z-index>
+            <image id="leaderboard_popup_number_2">
+				leaderboard_popup/sprites/number_2.png
+			</image>
+        </sprite>
+        <sprite background="false" comment="" visible="true">
+            <anchorpoint>default</anchorpoint>
+            <position>0, 0</position>
+            <position-name>number_3</position-name>
+            <z-index>0</z-index>
+            <image id="leaderboard_popup_number_3">
+				leaderboard_popup/sprites/number_3.png
+			</image>
+        </sprite>
+    </sprites>
+</view>
