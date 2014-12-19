@@ -51,12 +51,14 @@ bool TestController::init() {
                                    "of the protest movement's symbol.";
     
     textLabel = Label::createWithTTF(text,
-                                    "fonts/VNF-Oswald_Regular.ttf",
+                                    "fonts/Skranji-Regular.ttf",
                                     24);
     textLabel->setAnchorPoint(Vec2(0, 1));
     textLabel->setPosition(Vec2(0, 300));
     textLabel->setDimensions(300, 500);
     textLabel->setAlignment(TextHAlignment::LEFT, TextVAlignment::TOP);
+//    textLabel->enableOutline(Color4B(52, 26, 7, 255), 1);
+    textLabel->enableShadow(Color4B(52, 26, 7, 255), Size(-0.5f, -0.5f));
 //    this->addChild(textLabel);
 
 
