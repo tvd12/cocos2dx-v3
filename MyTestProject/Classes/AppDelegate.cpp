@@ -10,6 +10,15 @@ USING_NS_CC;
 
 static Size designResolutionSize =          Size(480, 320);
 
+std::vector<std::string> getSearchPaths(Director* director, Size frameSize)
+{
+    std::vector<std::string> searchPaths;
+    float contentScaleFactor = 2.0f;
+    director->setContentScaleFactor(contentScaleFactor);
+    
+    return searchPaths;
+}
+
 AppDelegate::AppDelegate() {
 
 }
@@ -37,14 +46,16 @@ bool AppDelegate::applicationDidFinishLaunching() {
         glview = GLViewImpl::create("My Game");
         director->setOpenGLView(glview);
     }
-
+    
     // turn on display FPS
-//    director->setDisplayStats(true);
-
+    //    director->setDisplayStats(true);
+    
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
     
-    glview->setContentScaleFactor(2.0);
+//    Size frameSize = glview->getFrameSize();
+//    getSearchPaths(director, frameSize);
+    director->setContentScaleFactor(2.0f);
     
     glview->setDesignResolutionSize(designResolutionSize.width,
                                     designResolutionSize.height,
@@ -53,13 +64,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
     MapManager::getInstance()->init();
     
     // create a scene. it's an autorelease object
-//    auto scene = HelloWorld::scene();
-//    auto scene = SqliteTestScene::scene();
+    //    auto scene = HelloWorld::scene();
+    //    auto scene = SqliteTestScene::scene();
     auto scene = TestController::createScene();
-
+    
     // run
     director->runWithScene(scene);
-
+    
     return true;
 }
 

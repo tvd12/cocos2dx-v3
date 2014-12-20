@@ -46,7 +46,7 @@ THE SOFTWARE.
 #include "ui/UIVBox.h"
 #include "ui/UIRelativeBox.h"
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-//#include "ui/UIVideoPlayer.h"
+#include "ui/UIVideoPlayer.h"
 #endif
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 #include "ui/UIWebView.h"
