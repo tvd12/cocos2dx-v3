@@ -71,6 +71,12 @@ namespace cocos2d{namespace plugin{
     {
         return  agentManager->getUserPlugin()->callStringFuncWithParam("getUserID", NULL);
     }
+    std::string FacebookAgent::getUserFullName() {
+        return  agentManager->getUserPlugin()->callStringFuncWithParam("getUserFullName", NULL);
+    }
+    std::string FacebookAgent::getUserBirthday() {
+        return  agentManager->getUserPlugin()->callStringFuncWithParam("getUserBirthday", NULL);
+    }
     void FacebookAgent::dialog(FBInfo& info, FBCallback cb)
     {
         auto sharePlugin = agentManager->getSharePlugin();

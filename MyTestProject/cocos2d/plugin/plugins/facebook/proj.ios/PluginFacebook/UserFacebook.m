@@ -35,6 +35,8 @@
 @synthesize debug = __debug;
 bool _isLogin = false;
 NSString *_userId = @"";
+NSString *_userFullName = @"";
+NSString *_userBirthday = @"";
 NSString *_accessToken = @"";
 
 - (void) configDeveloperInfo : (NSMutableDictionary*) cpInfo{
@@ -71,6 +73,12 @@ NSString *_accessToken = @"";
 }
 -(NSString *)getUserID{
     return _userId;
+}
+-(NSString *)getUserFullName {
+    return _userFullName;
+}
+-(NSString *)getUserBirthday {
+    return _userBirthday;
 }
 - (BOOL) isLoggedIn{
     return _isLogin;
@@ -138,6 +146,8 @@ NSString *_accessToken = @"";
             if (!error) {
                 NSDictionary *dic = (NSDictionary *)result;
                 _userId = [dic objectForKey:@"id"];
+                _userFullName = [dic objectForKey:@"name"];
+                _userBirthday = [dic objectForKey:@"birthday"];
                 _isLogin = true;
                 NSMutableDictionary *result = [NSMutableDictionary dictionaryWithObjectsAndKeys:[FBSession.activeSession permissions],@"permissions",session.accessTokenData.accessToken,@"accessToken", nil];
                 NSString *msg = [ParseUtils NSDictionaryToNSString:result];

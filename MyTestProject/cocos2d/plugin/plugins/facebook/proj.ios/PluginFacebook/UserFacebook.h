@@ -38,6 +38,8 @@
 - (BOOL) isLogined;
 - (NSString*) getSessionID;
 - (NSString*) getUserID;
+- (NSString*) getUserFullName;
+- (NSString*) getUserBirthday;
 - (void) setDebugMode: (BOOL) debug;
 - (NSString*) getSDKVersion;
 - (void) setSDKVersion:(NSString *)version;
