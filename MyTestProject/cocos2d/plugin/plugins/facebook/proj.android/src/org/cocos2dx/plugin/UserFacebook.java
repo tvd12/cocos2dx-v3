@@ -66,6 +66,9 @@ public class UserFacebook implements InterfaceUser{
             "publish_actions", "ads_management", "create_event", "rsvp_event",
             "manage_friendlists", "manage_notifications", "manage_pages");
     private static String userIdStr = "";
+    private static String userFullName = "";
+    private static String userBirthday = ""; 
+    
     protected static void LogE(String msg, Exception e) {
         Log.e(LOG_TAG, msg, e);
         e.printStackTrace();
@@ -80,6 +83,14 @@ public class UserFacebook implements InterfaceUser{
     public String getUserID(){
 		return userIdStr;
 	}
+    
+    public String getUserFullName() {
+    	return userFullName;
+    }
+    
+    public String getUserBirthday() {
+    	return userBirthday;
+    }
     
     public UserFacebook(Context context) {
 
@@ -201,11 +212,11 @@ public class UserFacebook implements InterfaceUser{
 
     @Override
     public String getSDKVersion(){
-        return Settings.getSDKVersion();
+        return Settings.getSdkVersion();
     }
 
     public void setSDKVersion(String version){
-        Settings.setSDKVersion(version);
+//        Settings.setSDKVersion(version);
     }
     
     public String getAccessToken(){
@@ -391,7 +402,7 @@ public class UserFacebook implements InterfaceUser{
         }
     }
     
-	private void onSessionStateChange(Session session, SessionState state,
+	private void onSessionStateChange(final Session session, SessionState state,
             Exception exception) {
         if (session != null && session.isOpened()) {
             // make request to the /me API
@@ -399,9 +410,13 @@ public class UserFacebook implements InterfaceUser{
                 @Override
                 public void onCompleted(GraphUser user,
                         Response response) {
-                    if (user != null) {
-                    	userIdStr = user.getId();
-                    }
+                	if (session == Session.getActiveSession()) {
+	                    if (user != null) {
+	                    	userIdStr = user.getId();
+	                    	userFullName = user.getName();
+	                    	userBirthday = user.getBirthday();
+	                    }
+                	}
 
                 }
             }).executeAsync();

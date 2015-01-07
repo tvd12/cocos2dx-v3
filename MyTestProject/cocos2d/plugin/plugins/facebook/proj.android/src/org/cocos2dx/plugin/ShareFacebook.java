@@ -123,11 +123,11 @@ public class ShareFacebook implements InterfaceShare{
 
 	@Override
 	public String getSDKVersion() {
-		return Settings.getSDKVersion();
+		return Settings.getSdkVersion();
 	}
 
 	public void setSDKVersion(String version){
-        Settings.setSDKVersion(version);
+//        Settings.setSdkVersion(version);
     }
 
 	private boolean networkReachable() {
@@ -286,7 +286,7 @@ public class ShareFacebook implements InterfaceShare{
 	
 	private void WebRequestDialog(JSONObject info) throws JSONException{
 		String message = null;
-		String app_id = null;
+//		String app_id = null;
 		RequestsDialogBuilder requestDialogBuilder = new WebDialog.RequestsDialogBuilder(mContext);
 		// some property need to add
 		

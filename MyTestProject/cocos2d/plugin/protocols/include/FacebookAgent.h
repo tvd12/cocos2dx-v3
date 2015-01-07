@@ -79,6 +79,11 @@ public:
      @brief get UserID
      **/
     std::string getUserID();
+    /**
+	@brief get UserInfo
+     **/
+    std::string getUserFullName();
+    std::string getUserBirthday();
 	/**
      @brief get AccessToken
      */

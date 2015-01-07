@@ -101,6 +101,12 @@ std::string FacebookAgent::getUserID()
 {
 	return agentManager->getUserPlugin()->callStringFuncWithParam("getUserID", NULL);
 }
+std::string FacebookAgent::getUserFullName() {
+	return agentManager->getUserPlugin()->callStringFuncWithParam("getUserFullName", NULL);
+}
+std::string FacebookAgent::getUserBirthday() {
+	return agentManager->getUserPlugin()->callStringFuncWithParam("getUserBirthday", NULL);
+}
 std::string FacebookAgent::getAccessToken()
 {
 	return agentManager->getUserPlugin()->callStringFuncWithParam("getAccessToken", NULL);

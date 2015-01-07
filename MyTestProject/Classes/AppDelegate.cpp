@@ -64,9 +64,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     MapManager::getInstance()->init();
     
     // create a scene. it's an autorelease object
-    //    auto scene = HelloWorld::scene();
+        auto scene = HelloWorld::scene();
     //    auto scene = SqliteTestScene::scene();
-    auto scene = TestController::createScene();
+//    auto scene = TestController::createScene();
     
     // run
     director->runWithScene(scene);

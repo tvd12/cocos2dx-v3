@@ -181,6 +181,8 @@ void TestFacebookUser::eventMenuCallback(Ref* sender)
             {
 //                callbackInfo->setString(FacebookAgent::getInstance()->getUserID());
                 CCLOG("MyTestProject::getUserID::%s", FacebookAgent::getInstance()->getUserID().c_str());
+                CCLOG("MyTestProject::getUserFullName::%s", FacebookAgent::getInstance()->getUserFullName().c_str());
+                CCLOG("MyTestProject::getUserBirthday::%s", FacebookAgent::getInstance()->getUserBirthday().c_str());
             }
             else
             {
