@@ -8,6 +8,8 @@
 
 #include "WordLayer.h"
 
+#include "cocos-ext.h"
+
 #define LINE_SPACE          40
 
 static Vec2 s_tCurPos = Vec2::ZERO;
@@ -100,6 +102,16 @@ bool TestController::init() {
     listener->onTouchEnded = CC_CALLBACK_2(TestController::onTouchEnded, this);
     
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+    
+    rapidjson::Document json;
+    std::string stdstr = std::string("{ \"hello\" : \"world\" }").c_str();
+    char str[2048];
+    sprintf(str, "%s", stdstr.c_str());
+    
+    json.Parse<0>(str);
+    
+    const char key[] = "hello";
+    CCLOG("json value = %s", json[key].GetString());
     
     return true;
 }
