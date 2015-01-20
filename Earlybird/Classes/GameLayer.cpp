@@ -67,6 +67,7 @@ bool GameLayer::init() {
     groundBody->setLinearDamping(0.0f);
     groundBody->setContactTestBitmask(true);
     
+    mGroundNode->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
     mGroundNode->setPhysicsBody(groundBody);
     mGroundNode->setPosition(Vec2(144, landHeight / 2));
     this->addChild(mGroundNode);
@@ -173,6 +174,7 @@ void GameLayer::createPips() {
         body->addShape(PhysicsShapeBox::create(pipUp->getContentSize()));
         body->setDynamic(false);
         body->setContactTestBitmask(true);
+        singlePip->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         singlePip->setPhysicsBody(body);
         singlePip->setTag(PIP_NEW);
         
