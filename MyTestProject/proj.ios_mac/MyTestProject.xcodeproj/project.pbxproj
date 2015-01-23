@@ -74,6 +74,8 @@
 		CF7004471A36DFED00728153 /* stary.png in Resources */ = {isa = PBXBuildFile; fileRef = CF7004441A36DFED00728153 /* stary.png */; };
 		CF70044A1A36E2E700728153 /* MapAreaLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF7004481A36E2E700728153 /* MapAreaLayer.cpp */; };
 		CF75958D1A0CAFA8005A9E46 /* libPluginProtocol.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF75958C1A0CAF7F005A9E46 /* libPluginProtocol.a */; };
+		CF81722F1A7255BC0093CD22 /* LabelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF81722D1A7255BC0093CD22 /* LabelTest.cpp */; };
+		CF8172321A7257610093CD22 /* FlexibleLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF8172301A7257610093CD22 /* FlexibleLabel.cpp */; };
 		CF902D381A37009F00A535B2 /* MainGameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF902D361A37009F00A535B2 /* MainGameLayer.cpp */; };
 		CFA8EC0E1A3936AC00FABAD3 /* ILabelSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFA8EBFE1A3936AC00FABAD3 /* ILabelSource.cpp */; };
 		CFA8EC0F1A3936AC00FABAD3 /* UpdateableLabelTTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFA8EC001A3936AC00FABAD3 /* UpdateableLabelTTF.cpp */; };
@@ -230,6 +232,10 @@
 		CF7004481A36E2E700728153 /* MapAreaLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapAreaLayer.cpp; sourceTree = "<group>"; };
 		CF7004491A36E2E700728153 /* MapAreaLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAreaLayer.h; sourceTree = "<group>"; };
 		CF7595871A0CAF7F005A9E46 /* PluginProtocol.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginProtocol.xcodeproj; path = ../cocos2d/plugin/protocols/proj.ios/PluginProtocol.xcodeproj; sourceTree = "<group>"; };
+		CF81722D1A7255BC0093CD22 /* LabelTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelTest.cpp; sourceTree = "<group>"; };
+		CF81722E1A7255BC0093CD22 /* LabelTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTest.h; sourceTree = "<group>"; };
+		CF8172301A7257610093CD22 /* FlexibleLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlexibleLabel.cpp; sourceTree = "<group>"; };
+		CF8172311A7257610093CD22 /* FlexibleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleLabel.h; sourceTree = "<group>"; };
 		CF902D361A37009F00A535B2 /* MainGameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainGameLayer.cpp; sourceTree = "<group>"; };
 		CF902D371A37009F00A535B2 /* MainGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainGameLayer.h; sourceTree = "<group>"; };
 		CFA8EBFE1A3936AC00FABAD3 /* ILabelSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ILabelSource.cpp; sourceTree = "<group>"; };
@@ -423,6 +429,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CF81722C1A7255BC0093CD22 /* LabelTest */,
 				CFEFC1131A6DFE7400858DA5 /* Inapp */,
 				CFA8EBFB1A3936AC00FABAD3 /* View */,
 				CFA8EC161A3937B700FABAD3 /* TableTest */,
@@ -507,6 +514,17 @@
 				CF75958C1A0CAF7F005A9E46 /* libPluginProtocol.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CF81722C1A7255BC0093CD22 /* LabelTest */ = {
+			isa = PBXGroup;
+			children = (
+				CF81722D1A7255BC0093CD22 /* LabelTest.cpp */,
+				CF81722E1A7255BC0093CD22 /* LabelTest.h */,
+				CF8172301A7257610093CD22 /* FlexibleLabel.cpp */,
+				CF8172311A7257610093CD22 /* FlexibleLabel.h */,
+			);
+			path = LabelTest;
 			sourceTree = "<group>";
 		};
 		CFA8EBFB1A3936AC00FABAD3 /* View */ = {
@@ -857,6 +875,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF81722F1A7255BC0093CD22 /* LabelTest.cpp in Sources */,
 				CF902D381A37009F00A535B2 /* MainGameLayer.cpp in Sources */,
 				CF1008A91A354DB90090DFEF /* SqlCell.cpp in Sources */,
 				CF1008AB1A354DB90090DFEF /* SqlObject.cpp in Sources */,
@@ -865,6 +884,7 @@
 				CFA8EC251A39447B00FABAD3 /* WordLayer.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				CFA8EC1D1A3937B700FABAD3 /* LobbyLayerView.cpp in Sources */,
+				CF8172321A7257610093CD22 /* FlexibleLabel.cpp in Sources */,
 				CF70044A1A36E2E700728153 /* MapAreaLayer.cpp in Sources */,
 				CFA8EC131A3936AC00FABAD3 /* TableView.cpp in Sources */,
 				CFEFC11E1A6E0B5400858DA5 /* IosInappHelper.cpp in Sources */,

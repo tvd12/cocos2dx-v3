@@ -15,6 +15,15 @@
 using namespace std;
 using namespace cocos2d;
 
+#define CREATE_SCENE_FUNC(__classname__) \
+public: \
+    static Scene* createScene() { \
+        Scene* scene = Scene::create(); \
+        __classname__ *layer = __classname__::create(); \
+        scene->addChild(layer); \
+        return scene; \
+    }
+
 class CommonLayer : public Layer {
 public:
     CommonLayer();

@@ -5,6 +5,7 @@
 #include "Sqlite3Helper.h"
 #include "LobbyLayerView.h"
 #include "WordLayer.h"
+#include "LabelTest.h"
 
 USING_NS_CC;
 
@@ -64,7 +65,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     MapManager::getInstance()->init();
     
     // create a scene. it's an autorelease object
-        auto scene = HelloWorld::scene();
+//        auto scene = HelloWorld::scene();
+    auto scene = LabelTest::createScene();
     //    auto scene = SqliteTestScene::scene();
 //    auto scene = TestController::createScene();
     
