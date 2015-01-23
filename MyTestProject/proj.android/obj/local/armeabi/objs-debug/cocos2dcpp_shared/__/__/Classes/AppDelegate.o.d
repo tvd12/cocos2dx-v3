@@ -394,7 +394,8 @@
   /Volumes/DATA/Data/Android/IDE/android-ndk-r10d/sources/cxx-stl/llvm-libc++/libcxx/include/iostream \
   jni/../../Classes/View/Extends/Layer/TableLayer.h \
   jni/../../Classes/View/Extends/Tables/ITableViewBuilder.h \
-  jni/../../Classes/TableTest/Word/WordLayer.h
+  jni/../../Classes/TableTest/Word/WordLayer.h \
+  jni/../../libraries/google-analytics/android/jni/../../include/GoogleAnalyticsHelper.h
 
 jni/../../Classes/AppDelegate.h:
 
@@ -1187,3 +1188,5 @@ jni/../../Classes/View/Extends/Layer/TableLayer.h:
 jni/../../Classes/View/Extends/Tables/ITableViewBuilder.h:
 
 jni/../../Classes/TableTest/Word/WordLayer.h:
+
+jni/../../libraries/google-analytics/android/jni/../../include/GoogleAnalyticsHelper.h:

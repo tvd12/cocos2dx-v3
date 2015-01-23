@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0A42BA3B-241F-408D-8F67-D0D474F1BE55</string>
+	<key>IDESourceControlProjectName</key>
+	<string>google-analytics</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>796A323F62B3B76E4176BEA3DB64378EBB27520D</key>
+		<string>bitbucket.org:tavandung12/super-memory-libraries.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>google-analytics/ios/google-analytics.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>796A323F62B3B76E4176BEA3DB64378EBB27520D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:tavandung12/super-memory-libraries.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>796A323F62B3B76E4176BEA3DB64378EBB27520D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>796A323F62B3B76E4176BEA3DB64378EBB27520D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libraries</string>
+		</dict>
+	</array>
+</dict>
+</plist>

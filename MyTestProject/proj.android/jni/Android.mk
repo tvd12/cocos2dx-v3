@@ -5,6 +5,7 @@ include $(CLEAR_VARS)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d/external)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d/cocos)
+$(call import-add-path,$(LOCAL_PATH)/../../libraries/google-analytics)
 
 LOCAL_MODULE := cocos2dcpp_shared
 
@@ -14,6 +15,8 @@ LOCAL_SRC_FILES := \
 		hellocpp/main.cpp \
 		../../Classes/AppDelegate.cpp \
 		../../Classes/HelloWorldScene.cpp \
+		../../Classes/Inapp/PurchaseHelper.cpp \
+		../../Classes/Inapp/PurchaseTestLayer.cpp \
 		../../Classes/SqliteTest/sqlite3.c \
 		../../Classes/SqliteTest/Test/SqlCell.cpp \
 		../../Classes/SqliteTest/Test/SqlColumn.cpp \
@@ -38,6 +41,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES := \
 		$(LOCAL_PATH)/../../Classes \
+		$(LOCAL_PATH)/../../Classes/Inapp \
 		$(LOCAL_PATH)/../../Classes/SqliteTest \
 		$(LOCAL_PATH)/../../Classes/SqliteTest/Test \
 		$(LOCAL_PATH)/../../Classes/SqliteTest/Test/Try \
@@ -52,9 +56,11 @@ LOCAL_C_INCLUDES := \
 LOCAL_STATIC_LIBRARIES := cocos2dx_static
 
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos2dx_static \
-PluginProtocolStatic
+PluginProtocolStatic \
+google_analytics_static \
 
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,.)
 $(call import-module,plugin/protocols/proj.android/jni)
+$(call import-module,android/jni)

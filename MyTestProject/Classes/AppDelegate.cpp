@@ -5,8 +5,11 @@
 #include "Sqlite3Helper.h"
 #include "LobbyLayerView.h"
 #include "WordLayer.h"
+#include "GoogleAnalyticsHelper.h"
 
 USING_NS_CC;
+
+using namespace tvd::plugin;
 
 static Size designResolutionSize =          Size(480, 320);
 
@@ -70,6 +73,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     // run
     director->runWithScene(scene);
+    
+    GoogleAnalyticsHelper::getInstance()->setAppName("Test App");
+    GoogleAnalyticsHelper::getInstance()->setAppVersion("1.1.0");
+    GoogleAnalyticsHelper::getInstance()->setTrackingId("UA-36352887-9");
+    GoogleAnalyticsHelper::getInstance()->init();
+
+    GoogleAnalyticsHelper::getInstance()->sendScreenView("Home Screen");
     
     return true;
 }

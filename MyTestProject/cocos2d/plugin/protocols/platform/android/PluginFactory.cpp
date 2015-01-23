@@ -42,7 +42,7 @@ enum {
 	kPluginSocial,
 };
 
-#define ANDROID_PLUGIN_PACKAGE_PREFIX			"org/cocos2dx/plugin/"
+#define ANDROID_PLUGIN_PACKAGE_PREFIX			"com/tvd/android/plugin"
 
 static PluginFactory* s_pFactory = NULL;
 
