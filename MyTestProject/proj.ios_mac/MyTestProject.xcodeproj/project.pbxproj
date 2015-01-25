@@ -442,6 +442,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CF9B2CAC1A751A9C00B603E9 /* HttpTest */,
 				CFEFC1131A6DFE7400858DA5 /* Inapp */,
 				CFA8EBFB1A3936AC00FABAD3 /* View */,
 				CFA8EC161A3937B700FABAD3 /* TableTest */,
@@ -534,6 +535,13 @@
 				CF75958C1A0CAF7F005A9E46 /* libPluginProtocol.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CF9B2CAC1A751A9C00B603E9 /* HttpTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HttpTest;
 			sourceTree = "<group>";
 		};
 		CFA8EBFB1A3936AC00FABAD3 /* View */ = {
