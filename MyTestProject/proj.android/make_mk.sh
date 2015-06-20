@@ -1,1 +1,0 @@
-java -jar /Volumes/DATA/Data/Android/ADT/android-ndk-r9b/custom-tools/MakeMkFile.jar "../Classes" "jni" ";" "ZLib" "md5main.c"
