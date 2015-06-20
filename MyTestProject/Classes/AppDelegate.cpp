@@ -58,7 +58,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
 //    Size frameSize = glview->getFrameSize();
 //    getSearchPaths(director, frameSize);
-    director->setContentScaleFactor(2.0f);
+//    director->setContentScaleFactor(2.0f);
     
     glview->setDesignResolutionSize(designResolutionSize.width,
                                     designResolutionSize.height,
@@ -67,19 +67,19 @@ bool AppDelegate::applicationDidFinishLaunching() {
     MapManager::getInstance()->init();
     
     // create a scene. it's an autorelease object
-        auto scene = HelloWorld::scene();
-    //    auto scene = SqliteTestScene::scene();
+//        auto scene = HelloWorld::scene();
+        auto scene = SqliteTestScene::scene();
 //    auto scene = TestController::createScene();
     
     // run
     director->runWithScene(scene);
     
-    GoogleAnalyticsHelper::getInstance()->setAppName("Test App");
-    GoogleAnalyticsHelper::getInstance()->setAppVersion("1.1.0");
-    GoogleAnalyticsHelper::getInstance()->setTrackingId("UA-36352887-9");
-    GoogleAnalyticsHelper::getInstance()->init();
-
-    GoogleAnalyticsHelper::getInstance()->sendScreenView("Home Screen");
+//    GoogleAnalyticsHelper::getInstance()->setAppName("Test App");
+//    GoogleAnalyticsHelper::getInstance()->setAppVersion("1.1.0");
+//    GoogleAnalyticsHelper::getInstance()->setTrackingId("UA-36352887-9");
+//    GoogleAnalyticsHelper::getInstance()->init();
+//
+//    GoogleAnalyticsHelper::getInstance()->sendScreenView("Home Screen");
     
     return true;
 }

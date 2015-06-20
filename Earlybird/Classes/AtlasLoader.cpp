@@ -41,7 +41,7 @@ void AtlasLoader::loadAtlas(string filename, Texture2D* texture) {
     Atlas atlas;
     
     //find first of end line
-    pos = data.find_first_of("\n");
+    pos = (int)data.find_first_of("\n");
     
     //get line content
     string line = data.substr(0, pos);

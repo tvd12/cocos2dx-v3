@@ -93,6 +93,9 @@
 		CFDE60AA1A0DBBCB00C78706 /* TestFacebookShare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFDE60A81A0DBBCB00C78706 /* TestFacebookShare.cpp */; };
 		CFDE60AE1A0DCE2400C78706 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDE60AD1A0DCE2400C78706 /* MediaPlayer.framework */; };
 		CFDE60B01A0DCE2E00C78706 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDE60AF1A0DCE2E00C78706 /* GameController.framework */; };
+		CFE828E01AC63C40007E7174 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFE828DC1AC63C40007E7174 /* Board.cpp */; };
+		CFE828E11AC63C40007E7174 /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFE828DE1AC63C40007E7174 /* Square.cpp */; };
+		CFE828E61AC63D30007E7174 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFE828E21AC63D30007E7174 /* StringUtil.cpp */; };
 		CFEFC1171A6E028000858DA5 /* PurchaseHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFEFC1151A6E028000858DA5 /* PurchaseHelper.cpp */; };
 		CFEFC1191A6E02BD00858DA5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEFC1181A6E02BD00858DA5 /* StoreKit.framework */; };
 		CFEFC11A1A6E02C900858DA5 /* libPluginIAP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEFC1111A6DFB6A00858DA5 /* libPluginIAP.a */; };
@@ -274,6 +277,14 @@
 		CFDE60A91A0DBBCB00C78706 /* TestFacebookShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFacebookShare.h; sourceTree = "<group>"; };
 		CFDE60AD1A0DCE2400C78706 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		CFDE60AF1A0DCE2E00C78706 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
+		CFE828DC1AC63C40007E7174 /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Board.cpp; path = Board/Board.cpp; sourceTree = "<group>"; };
+		CFE828DD1AC63C40007E7174 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Board.h; path = Board/Board.h; sourceTree = "<group>"; };
+		CFE828DE1AC63C40007E7174 /* Square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Square.cpp; path = Board/Square.cpp; sourceTree = "<group>"; };
+		CFE828DF1AC63C40007E7174 /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Square.h; path = Board/Square.h; sourceTree = "<group>"; };
+		CFE828E21AC63D30007E7174 /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StringUtil.cpp; path = "../../../../Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/StringUtil.cpp"; sourceTree = "<group>"; };
+		CFE828E31AC63D30007E7174 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringUtil.h; path = "../../../../Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/StringUtil.h"; sourceTree = "<group>"; };
+		CFE828E41AC63D30007E7174 /* tounicupper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tounicupper.h; path = "../../../../Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/tounicupper.h"; sourceTree = "<group>"; };
+		CFE828E51AC63D30007E7174 /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utf8.h; path = "../../../../Bitbucket/supernatural-memory/supernatural-memory/SupernaturalMemory/Classes/Other/Utils/utf8.h"; sourceTree = "<group>"; };
 		CFEFC10B1A6DFB6A00858DA5 /* PluginIAP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginIAP.xcodeproj; path = ../cocos2d/plugin/plugins/iosiap/proj.ios/PluginIAP.xcodeproj; sourceTree = "<group>"; };
 		CFEFC1151A6E028000858DA5 /* PurchaseHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PurchaseHelper.cpp; path = Inapp/PurchaseHelper.cpp; sourceTree = "<group>"; };
 		CFEFC1161A6E028000858DA5 /* PurchaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PurchaseHelper.h; path = Inapp/PurchaseHelper.h; sourceTree = "<group>"; };
@@ -442,6 +453,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CFE828D71AC63BD4007E7174 /* Board */,
 				CF9B2CAC1A751A9C00B603E9 /* HttpTest */,
 				CFEFC1131A6DFE7400858DA5 /* Inapp */,
 				CFA8EBFB1A3936AC00FABAD3 /* View */,
@@ -650,6 +662,21 @@
 				CFDE60A91A0DBBCB00C78706 /* TestFacebookShare.h */,
 			);
 			path = TestFacebookShare;
+			sourceTree = "<group>";
+		};
+		CFE828D71AC63BD4007E7174 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				CFE828E21AC63D30007E7174 /* StringUtil.cpp */,
+				CFE828E31AC63D30007E7174 /* StringUtil.h */,
+				CFE828E41AC63D30007E7174 /* tounicupper.h */,
+				CFE828E51AC63D30007E7174 /* utf8.h */,
+				CFE828DC1AC63C40007E7174 /* Board.cpp */,
+				CFE828DD1AC63C40007E7174 /* Board.h */,
+				CFE828DE1AC63C40007E7174 /* Square.cpp */,
+				CFE828DF1AC63C40007E7174 /* Square.h */,
+			);
+			name = Board;
 			sourceTree = "<group>";
 		};
 		CFEFC10C1A6DFB6A00858DA5 /* Products */ = {
@@ -921,8 +948,11 @@
 				CFA8EC111A3936AC00FABAD3 /* PopupLayer.cpp in Sources */,
 				CFDE60AA1A0DBBCB00C78706 /* TestFacebookShare.cpp in Sources */,
 				CFA8EC121A3936AC00FABAD3 /* TableLayer.cpp in Sources */,
+				CFE828E01AC63C40007E7174 /* Board.cpp in Sources */,
 				CFA8EC0E1A3936AC00FABAD3 /* ILabelSource.cpp in Sources */,
+				CFE828E61AC63D30007E7174 /* StringUtil.cpp in Sources */,
 				CFA8EC1C1A3937B700FABAD3 /* LobbyLayerCellView.cpp in Sources */,
+				CFE828E11AC63C40007E7174 /* Square.cpp in Sources */,
 				CF078F4B1A31A8720042B5DC /* Sqlite3Helper.cpp in Sources */,
 				CFCD2D8D1A0CA6E000154B04 /* TestFacebookUserScene.cpp in Sources */,
 				CF1008B11A354DEA0090DFEF /* SqlRow.cpp in Sources */,

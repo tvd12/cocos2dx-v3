@@ -14,6 +14,8 @@
 		<string>https://github.com/tavandung12/Cocos2dx-V3-Game.git</string>
 		<key>286DDFB69CD355C4CE8014AA11AE760A283C827C</key>
 		<string>https://github.com/tavandung12/Cocos2dx-V3-Game.git</string>
+		<key>97EECED1644E1C4D987677789392E791B4CB0AA2</key>
+		<string>bitbucket.org:tavandung12/super-memory.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MyTestProject/proj.ios_mac/MyTestProject.xcodeproj</string>
@@ -23,6 +25,8 @@
 		<string>../../../../..</string>
 		<key>286DDFB69CD355C4CE8014AA11AE760A283C827C</key>
 		<string>../../../..</string>
+		<key>97EECED1644E1C4D987677789392E791B4CB0AA2</key>
+		<string>../../../../../../Bitbucket/supernatural-memory/supernatural-memory</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/tavandung12/Cocos2dx-V3-Game.git</string>
@@ -47,6 +51,14 @@
 			<string>286DDFB69CD355C4CE8014AA11AE760A283C827C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Cocos2d-x</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97EECED1644E1C4D987677789392E791B4CB0AA2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>supernatural-memory</string>
 		</dict>
 	</array>
 </dict>

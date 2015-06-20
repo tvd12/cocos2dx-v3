@@ -81,6 +81,7 @@ bool HelloWorld::init()
         pItem->setPosition(Point(beginPos.x, beginPos.y - i * step));
         pMenu->addChild(pItem);
     }
+    
     return true;
 }
 

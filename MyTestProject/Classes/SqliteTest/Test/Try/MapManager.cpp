@@ -119,7 +119,7 @@ MapManager* MapManager::getInstance() {
 }
 
 void MapManager::init() {
-    this->setTableName("super_memory_test");
+    this->setTableName("map_test");
     this->setColumnNames("id",
                         "size",
                         "character",
